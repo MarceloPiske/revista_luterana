@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+
+/* ========== ROOT VARIABLES ========== */
+
+:root {
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-ligth: rgba(132, 139, 200, 0.18);
+    --color-primary-variant: #0975F9;
+    --color-dark-variant: #677483;
+    --color-background: #eaf4fdf6;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shandow: 0 3px 7px 0 rgba(0, 0, 0, 0.17), 0 5px 30px 0 rgba(0, 0, 0, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    /* box-sizing: 0; */
+}
+
+html {
+    font-size: 14px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    background-color: #1d1f28;
+    /* background-image: url("background-body.png"); */
+    user-select: none;
+    overflow-x: hidden;
+}
+
+/*NOTE FORA DO ROOT */
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+
+}
+
+/*ΝΟΤΕ elementos da lista de revistas */
+.content-revist-list {
+    width: fit-content;
+    max-width: 45%;
+    height: 80%;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.revist-list {
+    /* border: .5px solid black; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+    overflow: auto;
+    align-items: center;
+    padding: 10px;
+}
+
+.revist {
+    transition: all 300ms ease;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: .5px solid red;
+    border-radius: 2px;
+    min-height: calc(33% + 2%);
+    width: calc(33% - 2%);
+    cursor: pointer;
+}
+.revist:hover {
+    transform: scale(1.1);
+}
+.tit-igreja {
+    cursor: pointer;
+    margin-top: 10%;
+    text-align: center;
+    background-color: red;
+    color: #fff;
+    width: 100%;
+}
+
+.tit-luterana {
+    cursor: pointer;
+    text-align: center;
+    color: red;
+    width: 100%;
+    background-color: #fff;
+}
+
+.ano-edit {
+    cursor: pointer;
+    text-align: center;
+    height: max-content;
+    color: #fff;
+    background-color: red;
+}
+
+/* Elementos do search e descrição */
+.content-search-description {
+    max-width: 45%;
+    height: 80%;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* Somente elementos do search */
+.search {
+    display: flex;
+    align-items: center;
+    border-bottom: .5px solid black;
+    max-width: 100%;
+    width: 100%;
+    height: 10%;
+    justify-content: space-between;
+}
+.search input{
+    width: 40%;
+    border-bottom: 1px solid #1d1f28;
+}
+.search input[type=number]{
+    width: 10%;
+}
+.search button {
+    background-color: #1d1f28;
+    color: #dce1eb;
+    padding: 15px;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+/* Somente elementos de descrição */
+.description-content{
+    height: 69%;
+    width: 90%;
+    overflow: auto;
+    
+    border: .5px solid black;
+    /* Casado com o search */
+}
+
+.titulo-edit-ano {
+    width: calc(90% - 2rem + 2px);
+    position: relative;
+    padding: 1rem;
+    background-color: red;
+    color: #fff;
+}
+
+.titulo-edit-ano .op-new {
+    position: absolute;
+    color: #fff;
+    right: .5rem;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    font-size: x-large;
+    max-height: 30px;
+}
+.titulo-edit-ano span:first-child{
+    font-size: larger;
+}
+.capitulos {
+    transition: all 700ms ease;
+    padding: 1rem;
+}
+.capitulos h2 {
+    margin-top: .5rem;
+}
+.capitulos div {
+    display: flex;
+    gap: 2%;
+    /* background-color: #9fa1a3; */
+    justify-content: space-between;
+    padding: .5rem;
+    border-bottom: .1px solid #9fa1a3;
+}
+
+.capitulos div p {
+    width: 78%;
+}
+
+.capitulos div span {
+    width: 20%;
+}
