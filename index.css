@@ -69,7 +69,7 @@ body {
 
 /*ΝΟΤΕ elementos da lista de revistas */
 .content-revist-list {
-    width: fit-content;
+    width: 45%;
     max-width: 45%;
     height: 80%;
     padding: 1rem;
@@ -94,7 +94,7 @@ body {
     gap: 2%;
     overflow: auto;
     align-items: center;
-    padding: 10px;
+    padding-top: 10px;
 }
 
 .revist {
@@ -102,10 +102,11 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    border: .5px solid red;
+    border: .5px solid gray;
     border-radius: 2px;
-    min-height: calc(33% + 2%);
+    aspect-ratio: 3 / 4;
     width: calc(33% - 2%);
+    max-width: 150px;
     cursor: pointer;
 }
 .revist:hover {
@@ -115,45 +116,74 @@ body {
     cursor: pointer;
     margin-top: 10%;
     text-align: center;
-    background-color: red;
+    background-color: gray;
     color: #fff;
     width: 100%;
+    font-size: large;
 }
 
 .tit-luterana {
+    font-size: large;
     cursor: pointer;
     text-align: center;
-    color: red;
+    color: gray;
     width: 100%;
     background-color: #fff;
 }
 
 .ano-edit {
+    font-size: small;
+    height: 40%;
     cursor: pointer;
     text-align: center;
     height: max-content;
     color: #fff;
+    background-color: gray;
+}
+
+.rev-green {
+    border: .5px solid green; 
+}
+.rev-green .tit-igreja {
+    background-color: green;
+}
+.rev-green  .tit-luterana {
+    color: green;
+}
+.rev-green .ano-edit {
+    background-color: green;
+}
+
+.rev-red {
+    border: .5px solid red; 
+}
+.rev-red .tit-igreja {
+    background-color: red;
+}
+.rev-red  .tit-luterana {
+    color: red;
+}
+.rev-red .ano-edit {
     background-color: red;
 }
 
-/* Elementos do search e descrição */
-.content-search-description {
-    max-width: 45%;
-    height: 80%;
-    padding: 1rem;
-    border-radius: .5rem;
-    background-color: white;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.rev-blue {
+    border: .5px solid blue; 
+}
+.rev-blue .tit-igreja {
+    background-color: blue;
+}
+.rev-blue  .tit-luterana {
+    color: blue;
+}
+.rev-blue .ano-edit {
+    background-color: blue;
 }
 /* Somente elementos do search */
 .search {
     display: flex;
     align-items: center;
-    border-bottom: .5px solid black;
+    border-bottom: .5px solid #677483;
     max-width: 100%;
     width: 100%;
     height: 10%;
@@ -161,13 +191,13 @@ body {
 }
 .search input{
     width: 40%;
-    border-bottom: 1px solid #1d1f28;
+    border-bottom: 1px solid #677483;
 }
 .search input[type=number]{
     width: 10%;
 }
 .search button {
-    background-color: #1d1f28;
+    background-color: #7380ec;
     color: #dce1eb;
     padding: 15px;
     border-radius: 5px;
@@ -178,20 +208,27 @@ body {
     align-items: center;
     cursor: pointer;
 }
-/* Somente elementos de descrição */
-.description-content{
-    height: 69%;
-    width: 90%;
-    overflow: auto;
+/* Elementos  e descrição */
+.content-search-description {
+    max-width: 45%;
+    width: 45%;
+    height: 80%;
+    padding: 0 1rem 2rem 1rem;
+    border-radius: .5rem;
+    background-color: white;
     
-    border: .5px solid black;
-    /* Casado com o search */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
 .titulo-edit-ano {
-    width: calc(90% - 2rem + 2px);
+    height: 10%;
+    width: 100%;
     position: relative;
     padding: 1rem;
+    border-radius: .5rem .5rem 0 0;
     background-color: red;
     color: #fff;
 }
@@ -209,16 +246,25 @@ body {
 .titulo-edit-ano span:first-child{
     font-size: larger;
 }
+
+.description-content{
+    transition: all 700ms ease;
+    height: 90%;
+    width: 100%;
+    overflow: auto;
+    /* border: .5px solid black; */
+    /* Casado com o search */
+}
+
 .capitulos {
     transition: all 700ms ease;
-    padding: 1rem;
 }
 .capitulos h2 {
-    margin-top: .5rem;
+    margin-top: 2rem;
 }
 .capitulos div {
     display: flex;
-    gap: 2%;
+    gap: 5%;
     /* background-color: #9fa1a3; */
     justify-content: space-between;
     padding: .5rem;
@@ -226,9 +272,9 @@ body {
 }
 
 .capitulos div p {
-    width: 78%;
+    width: 75%;
 }
 
-.capitulos div span {
+.capitulos div i {
     width: 20%;
 }

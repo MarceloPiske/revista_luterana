@@ -1,5 +1,180 @@
 [
   {
+    "ano": "2013",
+    "edicao": "1",
+    "capitulos": [
+      {
+        "capitulo": "A SANTA CEIA COMO UM EVENTO ESCATOLÓGICO",
+        "descricao": "O artigo discute a Santa Ceia como um evento escatológico, ou seja, um evento que aponta para o futuro. O autor argumenta que a Santa Ceia é um sinal da presença de Cristo e da promessa de sua volta.",
+        "autor": "Rosemir Mauro Benati",
+        "palavras_chave": "Santa Ceia, escatologia, futuro, presença de Cristo",
+        "tipo": "artigo"
+      },
+      {
+        "capitulo": "AUXÍLIOS HOMILÉTICOS",
+        "descricao": "Esta seção oferece auxílios para a pregação dos seguintes textos bíblicos: Salmo 122; Isaías 2.1-5; Romanos 13. (8-10) 11-14; Mateus 21.1-11 ou Mateus 24.36-44.",
+        "autor": "Gerson L. Linden",
+        "palavras_chave": "pregação, homilética, textos bíblicos",
+        "tipo": "auxílios homiléticos"
+      }
+    ]
+  },
+  {
+    "ano": "2013",
+    "edicao": "2",
+    "capitulos": [
+      {
+        "capitulo": "Educação Cristã no Contexto da Igreja Evangélica Luterana",
+        "descricao": "Este artigo discute a importância da educação cristã no contexto da Igreja Evangélica Luterana. Ele aborda os objetivos da educação cristã, os métodos de ensino e os desafios enfrentados pela igreja na educação de seus membros.",
+        "autor": "Dr. Christoph Barnbrock",
+        "palavras_chave": "educação cristã, igreja luterana, ensino",
+        "tipo": "artigo"
+      },
+      {
+        "capitulo": "Auxílios Homiléticos",
+        "descricao": "Esta seção fornece recursos para pregadores, incluindo sermões de exemplo, estudos bíblicos e outros materiais.",
+        "autor": null,
+        "palavras_chave": "homilética, sermões, estudos bíblicos",
+        "tipo": "auxílios homiléticos"
+      },
+      {
+        "capitulo": "Resenha Bibliográfica",
+        "descricao": "Esta seção fornece resenhas de livros relevantes para a teologia luterana.",
+        "autor": null,
+        "palavras_chave": "resenha bibliográfica, teologia luterana",
+        "tipo": "resenha bibliográfica"
+      }
+    ]
+  },
+  {
+    "ano": 2014,
+    "edicao": 1,
+    "capitulos": [
+      {
+        "capitulo": "FÓRMULA DE CONCÓRDIA",
+        "descricao": "O artigo aborda o primeiro artigo da Fórmula de Concórdia, que trata do pecado original.",
+        "autor": "Cezar Squiavo Schuquel",
+        "palavras_chave": "pecado original, confissões luteranas, fé, salvação, Jesus Cristo, Escrituras Sagradas, controvérsia Flaciana, substância, acidente, corpo, alma, tentação, ciências humanas, vítima, contexto social, familiar, terapias, tratamentos, redenção, obra vicária, Evangelho, Igreja de Deus, paz, desunião, ministros da igreja, dúvida.",
+        "tipo": "Artigo"
+      },
+      {
+        "capitulo": "AUXÍLIOS HOMILÉTICOS",
+        "descricao": "O artigo oferece sugestões de esboço homilético para os seguintes temas:\n* Décimo Primeiro Domingo Após Pentecostes: \"JESUS É O CRISTO, O FILHO DO DEUS VIVO!\"\n* Dia da Reforma: \"A verdadeira liberdade do evangelho é para todos.\"\n* Último Domingo do Ano da Igreja: \"O fim dos tempos e o plano de salvação.\"",
+        "autor": null,
+        "palavras_chave": "Jesus Cristo, Filho de Deus, Evangelho, liberdade, reino de Deus, reino dos céus, parábola, bodas, noivo, noiva, convidados, fé, boas obras, obras externas, lei, evangelho, óleo, lâmpadas, fim dos tempos, plano de salvação.",
+        "tipo": "auxílios homiléticos"
+      }
+    ]
+  },
+  {
+    "ano": 2014,
+    "edicao": 2,
+    "capitulos": [
+      {
+        "capitulo": "Resenha Bibliográfica",
+        "descricao": "Apresentação de livros relacionados à teologia luterana.",
+        "autor": "Raul Blum",
+        "palavras_chave": [
+          "teologia luterana",
+          "resenha",
+          "livros"
+        ],
+        "tipo": "resenha"
+      },
+      {
+        "capitulo": "Auxílios Homiléticos",
+        "descricao": "Sugestões para a elaboração de sermões para os diferentes domingos do ano litúrgico.",
+        "autor": null,
+        "palavras_chave": [
+          "homilética",
+          "sermões",
+          "ano litúrgico"
+        ],
+        "tipo": "auxílio"
+      }
+    ]
+  },
+  {
+    "ano": "2015",
+    "edicao": "2",
+    "capitulos": [
+      {
+        "capitulo": "APONTAMENTOS SOBRE A RELAÇÃO ENTRE A TEOLOGIA NICENA E A ASCENSÃO DA VENERAÇÃO A MARIA",
+        "descricao": "O artigo analisa a relação entre a teologia do Concílio de Niceia e a veneração a Maria na teologia católico-romana. Poderia a ênfase na teologia ontológica que afirma e insiste na verdadeira divindade de Cristo ter aberto espaço para o culto aos santos e a Maria?",
+        "autor": "Maximiliano Wolfgram da Silva",
+        "palavras_chave": [
+          "teologia",
+          "Concílio de Niceia",
+          "Maria",
+          "catolicismo",
+          "luteranismo"
+        ],
+        "tipo": "artigo"
+      },
+      {
+        "capitulo": "O BATISMO NO ESPÍRITO SANTO CONFORME O LIVRO DE ATOS",
+        "descricao": "O artigo analisa a relação entre os ministérios de Elias e Eliseu e o ministério do Senhor Jesus, utilizando o conceito de internarratividade.",
+        "autor": "Alexandre Teixeira Vieira",
+        "palavras_chave": [
+          "Elias",
+          "Eliseu",
+          "Jesus",
+          "internarratividade",
+          "ministério"
+        ],
+        "tipo": "artigo"
+      },
+      {
+        "capitulo": "A ESPIRITUALIDADE CRISTÃ ATRAVÉS DA VOCAÇÃO – UMA PERSPECTIVA LUTERANA",
+        "descricao": "O artigo analisa a relação entre os ministérios de Elias e Eliseu e o ministério do Senhor Jesus, utilizando o conceito de internarratividade.",
+        "autor": "Clóvis Jair Prunzel",
+        "palavras_chave": [
+          "espiritualidade",
+          "vocação",
+          "luteranismo",
+          "teologia"
+        ],
+        "tipo": "artigo"
+      },
+      {
+        "capitulo": "ELIAS, ELISEU E JESUS: UM EXERCÍCIO DE INTERNARRATIVIDADE",
+        "descricao": "O artigo analisa a relação entre os ministérios de Elias e Eliseu e o ministério do Senhor Jesus, utilizando o conceito de internarratividade.",
+        "autor": "Vilson Scholz",
+        "palavras_chave": [
+          "Elias",
+          "Eliseu",
+          "Jesus",
+          "internarratividade",
+          "ministério"
+        ],
+        "tipo": "artigo"
+      },
+      {
+        "capitulo": "RESENHAS",
+        "descricao": "Resenhas de livros sobre teologia e espiritualidade.",
+        "autor": "null",
+        "palavras_chave": [
+          "resenhas",
+          "teologia",
+          "espiritualidade"
+        ],
+        "tipo": "resenhas"
+      },
+      {
+        "capitulo": "PALAVRA AO LEITOR",
+        "descricao": "Editorial da revista, apresentando os artigos e resenhas da edição.",
+        "autor": "Gerson L. Linden",
+        "palavras_chave": [
+          "editorial",
+          "apresentação",
+          "artigos",
+          "resenhas"
+        ],
+        "tipo": "palavras ao leitor"
+      }
+    ]
+  },
+  {
     "ano": "2016",
     "edicao": 1,
     "capitulos": [

@@ -4,42 +4,49 @@
 
 const array_revistas = [
     {
+        "color": "red",
         "ano": "2016",
         "edicao": 1,
         "objectId": "1",
         "url": "https://drive.google.com/file/d/1Wk6L85DsIxa8FTGSs2SArd-joFdS0xtQ/view?usp=drive_link"
     },
     {
+        "color": "green",
         "ano": 2017,
         "edicao": 2,
         "objectId": "2",
         "url": "https://drive.google.com/file/d/1bjsCAC0KeOe1o_bBty0NrjmNwx8A0VkB/view?usp=drive_link"
     },
     {
+        "color": "green",
         "ano": 2017,
         "edicao": 1,
         "objectId": "3",
         "url": "https://drive.google.com/file/d/14pwP2SPtSe3xbLewAYIyhhgfmxC84lHc/view?usp=drive_link"
     },
     {
+        "color": "blue",
         "ano": 2018,
         "edicao": 1,
         "objectId": "4",
         "url": "https://drive.google.com/file/d/1ckewjvRXzs4aV04EDbQL0Ew1I9tVJAsA/view?usp=drive_link"
     },
     {
+        "color": "blue",
         "ano": "2018",
         "edicao": 2,
         "objectId": "5",
         "url": "https://drive.google.com/file/d/15418wpJn2I8OB7h6CYyWKAWJ87wug80M/view?usp=drive_link"
     },
     {
+        "color": "red",
         "ano": "2019",
         "edicao": "1",
         "objectId": "6",
         "url": "https://drive.google.com/file/d/1EDCVlKj8WfWFbuucsUYQQV9e6IkYqxrY/view?usp=drive_link"
     },
     {
+        "color": "red",
         "ano": 2019,
         "edicao": 2,
         "objectId": "7",
@@ -53,7 +60,7 @@ function drawn_revist(array_revistas) {
     for (const rev of array_revistas) {
         //console.log(rev);
 
-        lists_html += `<div data-url="${rev.url}" data-edicao="${rev.edicao == 2 ? "II" : "I"}" data-ano="${rev.ano}" id="${rev.objectId}" class="revist" onclick="get_description(this)">
+        lists_html += `<div data-color="${rev.color}" data-url="${rev.url}" data-edicao="${rev.edicao == 2 ? "II" : "I"}" data-ano="${rev.ano}" id="${rev.objectId}" class="revist rev-${rev.color}" onclick="get_description(this) ">
         <div class="tit-igreja">IGREJA</div>
         <div class="tit-luterana">LUTERANA</div>
         <div class="ano-edit">
@@ -612,6 +619,7 @@ function get_description(element) {
         }
     }
     description_content.innerHTML = desc_html
+    document.querySelector(".titulo-edit-ano").style.backgroundColor = `${element.dataset.color}`
     document.getElementById("ano-edicao").innerText = `${element.dataset.ano} EDIÇÃO ${element.dataset.edicao}`
     document.getElementById("op-new").href = element.dataset.url
 }
@@ -629,7 +637,6 @@ function filter_revist() {
             if (tema){
                 return JSON.stringify(obj.palavras_chave).includes(tema)}
             if (autor){
-                console.log("cai aqui");
                 return obj.autor && obj.autor.includes(autor)}
         }
     });
