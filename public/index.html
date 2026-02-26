@@ -48,26 +48,45 @@
 
     <div id="pdf-modal" class="modal hidden">
         <div class="modal-content" id="modal-content">
-
+            
             <div class="modal-header">
-                <button id="btn-citar" class="action-btn">
-                    <span class="material-symbols-outlined">format_quote</span> Citar (ABNT)
-                </button>
-                <button id="fullscreen-btn" class="action-btn">
-                    <span class="material-symbols-outlined">fullscreen</span> Expandir
-                </button>
-                <button id="close-modal" class="close-btn">
-                    <span class="material-symbols-outlined">close</span> Fechar
-                </button>
+                <div class="header-left">
+                    <button id="btn-toggle-sidebar" class="action-btn">
+                        <span class="material-symbols-outlined">library_books</span> Artigos Relacionados
+                    </button>
+                </div>
+                <div class="header-right" style="display: flex; gap: 12px;">
+                    <button id="btn-citar" class="action-btn">
+                        <span class="material-symbols-outlined">format_quote</span> Citar (ABNT)
+                    </button>
+                    <button id="fullscreen-btn" class="action-btn">
+                        <span class="material-symbols-outlined">fullscreen</span> Expandir
+                    </button>
+                    <button id="close-modal" class="close-btn">
+                        <span class="material-symbols-outlined">close</span> Fechar
+                    </button>
+                </div>
             </div>
 
-            <div id="loading-spinner" class="spinner-container">
-                <div class="spinner"></div>
-                <p>Carregando documento do acervo...</p>
-            </div>
+            <div class="modal-body">
+                
+                <div class="pdf-container">
+                    <div id="loading-spinner" class="spinner-container">
+                        <div class="spinner"></div>
+                        <p>Carregando documento...</p>
+                    </div>
+                    <iframe id="pdf-viewer" src="" frameborder="0" allowfullscreen></iframe>
+                </div>
 
-            <iframe id="pdf-viewer" src="" frameborder="0" alt="Documento PDF do artigo selecionado"
-                allowfullscreen></iframe>
+                <aside id="lateral-sidebar" class="lateral-sidebar hidden-sidebar">
+                    <div class="sidebar-header">
+                        <h4>Recomendações</h4>
+                    </div>
+                    <div id="grid-relacionados" class="related-vertical-grid">
+                        </div>
+                </aside>
+                
+            </div>
         </div>
     </div>
 

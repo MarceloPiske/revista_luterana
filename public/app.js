@@ -105,7 +105,7 @@ function renderArticles(artigos) {
                 <div class="tags">
                     ${artigo.palavras_chave.map(tag => `<span>#${tag}</span>`).join(' ')}
                 </div>
-                <button class="btn-read" onclick="abrirPDF('${artigo.url_acesso}', ${artigo.paginas.inicio}, '${artigo.id}', '${artigo.titulo}')">
+                <button class="btn-read" onclick="abrirPDF('${artigo.id}')">
                     <span class="material-symbols-outlined">menu_book</span> Ler Artigo
                 </button>
             </div>
@@ -215,33 +215,109 @@ function atualizarSEOAcademico(artigo) {
     document.title = `${artigo.titulo} - Acervo Luterano`;
 }
 
+// Captura os novos elementos
+const secaoRelacionados = document.getElementById('secao-relacionados');
+const gridRelacionados = document.getElementById('grid-relacionados');
+const btnToggleSidebar = document.getElementById('btn-toggle-sidebar');
+const lateralSidebar = document.getElementById('lateral-sidebar');
+
+// 1. AÇÃO DO BOTÃO LATERAL
+btnToggleSidebar.addEventListener('click', () => {
+    lateralSidebar.classList.toggle('hidden-sidebar');
+});
+function encontrarArtigosRelacionados(artigoBase) {
+    // 1. Remove o próprio artigo da lista de candidatos
+    let candidatos = todosOsArtigos.filter(a => a.id !== artigoBase.id);
+
+    // 2. Calcula a Pontuação de Similaridade (Scoring)
+    candidatos.forEach(candidato => {
+        let pontuacao = 0;
+        
+        // Peso Maior: Palavras-chave em comum (2 pontos cada)
+        artigoBase.palavras_chave.forEach(tag => {
+            if (candidato.palavras_chave.includes(tag)) pontuacao += 2;
+        });
+        
+        // Peso Médio: Mesmo autor (1 ponto)
+        if (candidato.autor === artigoBase.autor) pontuacao += 1;
+        
+        // Peso Menor: Mesma Revista (0.5 pontos)
+        if (candidato.nomeRevista === artigoBase.nomeRevista) pontuacao += 0.5;
+
+        candidato.similaridade = pontuacao;
+    });
+
+    // 3. Ordena pelos mais similares e retorna o Top 3 (que tenham alguma pontuação)
+    return candidatos
+        .filter(c => c.similaridade > 0)
+        .sort((a, b) => b.similaridade - a.similaridade)
+        .slice(0, 3);
+}
+// 2. ATUALIZAR A FUNÇÃO RENDERIZAR
+function renderizarRelacionados(artigoBase) {
+    const recomendacoes = encontrarArtigosRelacionados(artigoBase); // A mesma função que criamos antes
+    gridRelacionados.innerHTML = '';
+
+    // Se não houver recomendações, esconde o botão da barra lateral
+    if (recomendacoes.length === 0) {
+        btnToggleSidebar.style.display = 'none';
+        lateralSidebar.classList.add('hidden-sidebar');
+        return;
+    }
+
+    btnToggleSidebar.style.display = 'flex';
+
+    recomendacoes.forEach(artigo => {
+        const card = document.createElement('div');
+        card.className = 'related-card';
+        card.onclick = () => window.abrirPDF(artigo.id); 
+        
+        card.innerHTML = `
+            <h5>${artigo.titulo}</h5>
+            <div class="meta" style="font-size: 0.8rem; color: #64748b; display: flex; align-items: center; gap: 4px;">
+                <span class="material-symbols-outlined" style="font-size: 14px;">person</span> 
+                ${artigo.autor}
+            </div>
+        `;
+        gridRelacionados.appendChild(card);
+    });
+}
+
 /**
  * 5. VISUALIZADOR DE PDF E LÓGICA DO MODAL
  */
 // Função no escopo global para ser chamada pelo HTML
-window.abrirPDF = function (url, pagina, artigoId, artigoTitulo) {
+window.abrirPDF = function (artigoId) {
+    // Busca todos os dados do artigo diretamente na memória usando o ID
+    const artigo = todosOsArtigos.find(a => a.id === artigoId);
+    
+    // Trava de segurança
+    if (!artigo) {
+        console.error("Artigo não encontrado no banco de dados.");
+        return;
+    }
+
     document.body.classList.add('no-scroll');
     loadingSpinner.style.display = 'flex';
     pdfViewer.style.opacity = '0';
 
-    // GUARDA O ARTIGO ATUAL PARA A CITAÇÃO
-    artigoAbertoAtual = todosOsArtigos.find(a => a.id === artigoId);
-    
-    if (artigoAbertoAtual) {
-        atualizarSEOAcademico(artigoAbertoAtual);
-    }
-
-    let embedUrl = url.replace(/\/view.*/, '/preview');
-    embedUrl += `#page=${pagina}`;
+    // GUARDA O ARTIGO ATUAL PARA A CITAÇÃO E SEO
+    artigoAbertoAtual = artigo;
+    atualizarSEOAcademico(artigo);    
+    // NOVO: Chama o motor de recomendação
+    renderizarRelacionados(artigo);
+    // Converte a URL e adiciona a página de início
+    let embedUrl = artigo.url_acesso.replace(/\/view.*/, '/preview');
+    embedUrl += `#page=${artigo.paginas.inicio}`;
 
     pdfViewer.src = embedUrl;
     modal.classList.remove('hidden');
 
-    // Registo no Analytics
+    // Registo no Analytics (agora com acesso seguro ao título)
     logEvent(analytics, 'select_content', {
         content_type: 'artigo_pdf',
-        item_id: artigoId,
-        item_name: artigoTitulo
+        item_id: artigo.id,
+        item_name: artigo.titulo
     });
 };
 
@@ -322,6 +398,7 @@ closeModalBtn.addEventListener('click', () => {
         document.exitFullscreen();
     }
     document.title = "Acervo Luterano Digital";
+    lateralSidebar.classList.add('hidden-sidebar');
 });
 
 // Lógica da Fullscreen API (W3C)

@@ -360,3 +360,100 @@ body.no-scroll { overflow: hidden; }
 
 /* Ajuste do iframe para transição suave */
 #pdf-viewer { position: relative; z-index: 20; transition: opacity 0.3s ease; opacity: 0; }
+
+/* Estrutura do Novo Modal */
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    height: 95vh; /* Ocupa quase a tela toda */
+    width: 95vw;
+    max-width: 1400px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between; /* Separa os botões da esquerda e direita */
+    align-items: center;
+}
+
+.modal-body {
+    display: flex;
+    flex: 1; /* Ocupa todo o espaço restante abaixo do cabeçalho */
+    overflow: hidden; /* Impede que o modal vaze */
+    position: relative;
+}
+
+/* Área do PDF */
+.pdf-container {
+    flex: 1; /* Cresce para ocupar o espaço livre */
+    position: relative;
+    height: 100%;
+}
+
+#pdf-viewer {
+    width: 100%;
+    height: 100%;
+    border: none;
+    position: relative;
+    z-index: 20;
+}
+
+/* Barra Lateral Deslizante */
+.lateral-sidebar {
+    width: 320px;
+    background: #f8fafc;
+    border-left: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Animação suave */
+    overflow-y: auto;
+}
+
+/* O Segredo do efeito Slick */
+.lateral-sidebar.hidden-sidebar {
+    width: 0;
+    border: none;
+    padding: 0;
+    opacity: 0;
+}
+
+.sidebar-header {
+    padding: 20px 20px 10px 20px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.sidebar-header h4 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 1.1rem;
+}
+
+.related-vertical-grid {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Cards na Vertical */
+.related-card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.related-card:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transform: translateX(-4px); /* Efeito de flutuar para a esquerda */
+}
+
+.related-card h5 {
+    margin: 0 0 8px 0;
+    font-size: 0.9rem;
+    color: #0f172a;
+    line-height: 1.4;
+}
