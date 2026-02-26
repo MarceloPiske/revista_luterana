@@ -1,0 +1,362 @@
+:root {
+    --primary-color: #1e293b;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #334155;
+    --text-muted: #64748b;
+    --accent: #0284c7;
+    --radius: 12px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Configuração do Banner com Imagem (Substitua a URL pela imagem desejada) */
+.hero {
+    position: relative;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    background-image: url('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.7);
+    /* Escurece a imagem de fundo */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.hero p {
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+/* Barra de Pesquisa com Ícone */
+.search-wrapper {
+    position: relative;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    pointer-events: none;
+}
+
+#search-input {
+    width: 100%;
+    padding: 16px 20px 16px 50px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.05rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: transform 0.2s;
+}
+
+#search-input:focus {
+    transform: scale(1.02);
+}
+
+/* Grid e Cards de Artigo */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+    padding: 50px 0;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Espaço para Imagem do Artigo */
+.card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    /* Evita que a imagem distorça */
+    background-color: #e2e8f0;
+}
+
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.meta-info {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+    color: var(--primary-color);
+    line-height: 1.4;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+.info-row .material-symbols-outlined {
+    font-size: 1.1rem;
+}
+
+.card .tags {
+    font-size: 0.8rem;
+    color: var(--accent);
+    margin-top: 10px;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.card .resumo {
+    font-size: 0.95rem;
+    color: #475569;
+    margin-bottom: 20px;
+}
+
+.btn-read {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s;
+}
+
+.btn-read:hover {
+    background: #0369a1;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    -webkit-backdrop-filter: blur(4px); 
+    backdrop-filter: blur(4px);
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: white;
+    width: 95%;
+    max-width: 1000px;
+    height: 90%;
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.close-btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* Controle Segmentado de Revistas */
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+    /* Faz o toggle sobrepor o final do header */
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 10;
+    padding: 0 20px;
+}
+
+.magazine-toggle {
+    background: var(--card-bg);
+    padding: 8px;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.toggle-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 40px;
+    background: transparent;
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.toggle-btn .material-symbols-outlined {
+    font-size: 1.2rem;
+}
+
+.toggle-btn:hover {
+    color: var(--primary-color);
+    background: var(--bg-color);
+}
+
+.toggle-btn.active {
+    background: var(--primary-color);
+    color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajuste responsivo para telas menores (celulares) */
+@media (max-width: 600px) {
+    .magazine-toggle {
+        border-radius: 16px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .toggle-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+/* Prevenção de Rolagem do Fundo (Scroll Lock) */
+body.no-scroll { overflow: hidden; }
+
+/* Cabeçalho do Modal */
+.modal-header {
+    display: flex; justify-content: flex-end; gap: 12px;
+    padding: 12px 20px; background: #ffffff; border-bottom: 1px solid #e2e8f0;
+}
+
+.action-btn {
+    background: var(--bg-color); color: var(--text-main); border: 1px solid #cbd5e1;
+    padding: 8px 16px; border-radius: 6px; cursor: pointer;
+    display: flex; align-items: center; gap: 6px; font-weight: 600; font-size: 0.9rem;
+    transition: background 0.2s;
+}
+.action-btn:hover { background: #e2e8f0; }
+
+/* O botão de fechar já existia, ajustei para combinar com o novo layout */
+.close-btn { 
+    background: #ef4444; color: white; border: none; padding: 8px 16px; 
+    border-radius: 6px; cursor: pointer; display: flex; align-items: center; gap: 6px;
+    font-weight: 600; font-size: 0.9rem; transition: background 0.2s;
+}
+.close-btn:hover { background: #dc2626; }
+
+/* Animação do Loading Spinner */
+.spinner-container {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    display: flex; flex-direction: column; align-items: center; gap: 15px;
+    color: var(--text-muted); z-index: 10;
+}
+
+.spinner {
+    width: 40px; height: 40px; border: 4px solid #f1f5f9;
+    border-top: 4px solid var(--accent); border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+/* Ajuste do iframe para transição suave */
+#pdf-viewer { position: relative; z-index: 20; transition: opacity 0.3s ease; opacity: 0; }
