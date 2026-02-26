@@ -35,10 +35,6 @@ const modalContent = document.getElementById('modal-content');
 const loadingSpinner = document.getElementById('loading-spinner');
 const fullscreenBtn = document.getElementById('fullscreen-btn');
 
-// Novos elementos de Filtro
-const checkboxesTipo = document.querySelectorAll('.filter-tipo');
-const selectAno = document.getElementById('filter-ano');
-const btnLimparFiltros = document.getElementById('btn-limpar-filtros');
 
 /**
  * 1. CARREGAMENTO DOS DADOS (JSON EXTERNO)
@@ -69,6 +65,7 @@ async function carregarAcervo() {
         document.getElementById('revista-edicao').textContent = `${todosOsArtigos.length} artigos disponíveis nas revistas luteranas.`;
         construirFiltrosDinamicos();
         renderArticles(todosOsArtigos);
+        lerURLInicial();
         console.log("Acervo carregado com sucesso!"); // Log para teste
 
     } catch (error) {
@@ -121,6 +118,50 @@ function renderArticles(artigos) {
 /**
  * MOTOR DE GERAÇÃO DINÂMICA DE FILTROS (Data-Driven)
  */
+function atualizarContadoresCruzados(baseAnos, baseAutores, baseAssuntos) {
+    const contagemAnos = {};
+    const contagemAutores = {};
+    const contagemAssuntos = {};
+
+    // Conta os Anos (Base já filtrada por Autor e Assunto)
+    baseAnos.forEach(a => contagemAnos[a.ano] = (contagemAnos[a.ano] || 0) + 1);
+    
+    // Conta os Autores (Base já filtrada por Ano e Assunto)
+    baseAutores.forEach(a => {
+        a.autor.split(/ e |;/).map(x => x.trim()).forEach(autor => {
+            contagemAutores[autor] = (contagemAutores[autor] || 0) + 1;
+        });
+    });
+
+    // Conta os Assuntos (Base já filtrada por Ano e Autor)
+    baseAssuntos.forEach(a => {
+        a.palavras_chave.forEach(tag => {
+            const termo = tag.trim();
+            contagemAssuntos[termo] = (contagemAssuntos[termo] || 0) + 1;
+        });
+    });
+
+    // Atualiza o DOM (HTML)
+    document.querySelectorAll('.filter-label').forEach(label => {
+        const checkbox = label.querySelector('input');
+        let novaQuantidade = 0;
+        
+        if (checkbox.classList.contains('cb-ano')) novaQuantidade = contagemAnos[checkbox.value] || 0;
+        else if (checkbox.classList.contains('cb-autor')) novaQuantidade = contagemAutores[checkbox.value] || 0;
+        else if (checkbox.classList.contains('cb-assunto')) novaQuantidade = contagemAssuntos[checkbox.value] || 0;
+
+        label.querySelector('.filter-count').textContent = novaQuantidade;
+
+        // Se for zero e não estiver selecionado, esmaece. Caso contrário, deixa clicável.
+        if (novaQuantidade === 0 && !checkbox.checked) {
+            label.style.opacity = '0.3';
+            label.style.pointerEvents = 'none';
+        } else {
+            label.style.opacity = '1';
+            label.style.pointerEvents = 'auto';
+        }
+    });
+}
 function construirFiltrosDinamicos() {
     const contagemAnos = {};
     const contagemAutores = {};
@@ -186,47 +227,125 @@ function construirFiltrosDinamicos() {
 /**
  * APLICAÇÃO DOS FILTROS UNIFICADOS
  */
+/**
+ * LÓGICA DE DEEP LINKING (URLs Inteligentes)
+ */
+function atualizarURL() {
+    const params = new URLSearchParams();
+    
+    // Captura o texto da busca
+    const termo = searchInput.value.trim();
+    if (termo) params.set('busca', termo);
+    
+    // Captura a aba da revista
+    if (revistaAtual !== 'Todas') params.set('revista', revistaAtual);
+
+    // Função auxiliar para capturar checkboxes
+    const getSelecionados = (className) => Array.from(document.querySelectorAll(`.${className}:checked`)).map(cb => cb.value);
+    
+    // Captura os filtros facetados
+    const anosSel = getSelecionados('cb-ano');
+    if (anosSel.length > 0) params.set('anos', anosSel.join(','));
+
+    const autoresSel = getSelecionados('cb-autor');
+    if (autoresSel.length > 0) params.set('autores', autoresSel.join(','));
+
+    const assuntosSel = getSelecionados('cb-assunto');
+    if (assuntosSel.length > 0) params.set('assuntos', assuntosSel.join(','));
+
+    // Atualiza a barra de endereço do navegador silenciosamente (History API)
+    const stringParams = params.toString();
+    const novaURL = `${window.location.pathname}${stringParams ? '?' + stringParams : ''}`;
+    window.history.replaceState({}, '', novaURL);
+}
+
+function lerURLInicial() {
+    const params = new URLSearchParams(window.location.search);
+    
+    // 1. Preenche a barra de pesquisa
+    if (params.has('busca')) {
+        searchInput.value = params.get('busca');
+    }
+    
+    // 2. Ativa a aba da revista correta
+    if (params.has('revista')) {
+        const revistaParam = params.get('revista');
+        const aba = Array.from(toggleBtns).find(btn => btn.getAttribute('data-revista') === revistaParam);
+        if (aba) {
+            toggleBtns.forEach(b => b.classList.remove('active'));
+            aba.classList.add('active');
+            revistaAtual = revistaParam;
+        }
+    }
+
+    // 3. Preenche os checkboxes (anos, autores, assuntos)
+    const preencherCheckboxes = (paramNome, className) => {
+        if (params.has(paramNome)) {
+            const valores = params.get(paramNome).split(',');
+            const checkboxes = document.querySelectorAll(`.${className}`);
+            checkboxes.forEach(cb => {
+                if (valores.includes(cb.value)) cb.checked = true;
+            });
+        }
+    };
+
+    preencherCheckboxes('anos', 'cb-ano');
+    preencherCheckboxes('autores', 'cb-autor');
+    preencherCheckboxes('assuntos', 'cb-assunto');
+
+    // Após ler tudo, aplica os filtros para renderizar a tela
+    aplicarFiltros();
+}
 function aplicarFiltros() {
     const termoBusca = searchInput.value.toLowerCase().trim();
     const palavrasChave = termoBusca === "" ? [] : termoBusca.split(/\s+/);
-
-    // Função auxiliar para capturar o que o utilizador selecionou
+    
     const getSelecionados = (className) => Array.from(document.querySelectorAll(`.${className}:checked`)).map(cb => cb.value);
-
+    
     const anosSel = getSelecionados('cb-ano');
     const autoresSel = getSelecionados('cb-autor');
     const assuntosSel = getSelecionados('cb-assunto');
 
-    let resultado = todosOsArtigos;
-
-    // Aba da Revista no Topo
+    // 1. FILTROS GLOBAIS (Aba da Revista e Barra de Pesquisa afetam tudo)
+    let baseGlobal = todosOsArtigos;
+    
     if (revistaAtual !== 'Todas') {
-        resultado = resultado.filter(artigo => artigo.nomeRevista === revistaAtual);
+        baseGlobal = baseGlobal.filter(artigo => artigo.nomeRevista === revistaAtual);
     }
-
-    // Filtros Dinâmicos
-    if (anosSel.length > 0) {
-        resultado = resultado.filter(a => anosSel.includes(a.ano.toString()));
-    }
-
-    if (autoresSel.length > 0) {
-        resultado = resultado.filter(a => autoresSel.some(autorSel => a.autor.includes(autorSel)));
-    }
-
-    if (assuntosSel.length > 0) {
-        resultado = resultado.filter(a => assuntosSel.some(assuntoSel => a.palavras_chave.includes(assuntoSel)));
-    }
-
-    // Pesquisa de Texto Livre
+    
     if (palavrasChave.length > 0) {
-        resultado = resultado.filter(artigo => {
+        baseGlobal = baseGlobal.filter(artigo => {
             const citacoes = artigo.autores_citados ? artigo.autores_citados.join(' ') : '';
             const indiceTexto = `${artigo.titulo} ${artigo.autor} ${artigo.palavras_chave.join(' ')} ${artigo.resumo} ${citacoes}`.toLowerCase();
             return palavrasChave.every(palavra => indiceTexto.includes(palavra));
         });
     }
 
-    renderArticles(resultado);
+    // 2. FUNÇÕES AUXILIARES DE FACETAS (Lógica OR interna, Lógica AND externa)
+    const filtraAno = (lista) => anosSel.length === 0 ? lista : lista.filter(a => anosSel.includes(a.ano.toString()));
+    const filtraAutor = (lista) => autoresSel.length === 0 ? lista : lista.filter(a => autoresSel.some(autorSel => a.autor.includes(autorSel)));
+    const filtraAssunto = (lista) => assuntosSel.length === 0 ? lista : lista.filter(a => assuntosSel.some(assuntoSel => a.palavras_chave.includes(assuntoSel)));
+
+    // 3. CÁLCULO DAS BASES PARA OS CONTADORES (O Segredo do Cross-Filtering)
+    // Para calcular os Anos disponíveis, filtramos Autores e Assuntos, mas pulamos os Anos.
+    const baseParaAnos = filtraAssunto(filtraAutor(baseGlobal));
+    
+    // Para calcular os Autores disponíveis, filtramos Anos e Assuntos.
+    const baseParaAutores = filtraAssunto(filtraAno(baseGlobal));
+    
+    // Para calcular os Assuntos disponíveis, filtramos Anos e Autores.
+    const baseParaAssuntos = filtraAutor(filtraAno(baseGlobal));
+
+    // Atualiza visualmente os números na barra lateral
+    atualizarContadoresCruzados(baseParaAnos, baseParaAutores, baseParaAssuntos);
+
+    // 4. O RESULTADO FINAL DA TELA (Aplica tudo em conjunto)
+    const resultadoFinal = filtraAssunto(filtraAutor(filtraAno(baseGlobal)));
+    
+    renderArticles(resultadoFinal);
+    
+    // Atualiza a barra de endereço se a função existir
+    if (typeof atualizarURL === "function") atualizarURL(); 
 }
 
 // Lógica de Limpeza do Botão "X"
