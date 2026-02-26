@@ -457,3 +457,78 @@ body.no-scroll { overflow: hidden; }
     color: #0f172a;
     line-height: 1.4;
 }
+
+/* Layout Principal com Sidebar de Filtros */
+/* Layout Principal */
+.main-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr; /* 280px para os filtros, o resto para os artigos */
+    gap: 30px;
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 0 20px;
+    align-items: start;
+}
+
+/* A CORREÇÃO DA GRELHA: Múltiplos artigos por linha */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+    width: 100%;
+}
+
+/* Sidebar de Filtros */
+.filters-sidebar {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+    position: sticky;
+    top: 20px;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto; /* Permite scroll dentro da sidebar se houver muitos filtros */
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.filter-header h3 { margin: 0; font-size: 1.1rem; color: #0f172a; }
+
+.btn-icon-clear {
+    background: none; border: none; color: #64748b; cursor: pointer;
+    transition: color 0.2s; padding: 4px; border-radius: 4px;
+}
+.btn-icon-clear:hover { color: #ef4444; background: #fee2e2; }
+
+.filter-group { margin-bottom: 25px; }
+.filter-group h4 { font-size: 0.8rem; text-transform: uppercase; color: #64748b; margin-bottom: 12px; letter-spacing: 0.5px; }
+
+/* Scroll nas listas de checkboxes */
+.filter-options-container {
+    display: flex; flex-direction: column; gap: 8px;
+    max-height: 180px; overflow-y: auto; padding-right: 5px;
+}
+
+/* Estilo do Checkbox com o Contador */
+.filter-label {
+    display: flex; align-items: center; justify-content: space-between;
+    font-size: 0.9rem; color: #334155; cursor: pointer;
+}
+.filter-label div { display: flex; align-items: center; gap: 8px; }
+.filter-count { font-size: 0.75rem; color: #94a3b8; background: #f1f5f9; padding: 2px 6px; border-radius: 10px; }
+
+/* Customização da scrollbar da sidebar */
+.filter-options-container::-webkit-scrollbar { width: 4px; }
+.filter-options-container::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+
+@media (max-width: 900px) {
+    .main-layout { grid-template-columns: 1fr; }
+    .filters-sidebar { position: static; max-height: none; }
+}

@@ -35,6 +35,11 @@ const modalContent = document.getElementById('modal-content');
 const loadingSpinner = document.getElementById('loading-spinner');
 const fullscreenBtn = document.getElementById('fullscreen-btn');
 
+// Novos elementos de Filtro
+const checkboxesTipo = document.querySelectorAll('.filter-tipo');
+const selectAno = document.getElementById('filter-ano');
+const btnLimparFiltros = document.getElementById('btn-limpar-filtros');
+
 /**
  * 1. CARREGAMENTO DOS DADOS (JSON EXTERNO)
  */
@@ -46,7 +51,6 @@ async function carregarAcervo() {
         if (!response.ok) throw new Error("Não foi possível carregar o ficheiro de dados.");
 
         const revistasData = await response.json();
-
         // Planificação (Flattening)
         todosOsArtigos = revistasData.flatMap(revista => {
             return revista.artigos.map(artigo => {
@@ -63,7 +67,7 @@ async function carregarAcervo() {
         // Configuração Inicial da Interface
         document.getElementById('revista-titulo').textContent = "Acervo Luterano Digital";
         document.getElementById('revista-edicao').textContent = `${todosOsArtigos.length} artigos disponíveis nas revistas luteranas.`;
-
+        construirFiltrosDinamicos();
         renderArticles(todosOsArtigos);
         console.log("Acervo carregado com sucesso!"); // Log para teste
 
@@ -115,51 +119,122 @@ function renderArticles(artigos) {
 }
 
 /**
- * 3. LÓGICA DE FILTRAGEM UNIFICADA E ANALYTICS
+ * MOTOR DE GERAÇÃO DINÂMICA DE FILTROS (Data-Driven)
+ */
+function construirFiltrosDinamicos() {
+    const contagemAnos = {};
+    const contagemAutores = {};
+    const contagemAssuntos = {};
+
+    // 1. Extração e Contagem de Dados do JSON
+    todosOsArtigos.forEach(artigo => {
+        // Conta Anos
+        contagemAnos[artigo.ano] = (contagemAnos[artigo.ano] || 0) + 1;
+
+        // Conta Autores (separando os múltiplos autores por "e" ou ";")
+        const autoresSeparados = artigo.autor.split(/ e |;/).map(a => a.trim());
+        autoresSeparados.forEach(autor => {
+            contagemAutores[autor] = (contagemAutores[autor] || 0) + 1;
+        });
+
+        // Conta Assuntos (Palavras-Chave)
+        artigo.palavras_chave.forEach(tag => {
+            const termo = tag.trim();
+            contagemAssuntos[termo] = (contagemAssuntos[termo] || 0) + 1;
+        });
+    });
+
+    // 2. Função Helper para injetar o HTML
+    function renderizarCheckboxes(containerId, dataObj, inputClass, sortBy = 'count') {
+        const container = document.getElementById(containerId);
+        container.innerHTML = ''; // Limpa antes de renderizar
+
+        let entradas = Object.entries(dataObj);
+
+        // Ordenação Inteligente
+        if (sortBy === 'count') {
+            entradas.sort((a, b) => b[1] - a[1]); // Ordena pelos mais comuns primeiro
+        } else if (sortBy === 'desc') {
+            entradas.sort((a, b) => b[0] - a[0]); // Ordena numérico decrescente (ideal para Anos)
+        }
+
+        entradas.forEach(([nome, quantidade]) => {
+            const label = document.createElement('label');
+            label.className = 'filter-label';
+            label.innerHTML = `
+                <div>
+                    <input type="checkbox" class="${inputClass}" value="${nome}">
+                    <span>${nome}</span>
+                </div>
+                <span class="filter-count">${quantidade}</span>
+            `;
+            container.appendChild(label);
+        });
+    }
+
+    // 3. Renderiza no DOM
+    renderizarCheckboxes('filter-ano-list', contagemAnos, 'cb-ano', 'desc');
+    renderizarCheckboxes('filter-autor-list', contagemAutores, 'cb-autor', 'count');
+    renderizarCheckboxes('filter-assunto-list', contagemAssuntos, 'cb-assunto', 'count');
+
+    // 4. Acopla os Event Listeners dinamicamente
+    document.querySelectorAll('.cb-ano, .cb-autor, .cb-assunto').forEach(cb => {
+        cb.addEventListener('change', aplicarFiltros);
+    });
+}
+
+/**
+ * APLICAÇÃO DOS FILTROS UNIFICADOS
  */
 function aplicarFiltros() {
     const termoBusca = searchInput.value.toLowerCase().trim();
     const palavrasChave = termoBusca === "" ? [] : termoBusca.split(/\s+/);
 
+    // Função auxiliar para capturar o que o utilizador selecionou
+    const getSelecionados = (className) => Array.from(document.querySelectorAll(`.${className}:checked`)).map(cb => cb.value);
+
+    const anosSel = getSelecionados('cb-ano');
+    const autoresSel = getSelecionados('cb-autor');
+    const assuntosSel = getSelecionados('cb-assunto');
+
     let resultado = todosOsArtigos;
 
-    // Filtro 1: Por Revista (Abas)
+    // Aba da Revista no Topo
     if (revistaAtual !== 'Todas') {
         resultado = resultado.filter(artigo => artigo.nomeRevista === revistaAtual);
     }
 
-    // Filtro 2: Por Texto (Pesquisa)
+    // Filtros Dinâmicos
+    if (anosSel.length > 0) {
+        resultado = resultado.filter(a => anosSel.includes(a.ano.toString()));
+    }
+
+    if (autoresSel.length > 0) {
+        resultado = resultado.filter(a => autoresSel.some(autorSel => a.autor.includes(autorSel)));
+    }
+
+    if (assuntosSel.length > 0) {
+        resultado = resultado.filter(a => assuntosSel.some(assuntoSel => a.palavras_chave.includes(assuntoSel)));
+    }
+
+    // Pesquisa de Texto Livre
     if (palavrasChave.length > 0) {
         resultado = resultado.filter(artigo => {
-            // Prevenção de erro: verifica se o array existe no JSON antigo
             const citacoes = artigo.autores_citados ? artigo.autores_citados.join(' ') : '';
-            
-            const indiceTexto = `
-                ${artigo.titulo} 
-                ${artigo.autor} 
-                ${artigo.palavras_chave.join(' ')} 
-                ${artigo.resumo}
-                ${artigo.ano}
-                ${citacoes} 
-            `.toLowerCase();
-            
+            const indiceTexto = `${artigo.titulo} ${artigo.autor} ${artigo.palavras_chave.join(' ')} ${artigo.resumo} ${citacoes}`.toLowerCase();
             return palavrasChave.every(palavra => indiceTexto.includes(palavra));
         });
     }
 
     renderArticles(resultado);
-
-    // Registo de Busca no Analytics (com Debounce para evitar bloqueio)
-    if (termoBusca.length > 0) {
-        clearTimeout(analyticsTimeout);
-        analyticsTimeout = setTimeout(() => {
-            logEvent(analytics, 'search', {
-                search_term: termoBusca
-            });
-            console.log(`Evento Analytics disparado: search (${termoBusca})`);
-        }, 1500);
-    }
 }
+
+// Lógica de Limpeza do Botão "X"
+document.getElementById('btn-limpar-filtros').addEventListener('click', () => {
+    searchInput.value = '';
+    document.querySelectorAll('.cb-ano, .cb-autor, .cb-assunto').forEach(cb => cb.checked = false);
+    aplicarFiltros();
+});
 
 /**
  * 4. EVENTOS DE INTERAÇÃO (Listeners)
@@ -232,15 +307,15 @@ function encontrarArtigosRelacionados(artigoBase) {
     // 2. Calcula a Pontuação de Similaridade (Scoring)
     candidatos.forEach(candidato => {
         let pontuacao = 0;
-        
+
         // Peso Maior: Palavras-chave em comum (2 pontos cada)
         artigoBase.palavras_chave.forEach(tag => {
             if (candidato.palavras_chave.includes(tag)) pontuacao += 2;
         });
-        
+
         // Peso Médio: Mesmo autor (1 ponto)
         if (candidato.autor === artigoBase.autor) pontuacao += 1;
-        
+
         // Peso Menor: Mesma Revista (0.5 pontos)
         if (candidato.nomeRevista === artigoBase.nomeRevista) pontuacao += 0.5;
 
@@ -270,8 +345,8 @@ function renderizarRelacionados(artigoBase) {
     recomendacoes.forEach(artigo => {
         const card = document.createElement('div');
         card.className = 'related-card';
-        card.onclick = () => window.abrirPDF(artigo.id); 
-        
+        card.onclick = () => window.abrirPDF(artigo.id);
+
         card.innerHTML = `
             <h5>${artigo.titulo}</h5>
             <div class="meta" style="font-size: 0.8rem; color: #64748b; display: flex; align-items: center; gap: 4px;">
@@ -290,7 +365,7 @@ function renderizarRelacionados(artigoBase) {
 window.abrirPDF = function (artigoId) {
     // Busca todos os dados do artigo diretamente na memória usando o ID
     const artigo = todosOsArtigos.find(a => a.id === artigoId);
-    
+
     // Trava de segurança
     if (!artigo) {
         console.error("Artigo não encontrado no banco de dados.");
@@ -303,7 +378,7 @@ window.abrirPDF = function (artigoId) {
 
     // GUARDA O ARTIGO ATUAL PARA A CITAÇÃO E SEO
     artigoAbertoAtual = artigo;
-    atualizarSEOAcademico(artigo);    
+    atualizarSEOAcademico(artigo);
     // NOVO: Chama o motor de recomendação
     renderizarRelacionados(artigo);
     // Converte a URL e adiciona a página de início
@@ -335,7 +410,7 @@ btnCitar.addEventListener('click', async () => {
 
     const a = artigoAbertoAtual;
     const autoresABNT = formatarAutoresABNT(a.autor);
-    
+
     // Formata a data de acesso (ex: 26 fev. 2026)
     const dataAtual = new Date().toLocaleDateString('pt-BR', { day: 'numeric', month: 'short', year: 'numeric' }).replace('de ', '').replace('.', '');
 
@@ -345,12 +420,12 @@ btnCitar.addEventListener('click', async () => {
     try {
         // Usa a API moderna do W3C para copiar o texto
         await navigator.clipboard.writeText(citacaoABNT);
-        
+
         // Feedback Visual (UX)
         const conteudoOriginal = btnCitar.innerHTML;
         btnCitar.innerHTML = `<span class="material-symbols-outlined">check</span> Copiado!`;
         btnCitar.style.backgroundColor = "#e2e8f0"; // Muda a cor levemente
-        
+
         // Retorna ao estado original após 2 segundos
         setTimeout(() => {
             btnCitar.innerHTML = conteudoOriginal;
@@ -375,11 +450,11 @@ btnCitar.addEventListener('click', async () => {
 function formatarAutoresABNT(autoresString) {
     // Separa múltiplos autores ligados por "e" ou ";"
     const autores = autoresString.split(/ e |;/).map(a => a.trim());
-    
+
     const autoresFormatados = autores.map(autor => {
         const partes = autor.split(' ');
         if (partes.length === 1) return partes[0].toUpperCase();
-        
+
         const sobrenome = partes.pop().toUpperCase(); // Pega o último nome e capitaliza
         const restoDoNome = partes.join(' ');
         return `${sobrenome}, ${restoDoNome}`;
@@ -392,7 +467,7 @@ function formatarAutoresABNT(autoresString) {
 closeModalBtn.addEventListener('click', () => {
     modal.classList.add('hidden');
     pdfViewer.src = "";
-    document.body.classList.remove('no-scroll'); 
+    document.body.classList.remove('no-scroll');
 
     if (document.fullscreenElement) {
         document.exitFullscreen();

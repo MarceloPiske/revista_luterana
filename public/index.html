@@ -42,13 +42,46 @@
         </div>
     </div>
     <main class="container">
-        <div id="results-grid" class="grid">
+        <div class="main-layout">
+
+            <aside class="filters-sidebar">
+                <div class="filter-header">
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <span class="material-symbols-outlined">tune</span>
+                        <h3>Filtros</h3>
+                    </div>
+                    <button id="btn-limpar-filtros" class="btn-icon-clear" title="Limpar Filtros">
+                        <span class="material-symbols-outlined">filter_alt_off</span>
+                    </button>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Ano de Publicação</h4>
+                    <div id="filter-ano-list" class="filter-options-container"></div>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Autores no Acervo</h4>
+                    <div id="filter-autor-list" class="filter-options-container"></div>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Assuntos (Palavras-Chave)</h4>
+                    <div id="filter-assunto-list" class="filter-options-container"></div>
+                </div>
+            </aside>
+
+            <main class="results-area">
+                <div id="results-grid" class="cards-grid">
+                </div>
+            </main>
+
         </div>
     </main>
 
     <div id="pdf-modal" class="modal hidden">
         <div class="modal-content" id="modal-content">
-            
+
             <div class="modal-header">
                 <div class="header-left">
                     <button id="btn-toggle-sidebar" class="action-btn">
@@ -69,7 +102,7 @@
             </div>
 
             <div class="modal-body">
-                
+
                 <div class="pdf-container">
                     <div id="loading-spinner" class="spinner-container">
                         <div class="spinner"></div>
@@ -83,9 +116,9 @@
                         <h4>Recomendações</h4>
                     </div>
                     <div id="grid-relacionados" class="related-vertical-grid">
-                        </div>
+                    </div>
                 </aside>
-                
+
             </div>
         </div>
     </div>
