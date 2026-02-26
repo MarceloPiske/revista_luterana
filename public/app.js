@@ -295,6 +295,19 @@ function lerURLInicial() {
 
     // Após ler tudo, aplica os filtros para renderizar a tela
     aplicarFiltros();
+    // 4. ABERTURA DIRETA DO ARTIGO (Deep Linking do Modal)
+    if (params.has('artigo')) {
+        const idArtigo = params.get('artigo');
+        const artigoExiste = todosOsArtigos.find(a => a.id === idArtigo);
+        
+        if (artigoExiste) {
+            // Um pequeno atraso (500ms) garante que a grelha de fundo já foi desenhada 
+            // antes de o modal sobrepor a tela, evitando travamentos visuais.
+            setTimeout(() => {
+                window.abrirPDF(idArtigo);
+            }, 500);
+        }
+    }
 }
 function aplicarFiltros() {
     const termoBusca = searchInput.value.toLowerCase().trim();
@@ -520,7 +533,58 @@ pdfViewer.onload = function () {
     loadingSpinner.style.display = 'none';
     pdfViewer.style.opacity = '1';
 };
+const btnPartilhar = document.getElementById('btn-partilhar');
 
+/**
+ * AÇÃO DE PARTILHAR O LINK DIRETO DO ARTIGO
+ */
+btnPartilhar.addEventListener('click', async () => {
+    if (!artigoAbertoAtual) return;
+
+    // Constrói a URL limpa com o ID do artigo
+    // Exemplo: https://seu-site.web.app/?artigo=RL_2018_V78_N2_001
+    const urlPartilha = `${window.location.origin}${window.location.pathname}?artigo=${artigoAbertoAtual.id}`;
+
+    // Regista no Analytics que o artigo foi partilhado
+    logEvent(analytics, 'share', {
+        method: 'link_direto',
+        content_type: 'artigo_academico',
+        item_id: artigoAbertoAtual.id
+    });
+
+    // Tenta usar a Web Share API (Nativa em Telemóveis)
+    if (navigator.share) {
+        try {
+            await navigator.share({
+                title: `${artigoAbertoAtual.titulo} - Acervo Luterano`,
+                text: `Leia este artigo no Acervo Luterano Digital: ${artigoAbertoAtual.titulo} (${artigoAbertoAtual.autor})`,
+                url: urlPartilha
+            });
+        } catch (err) {
+            // O utilizador fechou a janela de partilha nativa (não é um erro real)
+            console.log('Partilha cancelada pelo utilizador.');
+        }
+    } else {
+        // Fallback para Computadores (Copia para a Área de Transferência)
+        try {
+            await navigator.clipboard.writeText(urlPartilha);
+            
+            // Feedback Visual (UX)
+            const conteudoOriginal = btnPartilhar.innerHTML;
+            btnPartilhar.innerHTML = `<span class="material-symbols-outlined">check</span> Link Copiado!`;
+            btnPartilhar.style.backgroundColor = "#e2e8f0";
+            
+            setTimeout(() => {
+                btnPartilhar.innerHTML = conteudoOriginal;
+                btnPartilhar.style.backgroundColor = "";
+            }, 2000);
+            
+        } catch (err) {
+            console.error('Erro ao copiar o link: ', err);
+            alert("O seu navegador bloqueou a cópia automática do link.");
+        }
+    }
+});
 // Captura o novo botão
 const btnCitar = document.getElementById('btn-citar');
 let artigoAbertoAtual = null; // Nova variável global para saber qual artigo está aberto
