@@ -1,6 +1,1266 @@
 [
   {
-    "revista": "Revista Igreja Luterana",
+    "revista": "Igreja Luterana",
+    "edicao": { "ano": 2025, "volume": 85, "numero": 2 },
+    "artigos": [
+      {
+        "id": "RL_2025_V85_N2_001",
+        "titulo": "A Fé Nicena na Vida da Igreja",
+        "autor": "Claus Schwambach",
+        "paginas": { "inicio": 21, "fim": 78 },
+        "resumo": "Abordagem do conceito de 'fé nicena' a partir das decisões teológicas do Concílio de Niceia (325) e sua ampliação no Concílio de Constantinopla (381). Apresenta um esboço da história da recepção da fé nicena no oriente e ocidente até a Reforma protestante, enfatizando sua recepção na patrística, liturgia, decisões conciliares e direito canônico. Discute o desenvolvimento da inclusão da partícula Filioque e o cisma de 1054, além da recepção da fé nicena no período medieval e na escolástica.",
+        "palavras_chave": ["Fé Nicena", "Credo Niceno-Constantinopolitano", "Trindade imanente", "Trindade econômica", "Filioque"],
+        "autores_citados": ["Agostinho", "Tomás de Aquino", "Guilherme de Ockham", "Anselmo de Cantuária", "Fócio", "Martinho Lutero"],
+        "url_acesso": "https://drive.google.com/file/d/1mFEm3vxSGs0TnZdBbkTY5xJeo0ejNaC-/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2025_V85_N2_002",
+        "titulo": "\"Nós Cremos Todos Num Só Deus\": Lutero e a Tradição Nicena",
+        "autor": "Ricardo W. Rieth",
+        "paginas": { "inicio": 79, "fim": 107 },
+        "resumo": "Explora a recepção complexa do Concílio de Niceia e do Credo Niceno-Constantinopolitano na obra de Martinho Lutero. Mostra como Lutero utilizou as decisões de Niceia para refutar a primazia papal e como ele defendia a autoridade das Escrituras acima dos concílios. Analisa a defesa de Lutero do termo homoousios contra os 'novos arianos' de sua época e sua adaptação do Credo em um hino alemão.",
+        "palavras_chave": ["Martinho Lutero", "Concílio de Niceia", "Credo Niceno-Constantinopolitano", "Reforma protestante", "Teologia luterana"],
+        "autores_citados": ["Martinho Lutero", "Filipe Melanchthon", "João Eck", "Agostinho", "Miguel Serveto", "João Campano"],
+        "url_acesso": "https://drive.google.com/file/d/1W1UvXE6aksXIGXiZHql3XEQ5uBe-bVJo/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2025_V85_N2_003",
+        "titulo": "A Fé Nicena na Teologia Luterana Confessional: A Exposição do Credo no Catecismo Maior de Lutero",
+        "autor": "Clovis Jair Prunzel",
+        "paginas": { "inicio": 109, "fim": 152 },
+        "resumo": "Analisa a exposição do Credo no Catecismo Maior de Martinho Lutero, considerando seu enraizamento nos credos da igreja antiga (Apostólico, Niceno e Atanasiano) e sua função no Livro de Concórdia como norma normata. A pesquisa mostra como Lutero preserva a confissão trinitária e a centralidade bíblica, articulando Deus em termos imanentes/ontológicos e econômicos, e estrutura o Credo como resposta pastoral ao Primeiro Mandamento.",
+        "palavras_chave": ["Deus", "Trindade", "Catecismo Maior", "Lutero"],
+        "autores_citados": ["Martinho Lutero", "Agostinho", "Irineu de Lião", "Tomás de Aquino", "Charles P. Arand", "Robert Kolb"],
+        "url_acesso": "https://drive.google.com/file/d/16XL5BXjR6zhnf6da60ht0C6bxJ5FSVsM/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2025_V85_N2_004",
+        "titulo": "A Fé Nicena na Tradição Luterana: Johann Gerhard",
+        "autor": "Benjamin T. G. Mayes",
+        "paginas": { "inicio": 153, "fim": 184 },
+        "resumo": "A pesquisa foca na compreensão da fé nicena na teologia de Johann Gerhard (1582-1637) e seu modelo para a consideração dos pais da igreja na tradição luterana. Analisa como Gerhard transmitiu a fé nicena em seus escritos (Loci Communes e Methodus Studii Theologici), mostrando que, embora a Escritura seja a única fonte e autoridade, os pais da igreja devem ser lidos como professores e recursos indispensáveis.",
+        "palavras_chave": ["Johann Gerhard", "Pais da igreja", "Ortodoxia luterana", "Fé nicena"],
+        "autores_citados": ["Johann Gerhard", "Werner Elert", "Agostinho", "Basílio de Cesareia", "Aegidius Hunnius", "Martinho Lutero"],
+        "url_acesso": "https://drive.google.com/file/d/1QvBd7-BOwWksVK3GAnUQTPTlyZ7fcDu7/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2025_V85_N2_005",
+        "titulo": "Critérios Teológicos Confessionais para Avaliar Propostas Missiológicas Evangélicas",
+        "autor": "Gerson Luis Linden",
+        "paginas": { "inicio": 185, "fim": 214 },
+        "resumo": "Apresenta o uso de princípios teológicos para a avaliação de métodos evangelísticos na propagação do evangelho, destacando as implicações práticas e teológicas de iniciativas missiológicas de origens não luteranas. Propõe uma aplicação dos artigos da Confissão de Augsburgo (I a XVII) como base para essa análise, alertando para perigos como manipulação, sinergismo e desvirtuação do conceito de igreja e ministério.",
+        "palavras_chave": ["Evangelismo", "Métodos", "Confissão de Augsburgo"],
+        "autores_citados": ["Martinho Lutero", "Klaus Detlev Schulz", "Jonathan Fisk", "Hermann Sasse", "Gene E. Veith Jr.", "Charles P. Arand"],
+        "url_acesso": "https://drive.google.com/file/d/1a7N1AbAp2_7LhJa8CNV1egDFhOBGBTdD/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2025_V85_N2_006",
+        "titulo": "Lutero e os Judeus: Uma Análise da Culpa Coletiva e da \"Dissociação Qualificada\" na Igreja Luterana",
+        "autor": "Francis Dietrich Hoffmann",
+        "paginas": { "inicio": 215, "fim": 236 },
+        "resumo": "Analisa a posição da Igreja Evangélica Luterana do Brasil (IELB) frente aos controversos escritos de Martinho Lutero sobre os judeus. Utilizando o conceito de 'culpa coletiva', propõe a 'dissociação qualificada' para definir a resposta institucional, diferenciando o antijudaísmo de Lutero do antissemitismo racial moderno. Argumenta que essa postura permite repudiar a violência dos escritos tardios sem negar o legado teológico, fundamentando a identidade da Igreja em Cristo e na Escritura.",
+        "palavras_chave": ["Luteranismo", "Judeus", "Antissemitismo", "Culpa coletiva"],
+        "autores_citados": ["Martinho Lutero", "Nyla R. Branscombe", "Bertjan Doosje", "Thomas Kaufmann", "Marc Lienhard", "Claus Schwambach"],
+        "url_acesso": "https://drive.google.com/file/d/1VHXW256ziauMGReKkjeZbKwsMAXJcQ5U/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2025_V85_N2_007",
+        "titulo": "O Pronome Relativo na Língua Grega e a Atração Pelo Antecedente: Um Problema e sua Explicação",
+        "autor": "Cesar Motta Rios",
+        "paginas": { "inicio": 237, "fim": 257 },
+        "resumo": "Conduz à compreensão das peculiaridades do uso do pronome relativo no grego antigo, especificamente o fenômeno da 'atração pelo antecedente'. A reflexão compara o uso no português e no hebraico bíblico antes de explicar os usos esperados e inusitados do pronome no Novo Testamento e no grego clássico, utilizando exemplos e dialogando com obras de referência gramatical.",
+        "palavras_chave": ["Língua Grega", "Pronome Relativo", "Gramática", "Novo Testamento"],
+        "autores_citados": ["James H. Moulton", "Nigel Turner", "Jean Humbert", "Heinrich von Siebenthal", "Daniel B. Wallace"],
+        "url_acesso": "https://drive.google.com/file/d/1DnBopTrPTJHmqryI_aCf-2dS-GzJaU8c/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2025_V85_N2_008",
+        "titulo": "Liberdade de Forma: Lei/Evangelho e a Estrutura do Sermão na Proclamação Luterana Contemporânea",
+        "autor": "David Schmitt",
+        "paginas": { "inicio": 259, "fim": 280 },
+        "resumo": "Aborda a pregação luterana contemporânea a partir da distinção entre lei e evangelho, questionando a predominância da forma rígida 'lei então evangelho'. Baseando-se nos escritos de Walther e Caemmerer, argumenta que a correta distinção não exige essa divisão fixa. Propõe a liberdade de formas homiléticas (proposicional, textual e dinâmica) que integrem lei e evangelho para melhor comunicar o significado das Escrituras em diferentes contextos.",
+        "palavras_chave": ["Lei", "Evangelho", "Homilética", "Estrutura do Sermão", "Liberdade", "Forma"],
+        "autores_citados": ["C. F. W. Walther", "Richard R. Caemmerer", "Richard Lischer", "Eugene Lowry", "Thomas Long"],
+        "url_acesso": "https://drive.google.com/file/d/1ZnyL2W6E50B73PgmuQwPQ6WdyXjb4WJy/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2025_V85_N2_009",
+        "titulo": "Palavra ao Leitor: \"Sirvam o Senhor com temor e alegrem-se nele com tremor\" (Sl 2.11)",
+        "autor": "Não identificado",
+        "paginas": { "inicio": 9, "fim": 19 },
+        "resumo": "Editorial que reflete sobre a paradoxal combinação de temor e alegria no Salmo 2, a partir da interpretação de Martinho Lutero. O texto explora a submissão ao Rei Jesus, a diferença entre o serviço monástico e a vocação cristã no mundo, e o conceito de temor filial e servil. Ao final, apresenta um resumo dos artigos que compõem a edição 25-2, frutos do X Simpósio Internacional de Lutero.",
+        "palavras_chave": ["Salmo 2", "Temor", "Alegria", "Martinho Lutero", "Editorial"],
+        "autores_citados": ["Martinho Lutero", "H. C. Leupold", "Peter C. Craigie", "Timothy E. Saleska"],
+        "url_acesso": "https://drive.google.com/file/d/1hF4fStL4prHV6kQTMaxW5epNTB9ICvpP/view?usp=drive_link",
+        "url_capa": ""
+      }
+    ]
+  },
+  {
+    "revista": "Igreja Luterana",
+    "edicao": { "ano": 2025, "volume": 85, "numero": 1 },
+    "artigos": [
+      {
+        "id": "RL_2025_V85_N1_001",
+        "titulo": "Palavra ao Leitor (Editorial)",
+        "autor": "Anselmo Ernesto Graff",
+        "paginas": { "inicio": 9, "fim": 11 },
+        "resumo": "Editorial comemorativo dos 85 anos da Revista Igreja Luterana, apresentando as novidades da edição e o resumo dos artigos que compõem o volume, originados de dissertações do Mestrado Livre em Ministério Pastoral do Seminário Concórdia.",
+        "palavras_chave": ["Editorial", "85 anos", "Seminário Concórdia", "Mestrado"],
+        "autores_citados": ["Adrián Correnti", "Francis Dietrich Hoffmann", "Helvécio José Batista Júnior", "Gerson Luis Linden", "Marcelo Götz", "Silvio Donat", "Clóvis Jair Prunzel", "David R. Schmitt"],
+        "url_acesso": "https://drive.google.com/file/d/1uD9AhRieXjBuNybl5MxFbXp8Ao6TEiOo/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2025_V85_N1_002",
+        "titulo": "Historia de Francisco de Enzinas, Un Luterano Español del Siglo XVI",
+        "autor": "Adrián Correnti e Francis Dietrich Hoffmann",
+        "paginas": { "inicio": 13, "fim": 45 },
+        "resumo": "El tema de investigación de la presente Disertación de Maestría es Francisco de Enzinas y el objetivo principal es examinar su vida y obra, especialmente como traductor bíblico del Nuevo Testamento al español (1543), desde una perspectiva luterana confesional.",
+        "palavras_chave": ["Reforma Luterana", "Francisco de Enzinas", "Traducción de la Biblia al español", "Luteranismo en España"],
+        "autores_citados": ["Martín Lutero", "Felipe Melanchthon", "Juan Calvino", "Martín Bucero", "Tomas Cranmer", "Casiodoro de Reina", "Erasmo de Róterdam"],
+        "url_acesso": "https://drive.google.com/file/d/1HMwtIxx7l1geWT01f5BbID6n85IaKFyO/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2025_V85_N1_003",
+        "titulo": "Na Esperança Fomos Salvos: A Bendita Esperança em Cristo e sua Relação com o Serviço Divino que Ocorre na Liturgia da Palavra e dos Sacramentos",
+        "autor": "Helvécio José Batista Júnior e Gerson Luis Linden",
+        "paginas": { "inicio": 47, "fim": 68 },
+        "resumo": "O objetivo principal é a análise de como essa esperança se fundamenta na obra redentora de Cristo, realizada em sua encarnação, morte e ressurreição, e também como essa esperança antecipa a plenitude que será revelada na Parousia, abordando a tensão teológica entre o 'já' e o 'ainda não' presente no Novo Testamento.",
+        "palavras_chave": ["Esperança", "Salvação", "Liturgia", "Serviço", "Ressurreição"],
+        "autores_citados": ["Oscar Cullmann", "J. Gibbs", "S. Hahn", "Horace D. Hummel", "A. A. Just Jr.", "George Ladd", "Martinho Lutero", "N. T. Wright"],
+        "url_acesso": "https://drive.google.com/file/d/1pkzRDpmBGuiMm_0YYGHobIheI1f1B_4r/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2025_V85_N1_004",
+        "titulo": "O Sacerdócio Real e o seu Campo de Missão: Uma Revisão Bibliográfica do Tema em Revistas Teológicas Igreja Luterana e Vox Concordiana",
+        "autor": "Marcelo Götz e Anselmo Ernesto Graff",
+        "paginas": { "inicio": 69, "fim": 105 },
+        "resumo": "Investiga como os periódicos de Teologia da IELB têm abordado a questão do sacerdócio real e seu campo de missão. Os resultados apontam para um consenso significativo de que este campo vai além dos muros congregacionais, exercendo-se especialmente na família e na sociedade.",
+        "palavras_chave": ["Sacerdócio real", "Missão", "Ministério Pastoral"],
+        "autores_citados": ["Martinho Lutero", "Ivar Asheim", "H. J. A. Bouman", "Horst Kuchenbecker", "Johannes H. Rottmann", "Erní W. Seibert", "Rudi Zimmer", "Vilson Scholz", "Gustavo Henrique Schmidt", "Paulo Moisés Nerbas"],
+        "url_acesso": "https://drive.google.com/file/d/1FZvFYWFwy-0AxakI42a9laRmWSARbiPH/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2025_V85_N1_005",
+        "titulo": "La Eclesiología de los Artículos de Esmalcalda",
+        "autor": "Silvio Donat e Clóvis Jair Prunzel",
+        "paginas": { "inicio": 107, "fim": 141 },
+        "resumo": "Investiga la eclesiología expresada en los Artículos de Esmalcalda y su relevancia para la iglesia en nuestros días. Los resultados apuntan al hecho de que los artículos ponen un fuerte énfasis en la mediación de Dios con su iglesia por medio de la Palabra oral externa y los sacramentos.",
+        "palavras_chave": ["Eclesiología", "Artículos de Esmalcalda", "Entusiastas"],
+        "autores_citados": ["Martín Lutero", "Tom G. A. Hardt", "Jack D. Kilcrease", "Jonathan M. Fisk", "Philip Jakob Spener", "Hermann Sasse"],
+        "url_acesso": "https://drive.google.com/file/d/14zQ5-NuUJndw0xhtpwpiMCrY9DrNzOoK/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2025_V85_N1_006",
+        "titulo": "Contando a História de Deus",
+        "autor": "David R. Schmitt (Tradução: Lucas Prando)",
+        "paginas": { "inicio": 143, "fim": 160 },
+        "resumo": "Aborda a relevância da narrativa bíblica - da criação à nova criação - para a formação da fé cristã e para a proclamação teológica na contemporaneidade sob a perspectiva da teologia narrativa.",
+        "palavras_chave": ["Narrativa", "Proclamação", "História de Deus", "Homilética", "Pregação"],
+        "autores_citados": ["John Dryden", "John Milton", "Stephen Crites", "Agostinho", "Fred Craddock", "Henry Corcoran", "Alan Jacobs", "John W. Wright"],
+        "url_acesso": "https://drive.google.com/file/d/1KQwUhajktE3JdHTrJArMCBRJuAV-iPZY/view?usp=drive_link",
+        "url_capa": ""
+      }
+    ]
+  },
+  {
+    "revista": "Igreja Luterana",
+    "edicao": { "ano": 2024, "volume": 84, "numero": 2 },
+    "artigos": [
+      {
+        "id": "RL_2024_V84_N2_001",
+        "titulo": "Palavra ao Leitor: Apresentação do X Simpósio Internacional de Missão: A Missão de Deus como Marca da Igreja",
+        "autor": "Francis Dietrich Hoffmann e Anselmo Ernesto Graff",
+        "paginas": { "inicio": 7, "fim": 12 },
+        "resumo": "Introdução ao volume 24-2 (Simpósio Internacional de Missão), abordando a íntima conexão entre a missão de Deus e a igreja. O texto apresenta os artigos que compõem a edição e anuncia a nova parceria interinstitucional do periódico entre o Seminário Concórdia e o Curso de Teologia da Faculdade Luterana Concórdia.",
+        "palavras_chave": ["Missão de Deus", "Simpósio", "Editorial", "Igreja", "Parceria interinstitucional"],
+        "autores_citados": ["Klaus Detlev Schulz", "Georg F. Vicedom", "Martinho Lutero"],
+        "url_acesso": "https://drive.google.com/file/d/1bYsMjyg0dxkUG72nVG82CuOj4b5IAi7C/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2024_V84_N2_002",
+        "titulo": "A Missão de Deus como Marca da Igreja?",
+        "autor": "Cesar Motta Rios",
+        "paginas": { "inicio": 13, "fim": 35 },
+        "resumo": "A presente reflexão se estabelece a partir da pergunta sobre a pertinência de se elencar a 'missão de Deus' como uma das marcas da igreja em uma lista que tem como base a conhecida lista de sete marcas proposta por Lutero. Após investigar os motivos do reformador, o artigo conclui negativamente quanto a adicionar a missão à lista, mas ressalta a sua relação inseparável com a igreja.",
+        "palavras_chave": ["Missão", "Lutero", "Marcas da igreja", "Eclesiologia"],
+        "autores_citados": ["Martinho Lutero", "Fílon de Alexandria", "Agostinho", "Scott H. Hendrix", "Thorsten Prill", "Lesslie Newbigin", "Michael W. Goheen", "Joachim Fischer"],
+        "url_acesso": "https://drive.google.com/file/d/1eO10pIVHWrihbIwqatIM1eG7pzq66UoT/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2024_V84_N2_003",
+        "titulo": "As Marcas de uma Igreja que faz Missão",
+        "autor": "Fernando Ellwanger Garske",
+        "paginas": { "inicio": 37, "fim": 52 },
+        "resumo": "Este artigo explora a identidade e missão da igreja no contexto contemporâneo, em meio ao declínio numérico e à secularização. A pergunta central é: 'Que igreja queremos ser?' ou 'Que igreja somos?'. Conclui que, em vez de adaptar-se aos padrões culturais, a igreja deve reafirmar sua missão centrada na pregação do evangelho e nos sacramentos.",
+        "palavras_chave": ["Missão", "Declínio religioso", "Identidade da igreja", "Igreja Luterana", "Evangelho"],
+        "autores_citados": ["Larry Vogel", "David Kinnaman", "Christopher Duraisingh", "Klaus Detlev Schulz", "Leopoldo Sánchez", "Martinho Lutero", "Eugene F. Klug"],
+        "url_acesso": "https://drive.google.com/file/d/164o58im5eKruVxWTqHMuQb7SkjWvE_6S/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2024_V84_N2_004",
+        "titulo": "A Missão de Deus na Plantação de Igrejas",
+        "autor": "Lucas Pinz Graffunder",
+        "paginas": { "inicio": 53, "fim": 67 },
+        "resumo": "Este artigo apresenta um questionamento crítico e propositivo da missão da Igreja Evangélica Luterana do Brasil (IELB) na plantação de igrejas. Argumenta que a IELB precisa desenvolver um método estruturado para a plantação de igrejas e propõe uma análise histórica, explorando os desafios de um contexto plural.",
+        "palavras_chave": ["Plantação de igrejas", "Conceito", "História", "Método", "Proposta"],
+        "autores_citados": ["Ed Stetzer", "Timothy Keller", "Ricardo Willy Rieth", "Mário L. Rehfeldt", "Paulo Wille Buss", "Martinho Lutero"],
+        "url_acesso": "https://drive.google.com/file/d/14teVz1ZBNpjRAvqhTnnj0YkVaKnUlo7I/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2024_V84_N2_005",
+        "titulo": "A Missão de Deus na Vida Pessoal do Cristão",
+        "autor": "Mário Yudi Fukue",
+        "paginas": { "inicio": 69, "fim": 82 },
+        "resumo": "Este artigo explora a missão de Deus na vida pessoal dos cristãos, destacando que a vida pessoal nunca é autônoma, mas sempre parte da comunidade de fé. Examina a formação do 'ego' moderno e discute a domesticação da transcendência e a necessidade de viver a fé publicamente nas vocações diárias.",
+        "palavras_chave": ["Cristologia do Espírito", "Individualidade", "Vocações", "Missão de Deus", "Vida pública e privada", "Teologia da vocação"],
+        "autores_citados": ["Martinho Lutero", "Regin Prenter", "Carl R. Trueman", "Charles Taylor", "William Placher", "James Davison Hunter", "Joel D. Biermann", "Gordon W. Lathrop", "Alexander Schmemann", "Alan Kreider", "Ellen Charry", "Leopoldo A. Sánchez M."],
+        "url_acesso": "https://drive.google.com/file/d/1aZsOAx4EzEILbwMHfhxas8_xbJ_LYIQ7/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2024_V84_N2_006",
+        "titulo": "A Missão de Deus e a Igreja 'Marcada' pela Cruz",
+        "autor": "Samuel Fuhrmann",
+        "paginas": { "inicio": 83, "fim": 115 },
+        "resumo": "O texto busca propor algumas implicações da Teologia da Cruz para a igreja em missão. Analisa a 'Disputa de Heidelberg' e 'Sobre os Concílios e a Igreja' de Lutero. Conclui que a Teologia da Cruz ajuda a evitar o triunfalismo no campo missionário e a romantização de culturas minoritárias.",
+        "palavras_chave": ["Teologia da cruz", "Cruz", "Igreja", "Lutero"],
+        "autores_citados": ["Martinho Lutero", "Herman Sasse", "Gerhard Forde", "Vitor Westhelle", "David J. Bosch", "Robert Kolb", "Paul G. Hiebert", "Klaus Detlev Schulz"],
+        "url_acesso": "https://drive.google.com/file/d/1lEeTYQ4LNLYJDWsv-AF12E6bI7QZPK54/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2024_V84_N2_007",
+        "titulo": "Algo Além da Lei e do Evangelho? Reflexões Sobre Falar a Palavra em um Mundo (Pós) Moderno",
+        "autor": "Mark A. Seifrid (Tradução: Francis Dietrich Hoffmann)",
+        "paginas": { "inicio": 117, "fim": 137 },
+        "resumo": "Levanta a questão sobre a necessidade de se falar algo além de lei e evangelho para as pessoas deste mundo pós-moderno. A resposta é que não somente podemos continuar falando de lei e evangelho, mas que precisamos continuar a fazer isso, conduzindo o leitor em três histórias bíblicas que incluem a pregação de Paulo no Areópago.",
+        "palavras_chave": ["Lei e Evangelho", "Pregação", "Escrituras", "Apóstolo Paulo"],
+        "autores_citados": ["Martinho Lutero", "Oswald Bayer", "Dietrich Bonhoeffer", "Heinrich Bornkamm", "Robert Kolb"],
+        "url_acesso": "https://drive.google.com/file/d/1mBuNRe0Me2H5FeXSCylPXJyzALYJwOBQ/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2024_V84_N2_008",
+        "titulo": "Quando o Sal Perde 'Seu Sabor': O Niilismo e a Igreja Contemporânea",
+        "autor": "Joel P. Okamoto (Tradução: Clóvis Jair Prunzel)",
+        "paginas": { "inicio": 139, "fim": 160 },
+        "resumo": "A proposta do presente artigo é nos ajudar a perceber como o contexto importa na tradução da Palavra para determinado contexto, sem, no entanto, descaracterizar a autoridade dada por Cristo à igreja contemporânea. Examina a ameaça do niilismo, tal como antevisto por Nietzsche, na desvalorização dos 'valores mais elevados'.",
+        "palavras_chave": ["Contexto", "Nietzsche", "Hermenêutica", "Tradução da palavra de Deus", "Igreja Contemporânea"],
+        "autores_citados": ["Friedrich Nietzsche", "Terry Eagleton", "Alasdair MacIntyre", "Malcolm Bull", "Hubert Dreyfus", "Sean Dorrance Kelly", "Soren Kierkegaard", "Charles Baudelaire", "Bryan Magee", "Robert Wuthnow", "Christian Smith", "Thomas S. Kuhn", "James C. Edwards", "C. S. Lewis"],
+        "url_acesso": "https://drive.google.com/file/d/1FlhPa_mT1LEyivl6PjjTrdTlsyHLDRst/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2024_V84_N2_009",
+        "titulo": "Uma Estrutura Teológica Para a Prática Evangelística Congregacional",
+        "autor": "David J. Peter (Tradução: Anselmo Ernesto Graff)",
+        "paginas": { "inicio": 161, "fim": 176 },
+        "resumo": "O artigo usa a moldura das duas justiças — a justiça passiva (ação de Deus) e a ativa (responsabilidade humana) — para tratar da missão da igreja em evangelizar. O autor critica o reducionismo em qualquer uma das dimensões, apresentando uma estrutura onde a estratégia e os métodos (horizontal) servem aos meios de graça e ao Espírito Santo (vertical).",
+        "palavras_chave": ["Reducionismo", "Justiça Passiva", "Justiça Ativa", "Evangelização"],
+        "autores_citados": ["C. F. W. Walther", "Samuel H. Nafzger", "Richard John Neuhaus", "Christian Schwarz", "Dietrich Bonhoeffer", "Joel D. Biermann", "Robert Kolb", "Charles Arand", "Martinho Lutero", "Filipe Melanchthon"],
+        "url_acesso": "https://drive.google.com/file/d/1vdKKSNotG8MeI6Sv9oIIPsO0MIXpXtng/view?usp=drive_link",
+        "url_capa": ""
+      }
+    ]
+  },
+  {
+    "revista": "Igreja Luterana",
+    "edicao": { "ano": 2024, "volume": 84, "numero": 1 },
+    "artigos": [
+      {
+        "id": "RL_2024_V84_N1_001",
+        "titulo": "Palavra ao Leitor: Reflexões Sobre um Profeta que Quis, Mas Também Não Quis Ser Profeta: As Confissões de Jeremias",
+        "autor": "Anselmo Ernesto Graff",
+        "paginas": { "inicio": 7, "fim": 16 },
+        "resumo": "Apresenta reflexões bíblicas no livro de Jeremias, com foco nas confissões do profeta, especialmente a sexta confissão (Jr 20.7-18). Avalia a aplicabilidade dos lamentos e desafios do ministério profético para os indivíduos e para a igreja de Cristo nos dias atuais, diante de um mundo em ruína espiritual.",
+        "palavras_chave": ["Jeremias", "Profeta", "Confissões", "Lamento", "Editorial"],
+        "autores_citados": ["Lucas Alamino Martins Iglesias", "Nelson Kilpp", "Martinho Lutero", "Davi Dagostim Minatto", "Enrique Sanz Gimenez-Rico"],
+        "url_acesso": "https://drive.google.com/file/d/1_AYi776tFGlBXfg1oHprXkknD4PBI_za/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2024_V84_N1_002",
+        "titulo": "O Corpo de Cristo: A Igreja e o Pão que Partimos",
+        "autor": "Bruno Hasse Salomão e Cesar Motta Rios",
+        "paginas": { "inicio": 21, "fim": 35 },
+        "resumo": "Neste artigo explora-se a relação existente entre a igreja e o sacramento eucarístico. A dimensão eclesiológica da eucaristia, proeminente nos primeiros séculos da igreja, acabou dando lugar a uma compreensão predominantemente individualizada do sacramento, principalmente a partir do medievo tardio. O texto resgata a visão da comunhão sacramental como formadora do Corpo de Cristo.",
+        "palavras_chave": ["Igreja", "Eucaristia", "Corpo de Cristo", "Eclesiologia", "Sacramento"],
+        "autores_citados": ["John T. Pless", "Joseph Ratzinger", "Willy Rordorf", "São João Crisóstomo", "Hermann Sasse", "Daniel B. Wallace"],
+        "url_acesso": "https://drive.google.com/file/d/1t4rO_mbtqvc4J8BvMLs0i52tlot00ycM/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2024_V84_N1_003",
+        "titulo": "Disforia de Gênero: Reflexões Teológicas com Vistas ao Aconselhamento Pastoral",
+        "autor": "Nathan Felipe Hoffmann e Leonidio Schulz Görl",
+        "paginas": { "inicio": 137, "fim": 158 },
+        "resumo": "Elucida o tema da disforia de gênero e relaciona-o ao aconselhamento pastoral. O artigo indica que a disforia envolve uma angústia onde a pessoa não se identifica com seu sexo de nascimento, contrastando essa realidade com o ensino bíblico de que a humanidade foi criada à imagem e semelhança de Deus e de que o corpo é um presente divino.",
+        "palavras_chave": ["Disforia de Gênero", "Aconselhamento Pastoral", "Teologia", "Sexualidade"],
+        "autores_citados": ["Martinho Lutero", "Marguerite A. Peeters", "Albrecht Peters", "William W. Schumacher"],
+        "url_acesso": "https://drive.google.com/file/d/1Fg1nfayLaQwWNrNZY8ED-wJrRB86CJwj/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2024_V84_N1_004",
+        "titulo": "A Natureza da Eucaristia: A Cristologia como Fundamento para Entender a Eucaristia e seus Benefícios",
+        "autor": "Pedro Pinheiro e Francis Dietrich Hoffmann",
+        "paginas": { "inicio": 173, "fim": 196 },
+        "resumo": "Investiga a relação intrínseca entre a cristologia e a eucaristia, abordando diferentes posicionamentos formulados ao longo da Reforma. O estudo analisa os expoentes das tradições luterana e reformada (Lutero, Zwínglio e Calvino), demonstrando como suas compreensões cristológicas refletiram nas suas práticas eucarísticas.",
+        "palavras_chave": ["Cristologia", "Eucaristia", "Reforma", "Lutero", "Zwínglio", "Calvino"],
+        "autores_citados": ["Martinho Lutero", "Huldrych Zwingli", "Keith A. Mathison", "Samuel H. Nafzger", "James A. Nestigen", "Roger E. Olson"],
+        "url_acesso": "https://drive.google.com/file/d/1sLm1BXS6wEAye4fist3LiMlfVIjcGPTh/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2024_V84_N1_005",
+        "titulo": "El Problema de la Alienación del Trabajo",
+        "autor": "Martin Osmel Soliz Bernal e Joel Biermann",
+        "paginas": { "inicio": 211, "fim": 228 },
+        "resumo": "El trabajo es un don de Dios para los hombres, un mandato evangélico que nos envía al mundo para servirle a Él y al prójimo. Dios nos manda a disfrutar de nuestro trabajo en dos sentidos: disfrutar de sus frutos y disfrutar de lo que hacemos, trabajando con alegría porque esto agrada a Dios.",
+        "palavras_chave": ["Teología del trabajo", "Adoración", "Vocación"],
+        "autores_citados": ["Gerhard Kittel", "Kyle Kowalsky", "Andrew Louth", "Martín Lutero", "Josef Pieper", "Pedro Rodriguez"],
+        "url_acesso": "https://drive.google.com/file/d/1b0iYORuzQXUZVuo7oiJo-tGZSJ36_vnq/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2024_V84_N1_006",
+        "titulo": "De Volta ao Princípio: A Criação Molda a História Inteira",
+        "autor": "Charles Arand (Tradução: George Felten)",
+        "paginas": { "inicio": 229, "fim": 252 },
+        "resumo": "Busca resgatar a importância da doutrina bíblica da criação para toda a narrativa cristã. Os resultados indicam que a doutrina da criação não é apenas um cenário ou palco para a redenção, mas um componente essencial de toda a trama, contando o relacionamento de Deus para com a sua criação e a forma como Ele assumiu a forma humana para restaurá-la.",
+        "palavras_chave": ["Criação", "Criaturas", "Criador", "História de Deus"],
+        "autores_citados": ["Martinho Lutero", "Basílio o Grande", "Jacques Cousteau"],
+        "url_acesso": "https://drive.google.com/file/d/1JuDeSXyORRINhFmgF7MgwvzgxKp317H7/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2024_V84_N1_007",
+        "titulo": "Desde Já Habitando na Casa do Pai: Lendo João 14.2-3 à Luz do Seu Contexto",
+        "autor": "Jeffrey Gibbs (Tradução: Guilherme Knupfer)",
+        "paginas": { "inicio": 261, "fim": 280 },
+        "resumo": "O tema é a escatologia inaugurada presente no Evangelho de João (14.2-3). O artigo argumenta que 'a casa de meu Pai' se refere ao próprio Jesus como o novo templo escatológico, e que as promessas se cumpriram através de sua morte e ressurreição, oferecendo proximidade e garantindo um lugar para seus discípulos na comunhão com Deus agora mesmo.",
+        "palavras_chave": ["Escatologia", "Evangelho de João", "Casa do Pai", "Templo escatológico"],
+        "autores_citados": [],
+        "url_acesso": "https://drive.google.com/file/d/1dkkdtkKoZYlcvK_JgkjMjh0Es8ZfJ4KF/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2024_V84_N1_008",
+        "titulo": "A Relação do Cristão com a Criação à Luz da Distinção Luterana entre os Dois Tipos de Justiça",
+        "autor": "Marcos Grinevald Falk e Francis Dietrich Hoffmann",
+        "paginas": { "inicio": 9, "fim": 19 },
+        "resumo": "O objetivo deste trabalho é conscientizar os cristãos para o chamado de Deus para cuidar de toda a sua criação. A pesquisa indica que, na justiça coram mundo, o cristão não focaliza apenas o seu próximo humano, mas age ativamente em direção a toda a criação, numa correta inter-relação entre criatura e meio ambiente.",
+        "palavras_chave": ["Criação", "Justiça coram mundo", "Ecologia", "Meio ambiente", "Dois tipos de justiça"],
+        "autores_citados": ["Jeffrey A. Gibbs", "Martinho Lutero", "Jaroslav Pelikan", "Acir Raymann", "Samuel H. Nafzger", "Mateus Nelson", "Rafael J. Nerbas"],
+        "url_acesso": "https://drive.google.com/file/d/1wCpxswH94fwjdFiWlrIPoTqSod1EnC6G/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2024_V84_N1_009",
+        "titulo": "A Teologia do Trabalho: Uma Perspectiva do Trabalho e do Descanso",
+        "autor": "Alisson Jonathan Henn e Joel Biermann",
+        "paginas": { "inicio": 1, "fim": 13 },
+        "resumo": "Elucida o significado de trabalho secular e trabalho sagrado, assim como a importância do descanso. A pesquisa aponta que o trabalho faz parte da vida humana, criado antes da queda em pecado, e que o descanso é uma necessidade humana através da qual demonstramos confiança de que é Deus quem sustenta todas as coisas.",
+        "palavras_chave": ["Teologia do Trabalho", "Descanso", "Cuidado", "Vocação"],
+        "autores_citados": ["Izabella Camargo", "Timothy Keller", "Derek Kinder", "Robert Kolb", "Josef Pieper", "Christine Ro"],
+        "url_acesso": "https://drive.google.com/file/d/1MjsBWG1qkJAQ8DnK4aszp7A1MMyczDZh/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2024_V84_N1_010",
+        "titulo": "Conflitos Entre Padres Capuchinhos e Pastores Luteranos em Lagoa Vermelha: Uma Pesquisa Histórica",
+        "autor": "David Karnopp",
+        "paginas": { "inicio": 1, "fim": 10 },
+        "resumo": "Trata dos desdobramentos dos conflitos surgidos em Lagoa Vermelha, RS, entre padres capuchinhos e pastores luteranos, quando iniciaram seu projeto missionário a partir de 1918. Mostra como o conflito religioso esteve ancorado em disputas políticas locais, exigindo das lideranças esforço excepcional em suas missões.",
+        "palavras_chave": ["Capuchinhos", "Pastores luteranos", "História de Lagoa Vermelha", "História da IELB"],
+        "autores_citados": ["Martinho Krebs", "Carlos W. Winterle"],
+        "url_acesso": "https://drive.google.com/file/d/1PuIzeRWpu7TgGUWxEzyRFJMNH5dLOfaY/view?usp=drive_link",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2024_V84_N1_011",
+        "titulo": "Restaurando Práticas Antigas: O Papel da Unção dos Enfermos de Acordo com o Capítulo 5 da Epístola de Tiago na Atualidade à Luz da Teologia Luterana",
+        "autor": "Guilherme André Knüpfer e Francis Dietrich Hoffmann",
+        "paginas": { "inicio": 87, "fim": 112 },
+        "resumo": "Este artigo investiga a prática da unção dos enfermos com base na passagem de Tiago 5 ao longo da história. A pesquisa adota a história do dogma como sua metodologia, rastreando a interpretação dessa prática desde os primórdios da igreja até o contexto contemporâneo, com foco nas perspectivas luteranas.",
+        "palavras_chave": ["Unção de enfermos", "Tiago", "História da igreja", "Extrema unção", "Cuidado pastoral"],
+        "autores_citados": ["Adolph Harnack", "J. N. D. Kelly", "Paul Blowers", "Martinho Lutero", "Filipe Melanchthon", "Martin Chemnitz", "Wilhelm Löhe", "Gert Kelter", "Randy Stice"],
+        "url_acesso": "https://drive.google.com/file/d/1zA58ZO1VwCiN9NVNM21erCtxALkOfLN0/view?usp=drive_link",
+        "url_capa": ""
+      }
+    ]
+  },
+  {
+    "revista": "Igreja Luterana",
+    "edicao": { "ano": 2023, "volume": 83, "numero": 2 },
+    "artigos": [
+      {
+        "id": "RL_2023_V83_N2_001",
+        "titulo": "Palavra ao Leitor: O Estado da Arte em Pesquisas no Reformador Martinho Lutero",
+        "autor": "Anselmo Ernesto Graff",
+        "paginas": { "inicio": 9, "fim": 24 },
+        "resumo": "A presente edição da Revista Igreja Luterana apresenta um dossiê sobre Lutero e a política, fruto do 9º Simpósio Internacional de Lutero. O editorial fornece os resultados de uma navegação em periódicos de Teologia e Ciências da Religião para verificar o estado do conhecimento sobre pesquisas e produções em Lutero, destacando categorias teológicas em que o reformador tem recebido destaque nessas investigações, além de apresentar os artigos da edição.",
+        "palavras_chave": ["Estado da Arte", "Pesquisas em Lutero", "Categorias Teológicas", "Editorial", "Política"],
+        "autores_citados": ["Júlio Cézar Adam", "Paulo Agostinho Nogueira Baptista", "Paulo César Barros", "Breno Martins Campos", "Ronaldo de Paula Cavalcante", "Ulrich Duchrow", "Norma Sandra de Almeida Ferreira", "Pierre Gisel", "Carlos Ribeiro Caldas Filho", "Rui de Souza Josgrilberg", "Mário de França Miranda", "Thomas P. Rausch", "Ivoni Richter Reimer", "Helmut Renders", "Cláudio de Oliveira Ribeiro", "Abdruschin Schaeffer Rocha", "Wanderley Pereira da Rosa", "Jung Mo Sung", "Claudete Beise Ulrich", "Dilmeire Sant'Anna Ramos Vosgerau", "Wilhelm Wachholz", "Elias Wolff"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2023_V83_N2_002",
+        "titulo": "Lutero e os Dois Regimentos: Distinção e Relação ou Liberdade de Quem, Quais Direitos e Qual Indivíduo?",
+        "autor": "Joel Biermann",
+        "paginas": { "inicio": 25, "fim": 44 },
+        "resumo": "O tópico do presente artigo trata de uma pesquisa em Lutero e seu pensamento sobre os dois regimentos, tanto em relação à distinção, relação e direitos individuais. Sabe-se que muitos acreditam que a questão da relação Igreja/Estado não é difícil de resolver, mas a experiência mostra que a compreensão do ensino de Lutero pode estar equivocada. Lutero não defendia uma separação radical nem uma junção entre os dois. Acertar essa doutrina é importante para o bom funcionamento do mundo e para a prática fiel da igreja.",
+        "palavras_chave": ["Lutero", "Dois reinos", "Liberdade", "Direitos", "Indivíduo"],
+        "autores_citados": ["Filipe Melanchthon", "Dietrich Bonhoeffer", "Karl Barth", "Thomas Jefferson", "Reinhard Hütter", "Carl Trueman", "Jean-Jacques Rousseau"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2023_V83_N2_003",
+        "titulo": "Lutero Sobre a Relação do Cristão (e da Igreja) Com o Governo",
+        "autor": "Alan Furst",
+        "paginas": { "inicio": 45, "fim": 67 },
+        "resumo": "A doutrina dos Dois Tipos de Justiça, central para o pensamento de Lutero, trabalha muito bem com a doutrina dos Dois Reinos ao considerarmos a relação do cristão e da igreja com o governo secular. Este artigo observa essa conexão ao explorar os escritos de Lutero sobre assuntos relacionados ao governo secular, apontando para a função do governo, a participação do cristão no governo secular (como eleições e o voto) e o papel da igreja diante do governo.",
+        "palavras_chave": ["Lutero", "Política", "Igreja e Estado", "Dois Reinos", "Justiça", "Voto"],
+        "autores_citados": ["Joel Biermann", "Robert Kolb", "Charles Arand", "Martinho Lutero"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2023_V83_N2_004",
+        "titulo": "A Autoridade Como Repressora do Mal, em Lutero e Hoje: Uma Abordagem ao Reformador Sobre a Atuação do Governo na Manutenção da Ordem Pública à Luz do Direito Contemporâneo",
+        "autor": "Allan Breda",
+        "paginas": { "inicio": 69, "fim": 92 },
+        "resumo": "O artigo examina a maneira com a qual Martinho Lutero compreende a atuação do governo na manutenção da ordem pública. Define a origem do seu poder interventor e delimita o campo de atuação dela, à luz do Direito Constitucional hodierno. O Direito Criminal, como ciência que norteia a aplicação de pena, serve de base para aferir se o posicionamento de Lutero é coerente com a visão atual do jus puniendi (direito de punir) estatal. Os resultados apontam que o pensamento de Lutero respeita princípios gerais que norteiam o campo jurídico atual.",
+        "palavras_chave": ["Autoridade", "Governo", "Lutero", "Jus Puniendi", "Mal", "Direito"],
+        "autores_citados": ["Darcy Azambuja", "Danilo Batista", "Cynthia Grant Bowman", "Dalmo de Abreu Dallari", "Rogério Greco", "Damásio E. de Jesus", "Aaron Moldenhauer", "Clóvis Jair Prunzel", "Miguel Reale", "Joy Wiltenburg", "Luís Henrique Linhares Zouein"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2023_V83_N2_005",
+        "titulo": "Governo, Justiça Social e Econômica Segundo Martinho Lutero",
+        "autor": "Ricardo W. Rieth",
+        "paginas": { "inicio": 93, "fim": 116 },
+        "resumo": "Estados democráticos de direito preveem a busca de justiça social e econômica. Lutero abordou esses temas em diferentes circunstâncias. O artigo afirma que uma interpretação produtiva da obra do reformador demanda um entendimento diferenciado a respeito de conceitos como reinos, governos (regimentos), estamentos (ordens), justiça, equidade, lei natural, regra áurea e das responsabilidades da comunidade na busca por justiça social e econômica.",
+        "palavras_chave": ["Justiça social e econômica", "Martinho Lutero", "Governo", "Ética política", "Reforma Luterana"],
+        "autores_citados": ["Michael Beyer", "Gottfried Forck", "Judith Hahn", "Johannes Heckel", "Karl Holl", "Helmar Junghans", "Bernhard Lohse", "Heinz-Horst Schrey", "Christopher Spehr", "Theodor Strohm", "Charles Taylor", "Nicolau Maquiavel"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2023_V83_N2_006",
+        "titulo": "A Igreja Num Estado Laico: Possibilidades e Limites de Atuação",
+        "autor": "Jean Marques Regina",
+        "paginas": { "inicio": 117, "fim": 142 },
+        "resumo": "Este artigo aborda a fundamental importância da religião na busca pelo bem comum e sua relevância como um fenômeno social que precede o Direito. Explora detalhadamente a atuação da igreja no contexto da laicidade colaborativa brasileira, reconhecendo-a como uma comunidade moral religiosa. Discute o conceito jurídico de religião, analisa teorias relacionadas e distingue entre liberdade religiosa individual, coletiva e institucional, delineando limites de atuação política.",
+        "palavras_chave": ["Liberdade religiosa institucional", "Laicidade colaborativa", "Colisão de direitos fundamentais", "Igreja e Estado"],
+        "autores_citados": ["Paulo Pulido Adragão", "Tomás Prieto Álvarez", "Damião Alves de Azevedo", "Noberto Bobbio", "Winfried Brugger", "Heloísa Sanches Querino Chehoud", "Christopher Dawson", "Joël-Benoît D'Onorio", "Émile Durkheim", "Francisco Tomazoli da Fonseca", "José Gomes Canotilho", "Jónatas Eduardo Mendes Machado", "Zenon Grocholewski", "Jan Klos", "Jacques Maritain", "H. Richard Niebuhr", "James Orr", "Cesar Alberto Ranquetat Jr.", "Aloisio Cristovam dos Santos Júnior", "Tatiana Robles Seferjan", "Thiago Rafael Vieira"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2023_V83_N2_007",
+        "titulo": "“Ninguém Deve Ser Juiz em Causa Própria” Resistência à Autoridade – Em Martim Lutero e Hoje",
+        "autor": "Claus Schwambach",
+        "paginas": { "inicio": 143, "fim": 195 },
+        "resumo": "O presente artigo discute a questão da resistência à autoridade governamental em duas perspectivas, uma história e uma atual, considerando o momento brasileiro atual. A compreensão de resistência à autoridade de Martim Lutero é apresentada em seus aspectos históricos e teológicos através da análise de textos paradigmáticos que evidenciam as duas grandes fases de seu pensamento. Discute-se em que medida as balizas ético-políticas de Lutero podem servir de orientação teológica para o contexto brasileiro contemporâneo.",
+        "palavras_chave": ["Resistência à autoridade", "Distinção dos dois reinos", "Ética política", "Igreja e Estado", "Justiça"],
+        "autores_citados": ["Sved Andersen", "Walter Altmann", "Patrick Bahl", "Cristiane Brum Bernardes", "Diethelm Böttcher", "Dietrich Bonhoeffer", "Guilherme Carvalho", "João Ferreira Dias", "Klaus Dicke", "Franklin Ferreira", "Paul Freston", "Alfredo J. Gonsalves", "José Pérez Guadalupe", "Alba Zaluar Guimarães", "Azevedo Junior", "Wilfried Härle", "Bianca Vicêncio Leis", "Philipp Lichterbeck", "Guilherme Esteves Galvão Lopes", "Silas Malafaia", "Fernando Martins", "Jürgen Miethke", "Marcos Mortari", "Flávio Henrique Salomão Neto", "Germano Oliveira", "Ana Keila Mosca Pinezi", "Fábio Py", "Hans-Richard Reuter", "Loryel Rocha", "Luiz Alexandre Solano Rossi", "José Lima Santana", "Notger Slenczka", "Christopher Spehr", "Christoph Strohm", "Hellmut Tschoch", "Ellen Ueberschär", "Thiago Rafael Vieira", "Jean Marques Regina", "Eike Wolgast", "André Luis Zanini"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2023_V83_N2_008",
+        "titulo": "Experiências de Martinho Lutero em Sua Vida de Oração",
+        "autor": "Pedro Henrique Schmidt Pinheiro e Clóvis Jair Prunzel",
+        "paginas": { "inicio": 197, "fim": 235 },
+        "resumo": "A pesquisa investiga as experiências do reformador na vida de oração e os ensinamentos que podem ser extraídos de sua compreensão teológica. Lutero foi um homem de oração, exercendo a espiritualidade cristã a partir do clamor a Deus em momentos de necessidade e gratidão. Os resultados apontam para como Lutero aplicava a compreensão sobre a oração, fundamentando-se nas palavras de ordem e promessa de Deus, ensinando orar através do Pai-Nosso, dos Dez Mandamentos e do Credo.",
+        "palavras_chave": ["Oração", "Lutero", "Fundamentos", "Experiências", "Pai-Nosso", "Devoção"],
+        "autores_citados": ["Charles Arand", "Oswald Bayer", "Joaquim Fischer", "Anselmo Ernesto Graff", "Grethe Jacobsen", "Timothy Keller", "John W. Kleinig", "Carter Lindberg", "Munyengetero Mtata", "James Arne Nestingen", "John Pless", "Mark Rogers", "David P. Scaer", "Gene Edward Veith Junior", "Martim Carlos Warth", "Timothy J. Wengert", "Edgar Züge", "Pedro Beskendorf", "Filipe Melanchthon"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2023_V83_N2_009",
+        "titulo": "O Sofrimento Como Marca da Igreja na Exegese de Martinho Lutero de 1 Pedro",
+        "autor": "Kenneth J. Woo (Tradução: Clóvis Vítor Gedrat)",
+        "paginas": { "inicio": 237, "fim": 255 },
+        "resumo": "O artigo busca demonstrar a forma como Lutero enxergava o sofrimento dos cristãos como parte essencial da igreja, aproximando-a de Deus como um meio da graça que torna possível a retenção do evangelho. Enquanto exilados, os seguidores de Jesus (peregrinos que anseiam pelo lar) devem carregar a cruz e serem aperfeiçoados na dor, seguindo a obra de seu Senhor. O autor atribui a essa teologia reformatória o nome de 'eclesiologia cruciforme'.",
+        "palavras_chave": ["Lutero", "Sofrimento", "Eclesiologia cruciforme", "Cruz", "1 Pedro"],
+        "autores_citados": ["Andreas Karlstadt", "Martinho Lutero"],
+        "url_acesso": "",
+        "url_capa": ""
+      }
+    ]
+  },
+  {
+    "revista": "Igreja Luterana",
+    "edicao": { "ano": 2023, "volume": 83, "numero": 1 },
+    "artigos": [
+      {
+        "id": "RL_2023_V83_N1_001",
+        "titulo": "Palavra ao Leitor: Pedagogia de Lutero: Uma Análise do Tema à Luz da Nova Base Nacional Comum Curricular (BNCC)",
+        "autor": "Anselmo Ernesto Graff",
+        "paginas": { "inicio": 11, "fim": 28 },
+        "resumo": "O editorial propõe refletir sobre a realidade conceitual da pedagogia de Lutero, a sua relação com a Base Nacional Comum Curricular (BNCC) no Brasil e as decorrências disso em eventos educativos na igreja cristã, abordando de forma particular o processo de ensino, a aprendizagem e a avaliação baseada em competências.",
+        "palavras_chave": ["Pedagogia de Lutero", "BNCC", "Educação cristã", "Competências", "Editorial"],
+        "autores_citados": ["Nuccio Ordine", "Joseph Chilton Pearce", "Philippe Perrenoud", "Claudino Piletti", "Nelson Piletti"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2023_V83_N1_002",
+        "titulo": "A Ameaça em Apocalipse 22.18,19: Performance e Interpretação",
+        "autor": "César Motta Rios",
+        "paginas": { "inicio": 29, "fim": 42 },
+        "resumo": "O livro do Apocalipse permite saber acerca dos seus destinatários iniciais e sobre a forma da sua receção inicial. A presente nota discute uma interpretação de Apocalipse 22.18,19 que leva em conta a 'performance' do texto lido em voz alta. O artigo propõe um exercício de leitura em diálogo com fontes primárias e secundárias para a compreensão da ameaça sobre adicionar ou retirar palavras da profecia.",
+        "palavras_chave": ["Apocalipse", "Interpretação", "Receção", "Performance", "Ameaça"],
+        "autores_citados": ["Eugene A. Nida", "Cristina Carneiro Rodrigues", "Johannes H. Rottmann"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2023_V83_N1_003",
+        "titulo": "A Face Humana da Justiça: Recuperando o Papel do Próximo no Discurso sobre Lei, Vocação e Justiça",
+        "autor": "Leopoldo A. Sánchez (Tradução: Maximiliano Wolfgramm Silva)",
+        "paginas": { "inicio": 43, "fim": 62 },
+        "resumo": "Qualquer tentativa de reflexão sobre a teologia e a prática da justiça deve começar e terminar com algum 'próximo' em mente. O artigo define a justiça teologicamente como aquela 'justiça da lei' que Deus prescreve no Decálogo e analisa como o cumprimento da justiça divina está inseparavelmente ligado ao serviço amoroso ao próximo dentro das vocações humanas.",
+        "palavras_chave": ["Justiça", "Próximo", "Lei", "Vocação", "Teologia"],
+        "autores_citados": ["Martinho Lutero"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2023_V83_N1_004",
+        "titulo": "Abortos Espontâneos e Luto Parental - Reflexões para o Cuidado Pastoral",
+        "autor": "Rafael Felipe Herter e Maximiliano Wolfgramm Silva",
+        "paginas": { "inicio": 63, "fim": 86 },
+        "resumo": "Investiga o impacto do luto para um pai e, principalmente, para uma mãe que perderam um filho durante a gestação. A pesquisa procura responder como um pastor pode exercer melhor o cuidado pastoral diante da dor silenciosa do aborto espontâneo, oferecendo suporte emocional e espiritual para os pais num contexto onde a sociedade muitas vezes ignora esse luto.",
+        "palavras_chave": ["Aborto espontâneo", "Luto parental", "Cuidado pastoral", "Aconselhamento"],
+        "autores_citados": ["Beatriz Grupp da Rosa", "Mauro Altair Scheibler"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2023_V83_N1_005",
+        "titulo": "Deus e Suas Criaturas Humanas nos Sermões de Lutero sobre Gênesis: O Jovem Reformador e o Uso da Sua Distinção dos Dois Tipos de Justiça",
+        "autor": "Robert Kolb (Tradução: Felipe Barbosa Gonsioroski)",
+        "paginas": { "inicio": 87, "fim": 110 },
+        "resumo": "O artigo explora os sermões de Martinho Lutero sobre o livro de Gênesis, iniciados em 1523. Analisa como o jovem reformador utilizou a distinção teológica dos dois tipos de justiça (passiva perante Deus e ativa perante o mundo) para descrever a antropologia cristã, enfatizando que a identidade do crente repousa puramente na Palavra do Criador, e não na performance humana.",
+        "palavras_chave": ["Martinho Lutero", "Gênesis", "Dois tipos de justiça", "Antropologia cristã"],
+        "autores_citados": ["Martinho Lutero", "Caspar Cruciger", "George Rörer"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2023_V83_N1_006",
+        "titulo": "Do Supremo Pastor para Pastores: O Conceito de Pastorear Segundo o Pastor Jesus e o Apóstolo Pedro",
+        "autor": "Raí Kramer Soares e Anselmo Ernesto Graff",
+        "paginas": { "inicio": 111, "fim": 136 },
+        "resumo": "O artigo elucida o significado do ofício pastoral à luz do conceito de 'pastorear' presente no diálogo de Jesus com Pedro (João 21.15-17) e na posterior carta do apóstolo (1 Pedro 5.1-4). A pesquisa aponta que pastorear significa, primariamente, amar o Supremo Pastor Jesus, e que este amor se manifesta no cuidado, alimentação e orientação do rebanho de Cristo.",
+        "palavras_chave": ["Pastorear", "Supremo Pastor", "Ministério Pastoral", "Cristologia", "Eclesiologia"],
+        "autores_citados": ["Paulo M. Nerbas", "Roger L. Omanson", "Henri Daniel Rops", "Johannes H. Rottmann", "Thomas R. Schreiner", "Russel P. Shedd", "Vilson Scholz"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2023_V83_N1_007",
+        "titulo": "Dons Divinos: Uma Reflexão a partir dos Artigos do Credo",
+        "autor": "Ruan Schöenardie Faller e Gerson Luís Linden",
+        "paginas": { "inicio": 137, "fim": 162 },
+        "resumo": "Procura investigar os aspectos dos dons divinos na vida das pessoas, a partir da perspetiva dos crentes como criaturas de Deus (Primeiro Artigo do Credo) e filhos de Deus (Terceiro Artigo). A pesquisa conclui que os dons não se limitam a habilidades, mas englobam bênçãos, ofícios e ações conferidas pela graça, ressignificadas pela obra de Cristo.",
+        "palavras_chave": ["Dons divinos", "Credo Apostólico", "Criação", "Santificação", "Graça"],
+        "autores_citados": ["John Oberdeck", "Albrecht Peters", "Francis Pieper", "Clóvis Jair Prunzel", "Acir Raymann", "Leopoldo A. Sánchez"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2023_V83_N1_008",
+        "titulo": "Karlstadt, o Desenvolvimento de Sua Teologia e o Problema Iconoclástico de 1522",
+        "autor": "Kauê Neuenfeld Paniz e Clóvis Jair Prunzel",
+        "paginas": { "inicio": 163, "fim": 190 },
+        "resumo": "A pesquisa analisa o desenvolvimento teológico de Andreas Bodenstein von Karlstadt e a sua influência na Reforma Luterana, focando-se no problema iconoclástico (destruição de imagens) ocorrido em Wittenberg (1521-1522). Explora como Karlstadt desenvolveu uma teologia similar à de Lutero, mas divergiu radicalmente devido à influência da teologia mística e legalista, culminando no cisma entre ambos.",
+        "palavras_chave": ["Andreas Karlstadt", "Reforma Luterana", "Iconoclastia", "Teologia mística", "Wittenberg"],
+        "autores_citados": ["Martinho Lutero", "Bryan D. Mangrum", "Sergiusz Michalski", "Per Even T. Moldsvor", "Michael Mullet", "Clóvis J. Prunzel", "Ronald J. Sider"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2023_V83_N1_009",
+        "titulo": "Recomendo a Leitura: 10 Questions to Ask Every Time You Read the Bible",
+        "autor": "Gabriel Schmidt Sonntag",
+        "paginas": { "inicio": 191, "fim": 195 },
+        "resumo": "Resenha literária da obra '10 Questions to Ask Every Time You Read the Bible' (10 Perguntas a Fazer Sempre Que Lê a Bíblia) da autoria de Andrew Jones. A resenha destaca como a obra encoraja a leitura guiada pelo entendimento prático da Lei e do Evangelho nas Escrituras, útil tanto para pastores como para o estudo bíblico leigo.",
+        "palavras_chave": ["Resenha", "Leitura Bíblica", "Lei e Evangelho", "Estudo Bíblico"],
+        "autores_citados": ["Andrew Jones"],
+        "url_acesso": "",
+        "url_capa": ""
+      }
+    ]
+  },
+  {
+    "revista": "Igreja Luterana",
+    "edicao": { "ano": 2022, "volume": 82, "numero": 2 },
+    "artigos": [
+      {
+        "id": "RL_2022_V82_N2_001",
+        "titulo": "Palavra ao Leitor: A Agonia da Cristandade",
+        "autor": "Anselmo Ernesto Graff",
+        "paginas": { "inicio": 11, "fim": 24 },
+        "resumo": "O editorial reflete sobre a agonia da cristandade a partir da perspectiva de Unamuno, abordando o sofrimento e a tentação (anfechtung) como elementos formadores do cristão e do teólogo. Utilizando a dinâmica de oração, meditação e tentação proposta por Lutero (especialmente no Salmo 119), o texto introduz e sintetiza os artigos presentes na edição.",
+        "palavras_chave": ["Agonia", "Cristandade", "Sofrimento", "Tentação", "Anfechtung", "Editorial"],
+        "autores_citados": ["Miguel De Unamuno", "Philippe Perrenoud", "Leopoldo Sánchez", "Giovanni Papini", "C.S. Lewis", "William C. Weinrich", "Nicholas Salifu", "Paul Ricoeur", "H.C. Leupold", "Martinho Lutero"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2022_V82_N2_002",
+        "titulo": "A Igreja Cristã Como Comunidade Poimênica e Terapêutica no Cuidado a Pessoas Acometidas Pela Depressão",
+        "autor": "Matheus Ohnesorge Herz e Thomas Heimann",
+        "paginas": { "inicio": 25, "fim": 64 },
+        "resumo": "Visa contribuir com reflexões sobre o papel da igreja cristã como cuidadora no tratamento de pessoas com depressão. Apresenta dados sobre a depressão e suas formas de tratamento, destacando a espiritualidade cristã como fator de resiliência. Fundamenta o cuidado pastoral (poimênica) no Novo Testamento e explora o conceito de igreja como comunidade terapêutica baseada no amor ao próximo e redes de apoio.",
+        "palavras_chave": ["Depressão", "Igreja", "Cuidado", "Poimênica", "Comunidade Terapêutica", "Aconselhamento"],
+        "autores_citados": ["Jay E. Adams", "Aíla Luzia Pinheiro Andrade", "Marilisa Berti de Azevedo Barros", "Richard Baxter", "Aaron T. Beck", "Brad A. Alford", "Daniela Borja Bessa", "Dietrich Bonhoeffer", "David D. Burns", "Eduardo Chachamovich", "Howard J. Clinebell", "Gary R. Collins", "Maria P. L. Coutinho", "H. H. Esser", "Zack Eswine", "Marcelo P. Fleck", "Cintia A. V. Gonçales", "Hélio P. Guimarães", "Uriel Heckert", "Thomas Heimann", "Lothar Carlos Hoch", "Harold G. Koenig", "Gerson Luis Linden", "Johannes P. Louw", "Eugene A. Nida", "Martinho Lutero", "David P. Murray", "Sidnei Vilmar Nóe", "Catarina R. C. Nunes", "Márcio Divino Oliveira", "Julio F. P. Peres", "John Piper", "Wilson Porte Júnior", "Vania B. Powell", "Bruno Felippe Rieth", "Waldir Humberto Schubert", "Ana Beatriz B. M. Silva", "Antônio Geraldo Silva", "Andrew Solomon", "Sérgio Aparecido Souza", "Gene Edward Veith Junior", "Philip S. Watson", "Gilberto C. Weber", "Edward T. Welch"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2022_V82_N2_003",
+        "titulo": "Espiritualidade, Saúde e Teologia: Possibilidades e Limites",
+        "autor": "Róger Radtke Nörnberg e Anselmo Ernesto Graff",
+        "paginas": { "inicio": 65, "fim": 92 },
+        "resumo": "Investiga a vinculação entre espiritualidade e saúde e as implicações teológicas dessa conexão. O estudo analisa como a prática da religiosidade/espiritualidade influencia o enfrentamento de doenças (coping religioso). A partir da perspectiva luterana, avalia a necessidade de reconhecer a natureza pecaminosa do ser humano para se encontrar com a graça de Cristo, estabelecendo os pilares para uma espiritualidade realista e sadia.",
+        "palavras_chave": ["Espiritualidade", "Saúde", "Coping religioso/espiritual", "Espiritualidade Luterana", "Medicina"],
+        "autores_citados": ["Paulo Afonso Butzke", "Diogo Timóteo Costa", "Deolindo Feltz", "Lothar C. Hoch", "Nilton Herbes", "Timothy Keller", "John W. Kleinig", "Adolf Köberle", "Harold G. Koenig", "Elisabeth Kübler-Ross", "Johannes P. Louw", "Eugene A. Nida", "Fernando Lucchese", "Martinho Lutero", "Márcia Xavier Machado", "Vishal Mangalwadi", "Ticiane Dionízio de Souza Matos", "Michael E. McCullough", "Alexander Moreira-Almeida", "Giancarlo Lucchetti", "Raquel Gehrke Panzini", "Jaroslav Pelikan", "Matthieu Ricard", "Leopoldo A. Sanchez", "Alexsandro C. Silva", "Edward H. Schroeder", "William W. Schumacher", "Gene Edward Veith Junior", "Thaila Oliveira Zatiti Brasileiro"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2022_V82_N2_004",
+        "titulo": "O Testemunho Cristão na Pós-Cristandade",
+        "autor": "Miguel Zehetmeyer Bergmann e Samuel Fuhrmann",
+        "paginas": { "inicio": 93, "fim": 120 },
+        "resumo": "Explora elementos que promovam uma reflexão bíblica e luterana sobre o testemunho cristão num contexto cultural adverso da pós-cristandade. O artigo avalia as abordagens comuns do 'exílio' e da 'conquista' política e propõe um resgate do 'habitus cristão' da igreja primitiva. Por fim, articula essa forma de viver com a doutrina luterana dos dois tipos de justiça como proposta de testemunho prático da fé.",
+        "palavras_chave": ["Testemunho cristão", "Pós-cristandade", "Habitus cristão", "Duas justiças", "Igreja e Cultura"],
+        "autores_citados": ["Charles Arand", "Joel Biermann", "Christoph Barnbrock", "Clodovis M. Boff", "Carlos Alberto Motta Cunha", "Joel C. Elowsky", "Felipe Costa Fontes", "Samuel Reduss Fuhrmann", "Allan Diego Furst", "Justo L. González", "Robert Kolb", "Martinho Lutero", "Lesslie Newbigin", "Johannes H. Rottmann", "Wiliston Walker", "Martim Carlos Warth"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2022_V82_N2_005",
+        "titulo": "Cristo Como Mensageiro: Identidade e Teologia do Anjo do Senhor",
+        "autor": "Allan Breda e Acir Raymann",
+        "paginas": { "inicio": 121, "fim": 149 },
+        "resumo": "Examina as minúcias bíblicas que envolvem a pessoa do 'Anjo do Senhor' no Antigo Testamento. Confirma que o Messias é quem melhor se destaca como candidato a portar esse título de Javé, tendo a sua obra consumada em Jesus de Nazaré. Atesta que a igreja deve reter essa teologia cristofânica com afinco, porquanto o Anjo é a pedra angular da esperança de salvação e livramento.",
+        "palavras_chave": ["Anjo do Senhor", "Identidade", "Teofania", "Cristofania", "Filho de Deus", "Antigo Testamento"],
+        "autores_citados": ["Chad Bird", "Douglas Van Dorn", "Matt Foreman", "Daniel Finestone", "Jarl Fossum", "Charles A. Gieschen", "Michael S. Heiser", "Richard A. Lammert", "Richard C. H. Lenski", "René A. López", "Andrew S. Malone", "Paul R. Raabe", "Francis C. Rossow", "Gary Simmers", "H. Vogel"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2022_V82_N2_006",
+        "titulo": "Identidade à Luz do Pai Criador: O Ser Humano Como Criatura e Filho de Deus",
+        "autor": "Renan Figur e Paulo Willie Buss",
+        "paginas": { "inicio": 151, "fim": 174 },
+        "resumo": "Busca responder, à luz dos desdobramentos do Credo Apostólico, o que define a identidade humana na antropologia teológica luterana. Os resultados apontam que o primeiro artigo do Credo define o ser humano como criatura sustentada por um Deus relacional, enquanto o segundo e terceiro artigos revelam a sobreposição da nova identidade adquirida pela fé: além de criatura e pecador, o crente é também Filho de Deus.",
+        "palavras_chave": ["Antropologia luterana", "Identidade humana", "Credo Apostólico", "Criatura", "Filho de Deus", "Provindência"],
+        "autores_citados": ["Paul Althaus", "Charles P. Arand", "Joel Biermann", "Karl Barth", "Oswald Bayer", "Gottfried Brakemeier", "Frederick F. Bruce", "Dietrich Bonhoeffer", "São João Crisóstomo", "Herbert Gingersohn", "Hans-Cristoph Hahn", "Hermann Haarbeck", "Timothy Keller", "Søren Kierkegaard", "Derek Kidner", "Robert Kolb", "Martinho Lutero", "Thomas E. McComiskey", "Edgar Morin", "John T. Mueller", "Albrecht Peters", "Clóvis J. Prunzel", "William W. Schumacher", "Gene Edward Veith Junior"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2022_V82_N2_007",
+        "titulo": "As Metodologias Ativas e o Ensino Confirmatório na Igreja Evangélica Luterana do Brasil",
+        "autor": "Ivan Carlos Gamba e Anselmo Ernesto Graff",
+        "paginas": { "inicio": 175, "fim": 200 },
+        "resumo": "Discute o uso das metodologias ativas nas aulas de instrução de confirmandos na IELB. Investiga os desafios da evasão de jovens e da apropriação do conhecimento face ao método tradicional e comportamentalista héredado historicamente. Conclui que a aplicação de metodologias ativas (como sala de aula invertida, estudos de caso e mapas conceituais) amplia as possibilidades de reestabelecer um ensino catequético significativo.",
+        "palavras_chave": ["Aprendizagem", "Ensino Confirmatório", "Metodologia", "Metodologias ativas", "Educação Cristã"],
+        "autores_citados": ["Charles P. Arand", "Maria Lucia de Arruda Aranha", "Lilian Bacich", "José Moran", "Christoph Barnbrock", "Alberto Barrientos", "Jonathan Bergmann", "Aaron Sams", "Carlota Boto", "Fausto Camargo", "Thuinie Daros", "Franco Cambi", "Paulo Emílio de Oliveira Cruz", "Aline Diesel", "George C. Felten", "Paulo Freire", "D. Fürst", "Pierre Normando Gomes-da-Silva", "Luiz Fernando Klein", "Ana Maria Lakomy", "Martinho Lutero", "Rafael Estevão Milagres", "Edgar Morin", "Ana Rita Mota", "Daison M. Neutzling", "Anderson Gomes Peixoto", "Clóvis Jair Prunzel", "Beatriz Raymann", "João Ribeiro", "José Alex Soares Santos", "Dermeval Saviani", "Clécio Leocir Schadech", "Nadia Aparecida de Souza", "Evely Boruchovitch", "Luciana de Luca Dalla Valle", "Maria Lucia Marcondes Carvalho Vasconcelos", "Diana Gonçalves Vidal"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2022_V82_N2_008",
+        "titulo": "Por Que Dois Tipos de Justiça? (Tradução)",
+        "autor": "Charles P. Arand e Joel Biermann (Tradução: Alan Diego Furst)",
+        "paginas": { "inicio": 201, "fim": 226 },
+        "resumo": "Esclarece a natureza do relacionamento entre o Criador e a criatura através da matriz luterana dos dois tipos de justiça. A distinção remove a atividade humana como base para a justificação (justiça passiva diante de Deus), mas exalta a vida de justiça ativa no mundo para o bem-estar da comunidade. Mostra como esse paradigma resolve a confusão entre Lei e Evangelho e o conceito dos Dois Reinos.",
+        "palavras_chave": ["Dois tipos de justiça", "Justificação", "Santificação", "Dois Reinos", "Antropologia", "Ética"],
+        "autores_citados": ["Carter Lindberg", "Martinho Lutero", "Filipe Melanchthon", "Timothy J. Wengert", "Robert Kolb", "David A. Lumpp", "William W. Schumacher", "Joel Biermann", "Guntis Kalme", "Gerhard Ebeling", "Gustaf Wingren", "Scott R. Murray", "J. Budziszewski", "C. S. Lewis", "Gilbert Meilaender", "Uwe Siemon-Netto", "Mary Jane Haemig", "Stephen J. Carter", "Philip Hamburger", "Stanley Hauerwas", "Joel Lehenbauer", "Mark Y. Hanley", "Robert Benne", "Karl H. Hertz", "Lowell Green", "Phillip Schaff", "James W. Voelz", "C. F. W. Walther", "Bo Giertz", "Gerhard O. Forde", "Werner Elert"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2022_V82_N2_009",
+        "titulo": "Dois Tipos de Justiça: O Que o Pregador Tem Que Fazer? (Tradução)",
+        "autor": "Timothy Saleska (Tradução: Thiago Surian)",
+        "paginas": { "inicio": 227, "fim": 239 },
+        "resumo": "Explora a função da pregação à luz das duas justiças. O pregador entrega a Palavra que dá a identidade de 'tsaddik' (justo) por meio da justiça de Cristo (passiva), consolando o pecador. Mas o pregador também tem o dever de instruir, exortar e aplicar a lei, operando na justiça das obras (ativa) para que os cristãos saibam viver eticamente e servir ao próximo neste mundo.",
+        "palavras_chave": ["Pregação", "Dois tipos de justiça", "Lei e Evangelho", "Homilética", "Identidade cristã", "Parênese"],
+        "autores_citados": ["Chaim Potok", "Robert Kolb", "Charles Arand", "Gerhard Forde", "Bernard Lord Manning", "David Steinmetz", "Lesslie Newbigin", "J. Budziszewski", "C. S. Lewis", "Paul Raabe", "James Voelz"],
+        "url_acesso": "",
+        "url_capa": ""
+      }
+    ]
+  },
+  {
+    "revista": "Igreja Luterana",
+    "edicao": { "ano": 2021, "volume": 81, "numero": 2 },
+    "artigos": [
+      {
+        "id": "RL_2021_V81_N2_001",
+        "titulo": "Palavra ao Leitor: \"Consolem, consolem o meu povo\"",
+        "autor": "Anselmo Ernesto Graff",
+        "paginas": { "inicio": 7, "fim": 15 },
+        "resumo": "O editorial aborda o tema do consolo de Deus em meio ao sofrimento e à morte, trazendo um contexto histórico desde a Peste Negra até a pandemia de COVID-19. Ressalta o imperativo do profeta Isaías (\"Consolem, consolem o meu povo\") como vocação da igreja cristã e o dever de confortar as pessoas com as promessas de perdão e cuidado divino. Apresenta também o resumo dos artigos que compõem a edição, que tratam dos desigrejados, do terceiro uso da lei, dos Artigos de Esmalcalde, da pregação na modernidade líquida, das metodologias ativas no ensino confirmatório, da capelania escolar e da multivocacionalidade do pastor.",
+        "palavras_chave": ["Consolo", "Peste Negra", "Covid-19", "Igreja Cristã", "Editorial", "Sofrimento", "Esperança"],
+        "autores_citados": ["Stefan Cunha Ujvari", "Alana Sousa", "John Frith", "Lidiane Aires", "Voltaire Schilling Eber Evangelista", "Reed R. Lessing", "Martinho Lutero"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2021_V81_N2_002",
+        "titulo": "As Pessoas Cristãs, a Lei de Deus e a Vida que se Vive Aqui: Sobre o Terceiro Uso da Lei Conforme a Fórmula de Concórdia",
+        "autor": "Cesar Motta Rios",
+        "paginas": { "inicio": 47, "fim": 72 },
+        "resumo": "A Fórmula de Concórdia reconhece a existência de um terceiro uso da lei de Deus, que se dá somente com relação à pessoa justificada e tem em vista a vida cristã. Esse uso foi contestado, suprimido ou visto com reservas por diversos teólogos luteranos no século passado. Não obstante, é parte necessária do ensino da igreja, considerando-se a pessoa cristã real, com toda sua complexidade e necessidade. O artigo demonstra isso por meio de um estudo bibliográfico em fontes primárias e secundárias, com atenção especial para o texto do Artigo VI da Fórmula de Concórdia, sugerindo que o terceiro uso da lei não só é parte do corpo doutrinário luterano, como também é imprescindível para o ensino cristão.",
+        "palavras_chave": ["Lei", "Evangelho", "Terceiro uso da Lei", "Vida Cristã", "Fórmula de Concórdia", "Boas obras"],
+        "autores_citados": ["Henri-Irénée Marrou", "Filipe Melanchthon", "Willard Dow Allbeck", "Leopoldo Sánches", "Werner Elert", "Edward A. Engelbrecht", "Eugene F. Klug", "Michael H. J. Boutot", "Gerhard O. Forde", "Oswald Bayer", "David Scaer", "Ken Ray Schurb", "Martinho Lutero", "C. F. W. Walther", "Michael P. Middendorf", "Dietrich Bonhoeffer", "Mark P. Surburg"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2021_V81_N2_003",
+        "titulo": "Do Púlpito Para o Fogão: Limites e Desafios na Multivocacionalidade",
+        "autor": "Roberto Geloch e Leonídio Görl",
+        "paginas": { "inicio": 163, "fim": 187 },
+        "resumo": "A concepção do ser humano como máscara de Deus (Larvae Dei). O homem é uma máscara que resplandece a face de Deus na vida das outras pessoas, por meio das mais variadas e abrangentes vocações e ofícios com que Deus agraciou os seus filhos, visando o amparo da própria criação divina. O artigo aborda a doutrina dos \"Dois Reinos\", a identificação que Lutero faz das \"Três Ordens\", a doutrina da vocação e o conceito de máscara de Deus, salientando a importância de não confundirmos ou invadirmos os limites das esferas de atuação em que fomos chamados.",
+        "palavras_chave": ["Dois Reinos", "Vocação", "Máscara de Deus", "Multivocacionalidade", "Larvae Dei", "Ética cristã"],
+        "autores_citados": ["Paulo Wille Buss", "A. Stahlhoefer", "John A. Maxfield", "Robert Kolb", "C. L. Nessan", "Karlfried Froehlich", "John T. Pless", "Martinho Lutero", "Wilhelm Wachholz", "James A. Nestingen", "B. T. G. Mayes", "Gustaf Wingren", "Paul G. Alms", "Jean L. Hurd", "Jack Kilcrease", "Gerhard Ebeling", "Philip S. Watson", "Kathryn Kleinhans", "Anthony J. Steinbronn", "Robert Benne", "S. A. Hein", "Martin J. Heinecken"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2021_V81_N2_004",
+        "titulo": "Ensino Confirmatório: Um Estudo Comparativo do Método de Ensino dos Catecismos Proposto por Lutero e Metodologias Contemporâneas",
+        "autor": "Rafael Estevão Pereira Milagres e Anselmo Ernesto Graff",
+        "paginas": { "inicio": 119, "fim": 141 },
+        "resumo": "O presente artigo manifesta uma preocupação eclesiástica quanto à boa formação na fé do povo de Deus e uma discussão a respeito do impacto desta formação - especialmente no \"Ensino Confirmatório\" -, no que diz respeito à permanência dos jovens na igreja. A pesquisa aborda aspectos metodológicos, explorando os modelos comportamentalista e cognitivista, e traça um estudo comparativo com o método de ensino dos catecismos proposto por Lutero. Os resultados indicam que metodologias ativas, que abrangem uma visão ampla do aprendiz, dão grande contribuição ao processo de ensino/aprendizagem.",
+        "palavras_chave": ["Ensino Confirmatório", "Aprendizagem", "Comportamentalista", "Cognitivista", "Catecismo", "Metodologias Ativas"],
+        "autores_citados": ["Nuccio Ordine", "Joseph Chilton Pearce", "Philippe Perrenoud", "Claudino Piletti", "Nelson Piletti", "Martinho Lutero", "James M. Kittelson", "Daison M. Neutzling", "José Alex Soares Santos", "Franco Cambi", "Carlota Boto", "Jean Piaget", "Nelcy T. L. Finck", "Romero Tavares", "Christoph Barnbrock", "Marilze Wischral Rodrigues", "Charles P. Arand", "Husman", "José Luiz de Paiva Bello", "George C. Felten", "Antonio Carlos Gil"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2021_V81_N2_005",
+        "titulo": "O Capelão Como Embaixador de Cristo na Escola: A Capelania Escolar a Serviço da Missão de Deus",
+        "autor": "Jonathan Hoffmann Klippel e Paulo Wille Buss",
+        "paginas": { "inicio": 143, "fim": 162 },
+        "resumo": "O presente artigo trata a respeito da atuação do capelão escolar em seu ofício pastoral de embaixador de Cristo na escola. Constatou-se, através das definições da filosofia cristã-luterana de educação, da capelania escolar e do ofício do ministério, que o capelão é um pastor que representa Jesus Cristo na escola e para a comunidade escolar. O trabalho do capelão deve ser intencional, esforçado em seguir o exemplo do Cristo em todas as áreas de sua atuação, como mediador, mestre e comunicador do amor de Deus no espaço educacional.",
+        "palavras_chave": ["Capelão", "Pastor", "Filosofia cristã-luterana de educação", "Capelania Escolar", "Intencionalidade", "Missão de Deus"],
+        "autores_citados": ["César Nunes", "Martin C. Warth", "Nestor Beck", "Christoph Barnbrock", "Martinho Lutero", "Arno Bessel", "Allan H. Jahsmann", "Vilson Scholz", "Saulo Bledoff", "E. F. Gama", "T. F. Jarra", "Gisleno Gomes de Faria Alves", "Edilson Soares Souza", "Gleyds Silva Domingues", "Célia Marize Bündchen", "Hubert Matte", "Erní Seibert", "Ênio Starosky", "Samuel R. Fuhrmann", "Irma Flor", "Nilza E. B. Leal", "Reginald Heber", "Horst R. Kuchenbecker"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2021_V81_N2_006",
+        "titulo": "Os Artigos de Esmalcalde: Um Testemunho Teológico do Pastor Martinho Lutero",
+        "autor": "Silvio Adolfo Donat e Clóvis Jair Prunzel",
+        "paginas": { "inicio": 73, "fim": 94 },
+        "resumo": "O objetivo deste trabalho é analisar os principais tópicos da teologia de Lutero expressos nos Artigos de Esmalcalde e seu impacto sobre os autores da Fórmula de Concórdia, bem como a relevância desses tópicos na Igreja Confessional Luterana de hoje. Os resultados mostram que os Artigos de Esmalcalde têm uma forte formação pastoral e são de grande ajuda para orientar as congregações em seu trabalho e serviço. O texto explora temas centrais como as Sagradas Escrituras, Solus Christus, Lei e Evangelho e Eclesiologia no contexto da referida confissão.",
+        "palavras_chave": ["Artigos de Esmalcalde", "Lutero", "Justificação pela fé", "Cuidado Pastoral", "Fórmula de Concórdia", "Solus Christus"],
+        "autores_citados": ["Kenneth Hagen", "William R. Russell", "Charles P. Arand", "Robert Kolb", "James A. Nestingen", "Mark U. Edwards Jr.", "Tom G. A. Hardt", "Friedrich Bente", "David J. Zehnder", "Oswald Bayer", "Martinho Lutero", "Mark C. Mattes", "Andrés Meléndez"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2021_V81_N2_007",
+        "titulo": "Os Desigrejados: Um Estudo do Fenômeno e da Influência da Igreja no Aumento do Número de Cristãos sem Vínculo Institucional",
+        "autor": "Gerson Welmer Tetzner e Paulo Moisés Nerbas",
+        "paginas": { "inicio": 17, "fim": 46 },
+        "resumo": "O objetivo deste artigo é analisar o fenômeno dos desigrejados e suas decorrências nas práticas da igreja cristã. A pesquisa revela que os desigrejados não constituem um grupo homogêneo e que os principais motivos para o desligamento institucional incluem abusos cometidos por lideranças, o legalismo e o distanciamento entre discurso e prática. Influências externas como o individualismo crescente e a sociedade de consumo também contribuem para o crescimento do fenômeno. O desafio das igrejas é a quebra de estereótipos e o desenvolvimento de uma práxis baseada no acolhimento e no evangelho de Jesus Cristo.",
+        "palavras_chave": ["Desigrejados", "Igreja Institucional", "Sociedade", "Acolhimento", "Comunhão cristã", "Abuso Espiritual"],
+        "autores_citados": ["Nelson Bomilcar", "John W. Kleinig", "Michael W. Goheen", "Gerson Luís Linden", "Denise dos Santos Rodrigues", "Douglas Alessandro Souza Santos", "Idauro Campos", "Marília de Camargo César", "Augustus Nicodemus Lopes", "Rebecca Ferreira Lobo Andrade Maciel", "Frank A. Viola", "Antônio Flávio Pierucci", "Paulo Rodrigues Romeiro", "Rubem Alves", "William L. Craig", "J. P. Moreland", "Dan Kimball", "Timothy Keller", "Eric Phillips", "Heber Campos Jr.", "Christian Dunker", "Oseias Silva dos Santos", "Victor Vicent Valla", "Israel Belo de Azevedo"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2021_V81_N2_008",
+        "titulo": "Uma Análise Sociológica da Modernidade Líquida e a Aplicabilidade de Elementos Teológicos e Homiléticos de Keller, Kolb e Veith Jr. que Trazem Segurança à Pregação",
+        "autor": "Nilson José Quandt e Vilson Scholz",
+        "paginas": { "inicio": 95, "fim": 117 },
+        "resumo": "A pesquisa estuda a aplicabilidade de elementos teológicos e homiléticos de Gene Edward Veith Jr., Robert Kolb e do pastor Timothy Keller para a pregação do evangelho na modernidade líquida, conceito sociológico de Zygmunt Bauman. Em um contexto marcado por fluidez, leveza, insegurança, medos e incertezas, a Palavra de Deus se destaca como algo sólido e permanente. A pesquisa explora como o pregador, conhecendo seu tempo e ouvintes e mantendo a fidelidade às Escrituras, pode transformar histórias e informações bíblicas em fontes perenes de esperança e confiança.",
+        "palavras_chave": ["Modernidade líquida", "Zygmunt Bauman", "Pregador", "Pregação", "Evangelho", "Homilética", "Linguagem"],
+        "autores_citados": ["Zygmunt Bauman", "Timothy Keller", "Robert Kolb", "Gene Edward Veith Jr.", "Luiz Felipe Pondé", "Carl R. Trueman", "Ely Prieto", "Antônio Vieira", "L'ubomír Batka", "Irene Dingel"],
+        "url_acesso": "",
+        "url_capa": ""
+      }
+    ]
+  },
+  {
+    "revista": "Igreja Luterana",
+    "edicao": { "ano": 2022, "volume": 82, "numero": 1 },
+    "artigos": [
+      {
+        "id": "RL_2022_V82_N1_001",
+        "titulo": "Palavra ao Leitor: Formas de Culto Tradicionais, Adaptações Contemporâneas e o seu Ponto Decisivo: Uma Reflexão sobre a Prática, Conhecimento, Experiência, Conservadorismo e Liberalismo",
+        "autor": "Anselmo Ernesto Graff",
+        "paginas": { "inicio": 11, "fim": 25 },
+        "resumo": "O editorial propõe refletir se é possível adaptar o culto litúrgico luterano a contextos culturais contemporâneos e, ao mesmo tempo, ser fiel à teologia bíblica e às Confissões Luteranas. O texto debate a tensão entre posições conservadoras e liberais, abordando conceitos de prática, conhecimento e experiência para encontrar o ponto decisivo na elaboração e uso de liturgias.",
+        "palavras_chave": ["Culto tradicional", "Adaptações contemporâneas", "Conservadorismo", "Liberalismo", "Liturgia Luterana", "Editorial"],
+        "autores_citados": ["Edgar Morin", "John Theodore Mueller", "Antônio Nóvoa", "Francis Pieper", "Boaventura de Sousa Santos", "Yves Schwartz", "Roger Scruton"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2022_V82_N1_002",
+        "titulo": "A Liturgia Tradicional num Mundo de Sensibilidade Pós-Colonial",
+        "autor": "Christian Hoffmann",
+        "paginas": { "inicio": 27, "fim": 42 },
+        "resumo": "O artigo defende que a liturgia tradicional de um culto luterano é uma rica herança de mais de 1.400 anos que não pode ser desperdiçada, sendo fundamental para criar identidade. No entanto, alerta que a liturgia perde sua eficácia quando se transforma em mera repetição de fórmulas. O autor desafia pastores e equipes litúrgicas a investirem na preparação do culto para garantir que a comunicação do evangelho alcance os receptores no contexto pós-colonial.",
+        "palavras_chave": ["Liturgia Tradicional", "Pós-colonialismo", "Culto cristão", "Comunicação", "Identidade"],
+        "autores_citados": ["J. J. Von Allmen", "Paulo Wille Buss", "Justo L. Gonzalez", "David Karnopp", "Arthur Just", "Vilson Scholz", "Arnaldo Schmidt"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2022_V82_N1_003",
+        "titulo": "Evitando Uma Guerra: Convergência e Inculturação como Pontes nos Movimentos Litúrgicos da IELB",
+        "autor": "Mário Rafael Yudi Fukue",
+        "paginas": { "inicio": 43, "fim": 56 },
+        "resumo": "O artigo analisa a convergência e inculturação como pontes nos movimentos litúrgicos da Igreja Evangélica Luterana do Brasil (IELB). Mesmo sem organização oficial, movimentos litúrgicos surgem espontaneamente e enfrentam o desafio de evitar conflitos litúrgico-teológicos. Baseado no conceito de inculturação, propõe-se uma teologia de convergência para tecer pontes que fomentem o diálogo e a cooperação.",
+        "palavras_chave": ["Culto", "Liturgia", "Convergência", "Inculturação"],
+        "autores_citados": ["Lesslie Newbigin", "Friedrich Nietzsche", "Marshall T. Poe", "Joel P. Okamoto", "Ely Prieto", "Oscar Lehenbauer", "Leopold A. Sanchez", "James Marriott"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2022_V82_N1_004",
+        "titulo": "Culto Luterano e Choque Cultural: A Partir de uma Experiência Pessoal",
+        "autor": "Carlos Walter Winterle",
+        "paginas": { "inicio": 57, "fim": 72 },
+        "resumo": "A partir da experiência adquirida em 50 anos de ministério em diferentes culturas (Brasil, Quênia, África do Sul e Moçambique), o autor analisa como a estrutura litúrgica da Igreja Luterana ajuda no contexto missionário/evangelístico. O texto reflete sobre o declínio no hemisfério norte em contraste com o crescimento na África e Brasil, incentivando o uso de um culto litúrgico organizado e cheio de conteúdo salvífico.",
+        "palavras_chave": ["Tradição", "Instrução", "Proclamação", "Missão", "Choque cultural"],
+        "autores_citados": [],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2022_V82_N1_005",
+        "titulo": "Liturgia Histórica e Liturgia Contemporânea - História e Teologia: Limites e Possibilidades",
+        "autor": "Filipe Schneider e Clóvis Jair Prunzel",
+        "paginas": { "inicio": 73, "fim": 96 },
+        "resumo": "Reflete sobre os aspectos teológicos da liturgia luterana tradicional e os limites e possibilidades na elaboração de liturgias contemporâneas. A pesquisa observa que a liturgia luterana possui características essenciais que devem ser preservadas ao se produzir novas liturgias, mantendo a identidade e a confessionalidade na adoração do povo de Deus.",
+        "palavras_chave": ["Liturgia", "Identidade", "Culto", "Renovação", "Tradição"],
+        "autores_citados": ["Arthur A. Just", "Maxwell E. Johnson", "David Karnopp", "Martinho Lutero", "John T. Pless"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2022_V82_N1_006",
+        "titulo": "Lutero e o Culto",
+        "autor": "Eduvino Krause Filho",
+        "paginas": { "inicio": 97, "fim": 118 },
+        "resumo": "Analisa o desenvolvimento do culto ou da missa a partir do contexto teológico medieval e a formação de Lutero. Demonstra a evolução do conceito de culto como sacrifício humano para culto como obra de Deus. Destaca o papel central da pregação, a manutenção básica da estrutura da igreja primitiva, o uso de hinologia com conteúdo bíblico e a noção do sacerdócio de todos os crentes.",
+        "palavras_chave": ["Culto", "Liturgia", "Reforma", "Pregação da Palavra", "Liberdade Cristã"],
+        "autores_citados": ["Clóvis Jair Prunzel", "Herman Sasse", "Claus Schwambach", "Christopher Spehr", "Martin Weingaertner"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2022_V82_N1_007",
+        "titulo": "As Cerimônias nas Confissões Luteranas",
+        "autor": "Fernando Ellwanger Garske",
+        "paginas": { "inicio": 157, "fim": 172 },
+        "resumo": "Observa a posição dos primeiros confessores luteranos sobre o uso das cerimônias na igreja e os critérios para aprovar ou desaprovar seu uso, comparando-os com a teologia romana. Baseado no Livro de Concórdia, o artigo demonstra que o uso de qualquer cerimônia deve estar sujeito à correta compreensão da doutrina da justificação pela fé.",
+        "palavras_chave": ["Confissões Luteranas", "Cerimônias", "Reverência", "Justificação pela fé"],
+        "autores_citados": ["James Leonard Brauer", "Martinho Lutero"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2022_V82_N1_008",
+        "titulo": "Cuidados Quanto à Celebração da Santa Ceia",
+        "autor": "Congregação de Professores - Seminário Concórdia",
+        "paginas": { "inicio": 181, "fim": 186 },
+        "resumo": "Documento elaborado pela Congregação de Professores do Seminário Concórdia com apontamentos práticos e teológicos sobre a administração da Santa Ceia. O texto orienta sobre as 'Verba Testamenti', o limite da consagração, o descarte adequado dos elementos que sobram e o zelo com os cálices e utensílios, destacando a reverência devida ao corpo e sangue de Cristo.",
+        "palavras_chave": ["Santa Ceia", "Celebração", "Sacramento", "Teologia Prática", "Elementos Consagrados"],
+        "autores_citados": ["Martinho Lutero", "Simão Wolferinus"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2022_V82_N1_009",
+        "titulo": "A Missão Luso-Brasileira em Lagoa Vermelha: Local do \"Embrião\" do Hinário Luterano",
+        "autor": "David Karnopp",
+        "paginas": { "inicio": 187, "fim": 202 },
+        "resumo": "Trata do surgimento da primeira missão em língua portuguesa do Sínodo Evangélico Luterano, em Lagoa Vermelha, e o contexto social, educacional e político. Nessa missão, nasceu a obra 'Hymnos e Orações', que se tornaria o embrião do Hinário Luterano oficial do Brasil, cujo centenário foi celebrado recentemente.",
+        "palavras_chave": ["Hinário", "Hinário Luterano", "História de Lagoa Vermelha", "História da IELB"],
+        "autores_citados": ["Rodolpho Hasse", "Nilo Wachholz"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2022_V82_N1_010",
+        "titulo": "Lutero, Calvino e Zwínglio: Um Estudo Comparativo Sobre a Utilização da Música no Culto na Visão dos Três Reformadores",
+        "autor": "Raul Blum",
+        "paginas": { "inicio": 215, "fim": 238 },
+        "resumo": "O canto do povo de Deus é característico da igreja cristã. Durante a Idade Média, o canto congregacional foi quase eliminado. Na Reforma, ele foi retomado, mas os reformadores Lutero, Zwínglio e Calvino tiveram visões teológicas diferentes sobre a utilização e a liberdade musical no culto. O artigo apresenta as convergências e discordâncias entre os três.",
+        "palavras_chave": ["Lutero", "Zwínglio", "Calvino", "Canto congregacional", "Canto a cappella", "Canto em coro"],
+        "autores_citados": ["Martinho Lutero"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2022_V82_N1_011",
+        "titulo": "O Hinário Luterano e Suas Fases de Desenvolvimento: A História do Hinário Luterano na Ótica do Mensageiro Luterano",
+        "autor": "Ezequiel Blum",
+        "paginas": { "inicio": 199, "fim": 213 },
+        "resumo": "Este artigo pretende contar sobre a formação do Hinário Luterano, principal hinário da Igreja Evangélica Luterana do Brasil (IELB). Para tanto, utilizaram-se como fontes de pesquisa as publicações do Mensageiro Luterano, revista oficial desta mesma igreja. O Mensageiro Luterano teve sua primeira edição no ano de 1917, sendo veiculado até os dias de hoje. Por estar presente em boa parte da história da IELB, esta revista também ofereceu destaque a respeito da formação do Hinário Luterano, considerado obra de fundamental importância para o uso nos cultos desta igreja. Neste trabalho, destaca-se a preocupação que esta igreja sempre teve em proclamar a Palavra de Deus através da música. A finalidade desta pesquisa, então, foi identificar, através da revista, informações publicadas sobre o caminho percorrido na edição de hinários da igreja até chegarmos à obra atual.",
+        "palavras_chave": ["Música", "Culto", "Liturgia", "Tradicional", "Hinário Luterano", "Conteúdo", "Doutrina", "Igreja Evangélica Luterana do Brasil (IELB)", "Mensageiro Luterano"],
+        "autores_citados": ["Ezequiel Blum", "Arno C. Gueths", "Martinho Luthero Hasse", "A. Hoffmann", "Dieter Joel Jagnow", "Martinho Krebs", "H. G. Rottmann"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2022_V82_N1_012",
+        "titulo": "O Que Não Deve Faltar na Liturgia Dominical: Um Estudo a Partir das Origens do Culto Cristão",
+        "autor": "Paulo Gerhard Pietzsch",
+        "paginas": { "inicio": 57, "fim": 77 },
+        "resumo": "Em tempos de \"polarização litúrgica\", há por um lado, oficiantes do culto cristão que insistem em manter literalmente a tradição e a herança litúrgica sem qualquer preocupação com a sua atualização. Há também, por outro lado, um número crescente de adeptos de uma \"liturgia livre\", sem tradições e sem estruturas pré-estabelecidas. Estes tendem, até mesmo, a uma postura iconoclasta, que procura a eliminação de símbolos litúrgicos do ambiente dedicado ao culto. A presente pesquisa visa auxiliar a ambos os grupos, trazendo propostas de equilíbrio entre o antigo e o novo, entre os elementos imprescindíveis das origens do culto cristão e a livre expressão do louvor. O escopo deste artigo é apresentar quais são, de acordo com os liturgistas (estudiosos da liturgia), os elementos imprescindíveis e originais do culto cristão, quais são os elementos apenas úteis dessa estrutura e, até mesmo, partes consideradas por muitos como dispensáveis. A partir do conhecimento histórico, teológico, confessional, simbólico e prático das estruturas das origens do culto cristão, o presente trabalho apresenta o conceito \"moldar liturgia\" como via alternativa, que ajudará a todo oficiante da liturgia a cumprir a sua função com equilíbrio e criatividade.",
+        "palavras_chave": ["Culto cristão", "Liturgia", "Polarização", "Elementos imprescindíveis", "Origens"],
+        "autores_citados": ["Jean Jacques von Allmen", "Alberto Beckhäuser", "Nilo Belotto", "Karl-Heinrich Bieritz", "Eugene L. Brand", "Peter Brunner", "Raymond Leo Burke", "Oscar Cullmann", "D. Gregory Dix", "Werner Elert", "Charles J. Evanson", "Josef A. Jungmann", "Justino", "Nelson Kirst", "Oscar Lehenbauer", "Martinho Lutero", "Paulo Gerhard Pietzsch", "Luther D. Reed", "Sissi Georg Rieff", "Johannes H. Rottmann", "Domenico Sartore", "Sebastião Armando Gameleira Soares", "James White"],
+        "url_acesso": "",
+        "url_capa": ""
+      }
+    ]
+  },
+  {
+    "revista": "Igreja Luterana",
+    "edicao": { "ano": 2020, "volume": 80, "numero": 2 },
+    "artigos": [
+      {
+        "id": "RL_2020_V80_N2_001",
+        "titulo": "Palavra ao Leitor: Um Pouco de Passado, Um Pouco de Presente, Um Pouco de Futuro",
+        "autor": "Anselmo Ernesto Graff",
+        "paginas": { "inicio": 7, "fim": 10 },
+        "resumo": "O editorial reflete sobre a importância da história, fazendo alusão aos 80 anos do periódico, que iniciou em 1940 como Revista Técnica Teológica-Pedagógica. O autor exalta os benefícios da história com base em Descartes e Lutero, propondo um resgate do passado para julgar o presente e projetar o futuro, sem perder de vista as Escrituras Sagradas e a vida real do povo de Deus.",
+        "palavras_chave": ["História", "Revista Igreja Luterana", "Editorial", "Passado", "Educação Teológica"],
+        "autores_citados": ["Clóvis Renato Blank", "Anselmo Ernesto Graff", "Edward Farley", "Martinho Lutero", "René Descartes"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2020_V80_N2_002",
+        "titulo": "Revista Igreja Luterana – Uma Constituição Histórica do Periódico de Teologia do Seminário Concórdia",
+        "autor": "Patrícia Weiduschadt e Clóvis Renato Leitzke Blank",
+        "paginas": { "inicio": 11, "fim": 30 },
+        "resumo": "O objeto de estudo do presente artigo é a descrição histórica de como iniciou a Revista Igreja Luterana, publicação produzida pelo Seminário Concórdia. Investigou-se o histórico de duas revistas precursoras, Unsere Schule (1933-1934) e Wacht und Weide (1936-1939), analisando as continuidades e descontinuidades na proposta deste periódico ao longo dos anos.",
+        "palavras_chave": ["Revista Igreja Luterana", "História da Educação", "Seminário Concórdia", "Unsere Schule", "Wacht und Weide"],
+        "autores_citados": ["Luiz Henrique Ferraz Pereira", "Claudemir Quadros", "Elomar Calegaro Tambara", "Maria Helena Camara Bastos", "Carlos Henrique Warth", "Patrícia Weiduschadt"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2020_V80_N2_003",
+        "titulo": "A Pedagogia de Lutero Presente em Cartilhas Escolares em Língua Alemã Produzidas por Sínodos Luteranos no RS",
+        "autor": "Elias Kruger Albrecht e Patrícia Weiduschadt",
+        "paginas": { "inicio": 31, "fim": 54 },
+        "resumo": "Este artigo tem como objetivo compreender o campo educacional dos sínodos luteranos de Missouri e evangélico Rio-Grandense, a partir da análise de quatro cartilhas escolares produzidas em língua alemã nas primeiras décadas do século XX. Com base nos discursos de Martinho Lutero direcionados à escolarização, percebe-se a relevância dada por estas instituições aos ideais luteranos em suas produções didáticas comunitárias.",
+        "palavras_chave": ["Pedagogia de Lutero", "Cartilhas escolares", "Educação Luterana", "Sínodo de Missouri", "História da Educação"],
+        "autores_citados": ["Carmo Thum", "Patrícia Weiduschadt", "Leopoldo Wille", "Kathryn Woodward", "Tomaz Tadeu da Silva", "Martinho Lutero"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2020_V80_N2_004",
+        "titulo": "\"A Igreja Está na Pós-Modernidade\": Em Direção a Uma Resposta Luterana ao Relativismo Ético",
+        "autor": "Samuel R. Fuhrmann",
+        "paginas": { "inicio": 55, "fim": 82 },
+        "resumo": "Este artigo visa contribuir para a reflexão sobre ética no Brasil em perspectiva teológica. Busca entender uma forma de relativismo ético presente no contexto brasileiro, avaliar esse tipo de relativismo e dar um primeiro passo em direção a uma resposta prática a partir da teologia luterana, baseada na lei natural e na explicação dos Dez Mandamentos de Lutero.",
+        "palavras_chave": ["Relativismo ético", "Dez Mandamentos", "Lei de Deus", "Formação Cristã", "Pós-Modernidade"],
+        "autores_citados": ["Mário Sérgio Cortella", "Clóvis de Barros Filho", "Robert Eaglestone", "James Hunter", "Robert Kolb", "Charles P. Arand", "Martinho Lutero", "Gilbert Meilaender", "Richard Niebuhr", "Richard Osmer"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2020_V80_N2_005",
+        "titulo": "Confessando Cristo Após a Morte de Deus",
+        "autor": "Alan Diego Fürst",
+        "paginas": { "inicio": 83, "fim": 106 },
+        "resumo": "O artigo apresenta observações referentes às mudanças culturais e sociais trazidas pela Modernidade, considerando como influenciaram a prática da confissão de fé da igreja cristã. A análise do filósofo Friedrich Nietzsche (\"Deus está morto\") é identificada como essencial para entender o contexto atual, e a lente filosófica da \"política cultural\" de Richard Rorty é oferecida como uma forma de a igreja retornar à postura de confissão de fé.",
+        "palavras_chave": ["Confissão de fé", "Morte de Deus", "Modernidade", "Friedrich Nietzsche", "Política Cultural", "Richard Rorty"],
+        "autores_citados": ["Robert Kolb", "Timothy J. Wengert", "Karl Löwith", "Susan Neiman", "Joel P. Okamoto", "Richard Rorty", "Friedrich Nietzsche"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2020_V80_N2_006",
+        "titulo": "Arrependimento e Fé: Será Que os Luteranos Realmente Se Livraram das Obras Meritórias?",
+        "autor": "Charles Samuel Voigt Ledebuhr e Clóvis Jair Prunzel",
+        "paginas": { "inicio": 107, "fim": 132 },
+        "resumo": "Investiga formas adequadas de ensinar e pregar sobre arrependimento e fé, de modo a não dar a entender que são obras meritórias para a salvação, nem negar o envolvimento do ser humano nessas ações. A fé pode ser descrita como um relacionamento/estado, e o arrependimento como um estado/ritmo de vida do crente que é, simultaneamente, justo e pecador.",
+        "palavras_chave": ["Arrependimento", "Fé", "Obras Meritórias", "Simul justus et peccator", "Confissões Luteranas"],
+        "autores_citados": ["Peter Preus", "Robert Preus", "Acir Raymann", "Martim Carlos Warth", "Heinrich Schmid", "Walter Steele", "C. F. W. Walther", "Timothy J. Wengert"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2020_V80_N2_007",
+        "titulo": "O Ensino Cristão Para Crianças de 3 a 7 Anos na Escola Bíblica: Um Diálogo Entre a Teologia e a Pedagogia à Luz das Fases do Desenvolvimento Humano",
+        "autor": "Dion Albach e Anselmo Ernesto Graff",
+        "paginas": { "inicio": 133, "fim": 160 },
+        "resumo": "O artigo foca no desenvolvimento humano dos três aos sete anos e suas implicações no ensino cristão na escola bíblica infantil. Aborda a preparação do professor, ressaltando a necessidade do conhecimento bíblico-teológico em diálogo com a pedagogia, especificamente à luz da teoria do desenvolvimento cognitivo de Jean Piaget, para melhorar o processo de ensino-aprendizagem das crianças.",
+        "palavras_chave": ["Ensino Cristão", "Escola Bíblica Infantil", "Desenvolvimento Humano", "Jean Piaget", "Pedagogia"],
+        "autores_citados": ["Jean Piaget", "Jacques Marie Pohier", "Bruno E. Ries", "Marilze W. Rodrigues", "Egon Martim Seibert"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2020_V80_N2_008",
+        "titulo": "Perdoar: Saúde Para a Alma, Saúde Para o Corpo",
+        "autor": "Tiago André Krüger e Anselmo Ernesto Graff",
+        "paginas": { "inicio": 161, "fim": 184 },
+        "resumo": "Apresenta uma discussão teológica e interdisciplinar sobre a relação entre perdão e saúde, refletindo sobre os benefícios físicos e espirituais do ato de perdoar. A pesquisa aponta que conflitos emocionais não resolvidos adoecem o corpo e que a medicina tem atestado os efeitos benéficos do perdão, confirmando a verdade libertadora do perdão concedido por Deus em Jesus Cristo.",
+        "palavras_chave": ["Perdão", "Saúde Integral", "Alma e Corpo", "Cuidado Pastoral", "Medicina", "Ressentimento"],
+        "autores_citados": ["Fernando A. Lucchese", "Mauro R. N. Pontes", "Alvaro M. Rösler", "Martinho Lutero", "Alan Pieratt", "J. A. O. Preus", "Clóvis Jair Prunzel", "Paul Ricoeur", "Betty Tapscott"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2020_V80_N2_009",
+        "titulo": "Recomendo: Escatologia - La Esperanza Cristiana",
+        "autor": "Gerson Luis Linden",
+        "paginas": { "inicio": 199, "fim": 201 },
+        "resumo": "Resenha do livro 'Escatologia – La Esperanza Cristiana', do Dr. Leopoldo Sánchez. A resenha destaca a obra por sua abordagem solidamente cristológica, trinitária, bíblica e pastoral, evitando especulações desnecessárias. O livro foca a esperança cristã firmemente na pessoa e na obra de Jesus Cristo, ancorando o tema também ao contexto teológico hispânico e latino-americano.",
+        "palavras_chave": ["Resenha", "Escatologia", "Esperança Cristã", "Leopoldo Sánchez", "Teologia Sistemática"],
+        "autores_citados": ["Leopoldo Sánchez"],
+        "url_acesso": "",
+        "url_capa": ""
+      }
+    ]
+  },
+  {
+    "revista": "Igreja Luterana",
+    "edicao": { "ano": 2020, "volume": 80, "numero": 1 },
+    "artigos": [
+      {
+        "id": "RL_2020_V80_N1_001",
+        "titulo": "Palavra ao Leitor: Coisas Boas e Coisas Ruins Globalizam",
+        "autor": "Anselmo Ernesto Graff",
+        "paginas": { "inicio": 7, "fim": 10 },
+        "resumo": "Editorial escrito no início da pandemia da Covid-19. O autor reflete sobre a globalização tanto de coisas boas quanto ruins, utilizando passagens do livro de Eclesiastes para destacar as incertezas da vida e a sabedoria de confiar nos cuidados do Pai Celestial perante a adversidade. Também apresenta o contexto desta edição especial, fruto da 7ª Conferência Mundial de Seminários do Conselho Luterano Internacional nas Filipinas.",
+        "palavras_chave": ["Editorial", "Covid-19", "Globalização", "Eclesiastes", "Adversidade"],
+        "autores_citados": ["Gaston Bachelard", "Clóvis Renato Leitzke Blank", "James Bollhagen", "Erich Fromm", "Martinho Lutero"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2020_V80_N1_002",
+        "titulo": "Identidade Eclesial Luterana e a Missão da Igreja Diante da Realidade das Favelas",
+        "autor": "Samuel R. Fuhrmann",
+        "paginas": { "inicio": 11, "fim": 38 },
+        "resumo": "Aborda o desafio da IELB em realizar missão em áreas urbanas complexas, especificamente nas favelas do Brasil. Oferece uma visão integrada da teologia de Lutero sobre os dois tipos de justiça e o Credo Apostólico para fundamentar uma missiologia urbana relevante e contextualizada, combatendo a mentalidade de autopreservação histórica da denominação.",
+        "palavras_chave": ["Identidade Eclesial", "Missão", "Favelas", "Missiologia Urbana", "Dois Tipos de Justiça"],
+        "autores_citados": ["Ruben George Oliven", "Mario Rehfeldt", "Ricardo Willy Rieth", "Klaus Detlev Schulz", "Jailson de Souza e Silva", "Jorge Luiz Barbosa", "August R. Swelflow", "Robert Kolb", "Timothy J. Wengert"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2020_V80_N1_003",
+        "titulo": "Identidade Luterana no Contexto Pós-Cristão",
+        "autor": "Christoph Barnbrock",
+        "paginas": { "inicio": 39, "fim": 54 },
+        "resumo": "Reflexão sobre a manutenção da identidade luterana num contexto onde a cristandade está em franco declínio numérico, usando a secularização do contexto alemão como ponto de partida. O autor lembra que a verdadeira identidade de um crente provém do Batismo e é moldada exclusivamente por Cristo, sendo a identidade denominacional institucional secundária a essa realidade fundamental.",
+        "palavras_chave": ["Identidade Luterana", "Contexto Pós-Cristão", "Secularização", "Batismo"],
+        "autores_citados": ["Heinz Abels", "Thomas Bauer", "Oswald Bayer", "Ulrich Beck", "Armin Nassehi", "Hartmut Rosa"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2020_V80_N1_004",
+        "titulo": "Migração e Missão",
+        "autor": "Douglas Rutt (Tradução: Alexandre Vieira)",
+        "paginas": { "inicio": 55, "fim": 72 },
+        "resumo": "O artigo explora o impacto das imensas migrações globais contemporâneas na difusão do cristianismo. Destaca que, apesar de as migrações nascerem muitas vezes de crises geopolíticas e perseguições, elas criam oportunidades missionárias sem precedentes, exigindo pesquisa histórica, empírica e teológica profunda sobre o papel missionário passivo e ativo dos imigrantes e estudantes internacionais.",
+        "palavras_chave": ["Migração", "Missão", "Globalização", "Cristianismo Mundial", "Missiologia"],
+        "autores_citados": ["Samuel Escobar", "Jehu J. Hanciles", "Kari Storstein Haug"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2020_V80_N1_005",
+        "titulo": "Não Mais Casados, Mas Ainda Comprometidos: O Papel da Igreja Face à Decrescente Influência Cristã",
+        "autor": "Joel Biermann",
+        "paginas": { "inicio": 73, "fim": 96 },
+        "resumo": "O ensaio analisa a decrescente influência cristã e o avanço da secularização nos Estados Unidos. Utilizando visões clássicas como a de Tocqueville e dados estatísticos modernos, o autor debate como a igreja deve agir (e resistir) numa sociedade onde já não detém o poder cultural de outrora, sugerindo que os cristãos voltem a atuar biblicamente como \"estrangeiros e residentes\".",
+        "palavras_chave": ["Influência Cristã", "Secularização", "Estados Unidos", "Igreja e Sociedade", "Pós-Modernidade"],
+        "autores_citados": ["Dietrich Bonhoeffer", "Alexis de Tocqueville", "Patrick Deneen", "Rod Dreher", "Hubert Dreyfus", "Sean Dorrance Kelly", "James C. Edwards", "Stanley Hauerwas", "William Willimon", "James Davison Hunter", "Thomas Jefferson"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2020_V80_N1_006",
+        "titulo": "O Currículo Teológico e sua Construção: Aspectos Verticais e Horizontais",
+        "autor": "Anselmo Ernesto Graff",
+        "paginas": { "inicio": 97, "fim": 118 },
+        "resumo": "Examina a construção de um currículo de teologia tendo como base o perfil desejado do futuro pastor luterano. O artigo procura conciliar a dimensão \"vertical\" (o chamamento e os dons divinos) com a dimensão \"horizontal\" (a responsabilidade humana e o planeamento curricular), propondo reuniões colaborativas, formação docente continuada e métodos pedagógicos claros nos seminários.",
+        "palavras_chave": ["Currículo Teológico", "Educação Teológica", "Formação Pastoral", "Pedagogia", "Seminários"],
+        "autores_citados": ["Martinho Lutero", "Nilton José Machado", "Philippe Perrenoud", "Maurice Tardif", "Monica Gather Thurler"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2020_V80_N1_007",
+        "titulo": "A Confissão é Crucial e o Contexto é Importante",
+        "autor": "Werner Klän (Tradução: Gerson Luís Linden)",
+        "paginas": { "inicio": 119, "fim": 132 },
+        "resumo": "Destaca a importância central da igreja e da comunidade na fé de Lutero, em oposição a uma piedade estritamente individual ou atomizada. O autor afirma que a confissão luterana é inerentemente ecumênica (como evidenciado pela adoção dos três Credos Católicos Antigos) e demonstra que a ortodoxia confessional deve ser sempre articulada com profunda responsabilidade teológica para cada contexto cultural específico.",
+        "palavras_chave": ["Confissão", "Contexto", "Ecumenismo", "Identidade Luterana", "Credos Antigos"],
+        "autores_citados": ["Werner Klän", "Hermann Sasse", "Klaus Detlev Schulz", "Notger Slenczka", "Charles Taylor", "Nelson Umwene"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2020_V80_N1_008",
+        "titulo": "Batalha Espiritual Numa Perspectiva Luterana",
+        "autor": "Nicholas Salifu (Tradução: Charles Ledebuhr)",
+        "paginas": { "inicio": 133, "fim": 156 },
+        "resumo": "O autor apresenta o contexto africano, especificamente em Gana, onde existe uma crença generalizada no poder da feitiçaria, deuses menores, maldições e animismo. A partir dessa realidade missionária extrema, o artigo desenvolve e discute o papel da igreja cristã em fornecer uma resposta teológica luterana sobre batalhas espirituais (Anfechtung), focando no imenso consolo e vitória de Cristo sobre as forças demoníacas.",
+        "palavras_chave": ["Batalha Espiritual", "Gana", "Animismo", "Missão Africana", "Demônios", "Anfechtung"],
+        "autores_citados": ["Paul E. Kretzmann", "Samuel Waje Kunhiyop", "Peter Leithart", "Martinho Lutero", "Wilbur O'Donovan", "Edmund Schlink", "Alvin J. Schmidt", "Eugene L. Smith", "Philip M. Steyne", "Basil Studer", "Theodore G. Tappert"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2020_V80_N1_009",
+        "titulo": "Cristologia na Ásia: Principais Tendências da Reflexão Cristológica a Partir de um Contexto Indiano",
+        "autor": "Sam Thompson",
+        "paginas": { "inicio": 157, "fim": 182 },
+        "resumo": "O artigo analisa a história da reflexão cristológica na Ásia, iniciando por lembrar que o próprio cristianismo é uma religião de origem asiática. Em seguida, explora extensamente como o desafiante contexto asiático contemporâneo — marcado pelo pluralismo e por sociedades multirreligiosas — influencia a forma de se fazer teologia apologética e confessar a singularidade de Jesus Cristo na Índia e em outras nações.",
+        "palavras_chave": ["Cristologia", "Ásia", "Índia", "Teologia Contextual", "Missão", "Pluralismo Religioso"],
+        "autores_citados": ["H. E. W. Turner", "John H. Leith", "Geddes Macgregor", "Berard Marthaler", "A.P. Nirmal", "Gerald O'Collins", "Stanley J. Samartha", "David M. Thompson", "Emilianos Timiadis", "John Parratt", "Peter C. Phan"],
+        "url_acesso": "",
+        "url_capa": ""
+      }
+    ]
+  },
+  {
+    "revista": "Igreja Luterana",
+    "edicao": { "ano": 2021, "volume": 81, "numero": 1 },
+    "artigos": [
+      {
+        "id": "RL_2021_V81_N1_001",
+        "titulo": "Palavra ao Leitor: Na Companhia do Bom Pastor, no Vale da Sombra da Morte da Covid-19",
+        "autor": "Anselmo Ernesto Graff",
+        "paginas": { "inicio": 5, "fim": 11 },
+        "resumo": "Editorial escrito sob o impacto da pandemia da Covid-19. O autor reflete sobre a realidade da morte e do luto que, outrora mascarados pela modernidade laica, voltaram à agenda global de forma drástica. Destaca o consolo de caminhar no vale da sombra da morte sob a proteção do Bom Pastor e introduz os diversos artigos desta edição, que abordam desde o diaconato e a pregação até o racismo e a biotecnologia.",
+        "palavras_chave": ["Covid-19", "Morte", "Luto", "Bom Pastor", "Editorial"],
+        "autores_citados": ["Edgar Morin", "José Luis Cordeiro", "David Wood", "Peter C. Craigie", "Luc Ferry", "John E. Hartley", "Robert Kolb"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2021_V81_N1_002",
+        "titulo": "O Diaconato na IELB: Uma Avaliação a Partir do Novo Testamento e de Experiências do Luteranismo Confessional",
+        "autor": "Dionatan Ferreira e Gerson Luís Linden",
+        "paginas": { "inicio": 13, "fim": 38 },
+        "resumo": "A pesquisa procura entender o diaconato na Igreja Evangélica Luterana do Brasil (IELB) a partir de leituras do Novo Testamento e de experiências no luteranismo confessional. O estudo busca subsídios sobre a instituição e as funções do diaconato, verificando como ele foi percebido historicamente. Conclui-se que o diaconato é uma das facetas do ministério pastoral, diferenciando-se da diaconia, que é o serviço multiforme nascido da fé em Cristo.",
+        "palavras_chave": ["Diaconato", "Diaconia", "Ministério Pastoral", "Novo Testamento", "Luteranismo Confessional"],
+        "autores_citados": ["Wilhelm Löhe", "Johannes P. Louw", "Eugene A. Nida", "Martinho Lutero", "W. Shawn McKnight", "Johannes Munck", "Annette Noller", "Jeannine E. Olson"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2021_V81_N1_003",
+        "titulo": "A Doutrina Confessional Luterana da Igreja e do Santo Ofício do Ministério: Apontamentos",
+        "autor": "Moacyr Alves Junior e Gerson Luís Linden",
+        "paginas": { "inicio": 39, "fim": 62 },
+        "resumo": "Exposição da doutrina confessional luterana acerca da igreja e do santo ofício do ministério. Através do conflito histórico entre C.F.W. Walther e Wilhelm Löhe, o artigo busca compreender o relacionamento entre a comunidade de fé e o ministério pastoral. A ênfase recai sobre as Confissões Luteranas e dogmáticos clássicos, observando que a teologia luterana foca fortemente na essência do Evangelho e na correta administração dos Sacramentos.",
+        "palavras_chave": ["Igreja", "Santo Ofício do Ministério", "Confissões Luteranas", "C. F. W. Walther", "Wilhelm Löhe"],
+        "autores_citados": ["Arnaldo Schüller", "Nicolai Selnecceri", "August Vilmar", "C. F. W. Walther"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2021_V81_N1_004",
+        "titulo": "A Distinção Entre Informação e Proclamação na Pregação: Reflexões Sobre a Pregação Querigmática",
+        "autor": "Matheus Schmidt e Samuel Fuhrmann",
+        "paginas": { "inicio": 63, "fim": 84 },
+        "resumo": "O artigo contribui para a reflexão homilética da IELB face aos desafios das mudanças na cultura de comunicação. Baseando-se na 'Pregação Querigmática' e tendo como ponto de partida a tese 13 de Walther, destaca a diferença vital entre transmitir informações bíblicas (falar sobre assuntos) e proclamar Jesus Cristo (declarar as promessas de Deus na vida dos ouvintes).",
+        "palavras_chave": ["Pregação Querigmática", "Homilética", "Informação", "Proclamação", "Comunicação"],
+        "autores_citados": ["Martinho Lutero", "David Peter", "Ely Prieto", "Justin P. Rossow", "David Schmitt", "Robert C. Schultz", "Gene Edward Veith"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2021_V81_N1_005",
+        "titulo": "Racismo, Dignidade Humana e Direitos Humanos",
+        "autor": "Maycon Emmanuel de Matos Oliveira e Clóvis Jair Prunzel",
+        "paginas": { "inicio": 85, "fim": 110 },
+        "resumo": "O artigo discute o conceito de racismo e as suas implicações na sociedade e no âmbito eclesial. O foco recai sobre a dignidade humana, vista como intrínseca ao ser humano por ser criatura de Deus. Aborda o tema a partir da bioética, da hermenêutica bíblica e do posicionamento da Igreja Luterana, questionando a legitimidade de qualquer atitude racista perante a ética cristã.",
+        "palavras_chave": ["Racismo", "Dignidade Humana", "Direitos Humanos", "Bioética", "Ética Cristã"],
+        "autores_citados": ["Peter Theodore Nash", "Paulo Moisés Nerbas", "Ziraldo Alves Pinto", "Leopoldo Sánchez", "Simone Maria de Souza", "Maria de Fátima Gomes de Lucena"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2021_V81_N1_006",
+        "titulo": "Biotecnologia — Deficiência e Perfeição",
+        "autor": "Gabriel Schmidt Sonntag e Vilson Scholz",
+        "paginas": { "inicio": 111, "fim": 134 },
+        "resumo": "O acelerado desenvolvimento tecnológico trouxe muitos benefícios, mas também profundas questões bioéticas, especialmente na reprodução humana e na manipulação do DNA. Este artigo coloca a busca pela perfeição biotecnológica em diálogo com a teologia da criação. Aborda as consequências dessa mentalidade para decisões de aborto, aceitação de pessoas com deficiência e relações familiares, enfatizando a humildade e o cuidado.",
+        "palavras_chave": ["Biotecnologia", "Bioética", "Deficiência", "Engenharia Genética", "Teologia da Criação"],
+        "autores_citados": ["Paul Marshall", "Oliver O'Donovan", "Sergio Rego", "Marisa Palácios", "Leopoldo Sanchez", "Michael Sandel", "Ricardo Senra", "John Swinton"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2021_V81_N1_007",
+        "titulo": "Astrologia e Fé Cristã: Implicações Teológicas Sobre a Crendice da Influência do Movimento dos Astros na Vida do Ser Humano",
+        "autor": "Rodrigo Erstling e Paulo Moisés Nerbas",
+        "paginas": { "inicio": 135, "fim": 158 },
+        "resumo": "A pesquisa examina os fundamentos e as implicações teológicas e práticas da astrologia na vida do cristão. A investigação procura responder quais são os efeitos que o aumento do consumo da astrologia (mapas astrais, horóscopos) causa na sociedade moderna e dentro do próprio cristianismo. O estudo baseia-se numa forte refutação dessa prática à luz das Escrituras e da teologia dos Pais da Igreja.",
+        "palavras_chave": ["Astrologia", "Fé Cristã", "Ocultismo", "Crendice", "Apologética"],
+        "autores_citados": ["Karin Hueck", "David H. Hoover", "Thomas Keith", "Martinho Lutero", "Leão Magno", "Carlos Orsi", "J.M. da Cruz Pontes"],
+        "url_acesso": "",
+        "url_capa": ""
+      },
+      {
+        "id": "RL_2021_V81_N1_008",
+        "titulo": "\"Love is a Temple\": Deus e o Culto na Horizontalidade",
+        "autor": "Cesar Motta Rios e Mário Rafael Yudi Fukue",
+        "paginas": { "inicio": 159, "fim": 178 },
+        "resumo": "Devido à pandemia iniciada em março de 2020, o fechamento dos templos forçou a igreja a rever os seus encontros físicos. O artigo reflete sobre como a igreja continua a agir e a celebrar o culto na ausência de reuniões públicas. Utilizando poeticamente a frase 'Love is a temple' (O amor é um templo) da banda U2, explora a dimensão horizontal da adoração, o sacerdócio real e a vocação de amar o próximo no quotidiano.",
+        "palavras_chave": ["Culto", "Pandemia", "Sacerdócio Real", "Horizontalidade", "Vocação", "Amor"],
+        "autores_citados": ["Mika S. Pajunen", "Albrecht Peters", "Jacob A. O. Preus III", "Ken Ray Schurb", "Steve Stockman", "C. F. W. Walther"],
+        "url_acesso": "",
+        "url_capa": ""
+      }
+    ]
+  },
+  {
+    "revista": "Igreja Luterana",
     "edicao": {
       "volume": 80,
       "numero": 2,
@@ -86,7 +1346,7 @@
     ]
   },
   {
-    "revista": "Revista Igreja Luterana",
+    "revista": "Igreja Luterana",
     "edicao": {
       "volume": 79,
       "numero": 1,
@@ -169,7 +1429,7 @@
     ]
   },
   {
-    "revista": "Revista Igreja Luterana",
+    "revista": "Igreja Luterana",
     "edicao": {
       "volume": 78,
       "numero": 2,
@@ -293,7 +1553,7 @@
     ]
   },
   {
-    "revista": "Revista Igreja Luterana",
+    "revista": "Igreja Luterana",
     "edicao": {
       "volume": 78,
       "numero": 1,
@@ -434,7 +1694,7 @@
     ]
   },
   {
-    "revista": "Revista Igreja Luterana",
+    "revista": "Igreja Luterana",
     "edicao": {
       "volume": 76,
       "numero": 2,
@@ -520,7 +1780,7 @@
     ]
   },
   {
-    "revista": "Revista Igreja Luterana",
+    "revista": "Igreja Luterana",
     "edicao": {
       "volume": 76,
       "numero": 1,
@@ -606,7 +1866,7 @@
     ]
   },
   {
-    "revista": "Revista Igreja Luterana",
+    "revista": "Igreja Luterana",
     "edicao": {
       "volume": 75,
       "numero": 1,
@@ -692,7 +1952,7 @@
     ]
   },
   {
-    "revista": "Revista Igreja Luterana",
+    "revista": "Igreja Luterana",
     "edicao": {
       "volume": 74,
       "numero": 2,
@@ -778,7 +2038,7 @@
     ]
   },
   {
-    "revista": "Revista Igreja Luterana",
+    "revista": "Igreja Luterana",
     "edicao": {
       "volume": 73,
       "numero": 2,
@@ -864,7 +2124,7 @@
     ]
   },
   {
-    "revista": "Revista Igreja Luterana",
+    "revista": "Igreja Luterana",
     "edicao": {
       "volume": 73,
       "numero": 1,
@@ -950,7 +2210,7 @@
     ]
   },
   {
-    "revista": "Revista Igreja Luterana",
+    "revista": "Igreja Luterana",
     "edicao": {
       "volume": 72,
       "numero": 2,
@@ -1017,7 +2277,7 @@
     ]
   },
   {
-    "revista": "Revista Igreja Luterana",
+    "revista": "Igreja Luterana",
     "edicao": {
       "volume": 72,
       "numero": 1,
@@ -1065,7 +2325,7 @@
     ]
   },
   {
-    "revista": "Revista Igreja Luterana",
+    "revista": "Igreja Luterana",
     "edicao": {
       "volume": 71,
       "numero": 2,
@@ -1132,7 +2392,7 @@
     ]
   },
   {
-    "revista": "Revista Igreja Luterana",
+    "revista": "Igreja Luterana",
     "edicao": {
       "volume": 70,
       "numero": 2,
@@ -1180,7 +2440,7 @@
     ]
   },
   {
-    "revista": "Revista Igreja Luterana",
+    "revista": "Igreja Luterana",
     "edicao": {
       "volume": 70,
       "numero": 1,
@@ -1228,7 +2488,7 @@
     ]
   },
   {
-    "revista": "Revista Igreja Luterana",
+    "revista": "Igreja Luterana",
     "edicao": {
       "volume": 69,
       "numero": 2,
@@ -1314,7 +2574,7 @@
     ]
   },
   {
-    "revista": "Revista Igreja Luterana",
+    "revista": "Igreja Luterana",
     "edicao": {
       "volume": 69,
       "numero": 1,
@@ -1400,7 +2660,7 @@
     ]
   },
   {
-    "revista": "Revista Igreja Luterana",
+    "revista": "Igreja Luterana",
     "edicao": {
       "volume": 74,
       "numero": 1,

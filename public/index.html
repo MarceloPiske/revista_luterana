@@ -1,114 +1,162 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acervo Teológico Luterano Digital</title>
+    <link rel="shortcut icon" href="./icon.svg" type="image/x-icon">
+    <title>Acervo Luterano Digital</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#1e293b">
-    <link rel="apple-touch-icon" href="icone-192.png">
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-
-    <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-    <header class="hero hero-image-bg">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <h1 id="revista-titulo">Acervo Luterano Digital</h1>
-            <p id="revista-edicao">Carregando dados...</p>
 
-            <div class="search-wrapper">
-                <span class="material-symbols-outlined search-icon">search</span>
-                <input type="text" id="search-input" placeholder="Busque por título, autor, ano ou palavra-chave..."
-                    autocomplete="off">
+    <nav class="app-navbar">
+        <div class="nav-brand">
+            <!-- <span class="material-symbols-outlined">menu_book</span> -->
+             <img style="width: 50px; height: 50px;" src="./icon.svg" alt="">
+            <div class="brand-text">
+                <h1>Acervo Luterano</h1>
+                <span>Digital</span>
             </div>
         </div>
-    </header>
-    <div class="toggle-container">
-        <div class="magazine-toggle">
-            <button class="toggle-btn active" data-revista="Todas">
-                <span class="material-symbols-outlined">library_books</span> Ambas
-            </button>
-            <button class="toggle-btn" data-revista="Revista Igreja Luterana">
-                <span class="material-symbols-outlined">book</span> Revista Igreja Luterana
-            </button>
-            <button class="toggle-btn" data-revista="Vox Concordiana">
-                <span class="material-symbols-outlined">menu_book</span> Vox Concordiana
-            </button>
-        </div>
-    </div>
-    <main class="container">
-        <div class="main-layout">
 
-            <aside class="filters-sidebar">
+        <div class="nav-search-container">
+            <span class="material-symbols-outlined search-icon">search</span>
+            <input type="text" id="search-input" placeholder="Pesquisar por título, autor, assunto ou palavra-chave..." autocomplete="off">
+        </div>
+
+        <div class="nav-actions">
+            <button id="btn-mobile-filters" class="action-btn-icon mobile-only" title="Abrir Filtros">
+                <span class="material-symbols-outlined">tune</span>
+            </button>
+            
+            <div id="auth-container" class="auth-container">
+                <button id="btn-login-nav" class="btn-primary-outline btn-sm">
+                    <span class="material-symbols-outlined">login</span> Entrar
+                </button>
+                <div id="user-profile-menu" class="user-profile-menu hidden">
+                    <img id="user-avatar" src="" alt="Avatar" class="avatar-img" title="Ver Perfil">
+                    <button id="btn-logout" class="btn-icon-small" title="Sair"><span class="material-symbols-outlined">logout</span></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mobile-overlay" class="overlay-hidden"></div>
+
+    <div class="app-container">
+        
+        <aside id="lateral-sidebar" class="filters-sidebar">
+            <div class="sidebar-header mobile-only">
+                <h3>Filtrar Artigos</h3>
+                <button id="btn-close-filters" class="action-btn-icon">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <button id="btn-limpar-filtros" class="btn-primary-outline" style="width: 100%; margin-bottom: 15px;">
+                <span class="material-symbols-outlined">filter_alt_off</span> Limpar Todos os Filtros
+            </button>
+            <div class="filter-group hidden" id="filter-group-progresso">
                 <div class="filter-header">
-                    <div style="display: flex; align-items: center; gap: 8px;">
-                        <span class="material-symbols-outlined">tune</span>
-                        <h3>Filtros</h3>
-                    </div>
-                    <button id="btn-limpar-filtros" class="btn-icon-clear" title="Limpar Filtros">
-                        <span class="material-symbols-outlined">filter_alt_off</span>
-                    </button>
+                    <h4><span class="material-symbols-outlined">bookmark</span> Meu Progresso</h4>
+                    <button class="btn-clear-group" data-target="cb-progresso">Limpar</button>
                 </div>
-
-                <div class="filter-group">
-                    <h4>Ano de Publicação</h4>
-                    <div id="filter-ano-list" class="filter-options-container"></div>
+                <div class="filter-list">
+                    <label class="filter-label">
+                        <div><input type="checkbox" class="cb-progresso" value="lendo"> <span>Lendo Atualmente</span></div>
+                    </label>
+                    <label class="filter-label">
+                        <div><input type="checkbox" class="cb-progresso" value="lido"> <span>Já Lidos</span></div>
+                    </label>
+                    <label class="filter-label">
+                        <div><input type="checkbox" class="cb-progresso" value="nao_lido"> <span>Não Lidos</span></div>
+                    </label>
                 </div>
-
-                <div class="filter-group">
-                    <h4>Autores no Acervo</h4>
-                    <div id="filter-autor-list" class="filter-options-container"></div>
+            </div>
+            <div class="filter-group">
+                <div class="filter-header">
+                    <h4><span class="material-symbols-outlined">calendar_month</span> Ano de Publicação</h4>
                 </div>
+                <div id="filter-ano-list" class="filter-list"></div>
+            </div>
 
-                <div class="filter-group">
-                    <h4>Assuntos (Palavras-Chave)</h4>
-                    <div id="filter-assunto-list" class="filter-options-container"></div>
+            <div class="filter-group">
+                <div class="filter-header">
+                    <h4><span class="material-symbols-outlined">person_search</span> Autores</h4>
+                    <button class="btn-clear-group" data-target="cb-autor">Limpar</button>
                 </div>
-            </aside>
-
-            <main class="results-area">
-                <div id="results-grid" class="cards-grid">
+                <div class="mini-search-container">
+                    <input type="text" id="search-autor" class="mini-search" placeholder="Filtrar autores..." autocomplete="off">
                 </div>
-            </main>
+                <div id="filter-autor-list" class="filter-list"></div>
+            </div>
 
-        </div>
-    </main>
+            <div class="filter-group">
+                <div class="filter-header">
+                    <h4><span class="material-symbols-outlined">sell</span> Assuntos</h4>
+                    <button class="btn-clear-group" data-target="cb-assunto">Limpar</button>
+                </div>
+                <div class="mini-search-container">
+                    <input type="text" id="search-assunto" class="mini-search" placeholder="Filtrar assuntos..." autocomplete="off">
+                </div>
+                <div id="filter-assunto-list" class="filter-list"></div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <div class="tabs-container">
+                <button class="toggle-btn active" data-revista="Todas">Todo o Acervo</button>
+                <button class="toggle-btn" data-revista="Igreja Luterana">Revista Igreja Luterana</button>
+                <button class="toggle-btn" data-revista="Vox Concordiana">Vox Concordiana</button>
+            </div>
+
+            <div class="results-header">
+                <h2 id="revista-titulo">Carregando Acervo...</h2>
+                <p id="revista-edicao">Aguarde um momento</p>
+            </div>
+
+            <div id="results-grid" class="results-grid"></div>
+        </main>
+    </div>
 
     <div id="pdf-modal" class="modal hidden">
-        <div class="modal-content" id="modal-content">
-
+        <div id="modal-content" class="modal-content">
+            
             <div class="modal-header">
-                <div class="header-left">
-                    <button id="btn-toggle-sidebar" class="action-btn">
-                        <span class="material-symbols-outlined">library_books</span> Artigos Relacionados
+                <div class="modal-actions-left">
+                    <button id="close-modal" class="action-btn" title="Voltar para a pesquisa">
+                        <span class="material-symbols-outlined">arrow_back</span> Voltar
                     </button>
                 </div>
-                <div class="header-right" style="display: flex; gap: 12px;">
-                    <button id="btn-partilhar" class="action-btn" title="Partilhar Artigo">
+                <div class="modal-actions-right">
+                    <select id="status-leitura" class="action-btn hidden" style="appearance: none; font-weight: 600; cursor: pointer;" title="Marcar progresso">
+                        <option value="">+ Marcar Leitura</option>
+                        <option value="lendo">Estou Lendo</option>
+                        <option value="lido">Já Li</option>
+                    </select>
+                    <button id="btn-citar" class="action-btn" title="Copiar citação ABNT">
+                        <span class="material-symbols-outlined">format_quote</span> Citar
+                    </button>
+                    <button id="btn-partilhar" class="action-btn" title="Partilhar link deste artigo">
                         <span class="material-symbols-outlined">share</span> Partilhar
                     </button>
-                    <button id="btn-citar" class="action-btn">
-                        <span class="material-symbols-outlined">format_quote</span> Citar (ABNT)
-                    </button>
-                    <button id="fullscreen-btn" class="action-btn">
+                    <button id="fullscreen-btn" class="action-btn mobile-hidden" title="Modo Tela Cheia">
                         <span class="material-symbols-outlined">fullscreen</span> Expandir
                     </button>
-                    <button id="close-modal" class="close-btn">
-                        <span class="material-symbols-outlined">close</span> Fechar
+                    <button id="btn-toggle-sidebar" class="action-btn mobile-hidden" title="Ver Artigos Relacionados">
+                        <span class="material-symbols-outlined">menu_open</span> Relacionados
                     </button>
                 </div>
             </div>
-
+            
             <div class="modal-body">
-
                 <div class="pdf-container">
                     <div id="loading-spinner" class="spinner-container">
                         <div class="spinner"></div>
@@ -116,29 +164,57 @@
                     </div>
                     <iframe id="pdf-viewer" src="" frameborder="0" allowfullscreen></iframe>
                 </div>
-
-                <aside id="lateral-sidebar" class="lateral-sidebar hidden-sidebar">
-                    <div class="sidebar-header">
-                        <h4>Recomendações</h4>
+                <div id="secao-relacionados" class="related-sidebar">
+                    <div class="sidebar-tabs">
+                        <button class="s-tab active" data-tab="tab-relacionados">Relacionados</button>
+                        <button class="s-tab" data-tab="tab-comentarios">Avaliações</button>
                     </div>
-                    <div id="grid-relacionados" class="related-vertical-grid">
-                    </div>
-                </aside>
 
+                    <div id="tab-relacionados" class="s-tab-content">
+                        <div id="grid-relacionados" class="related-grid"></div>
+                    </div>
+
+                    <div id="tab-comentarios" class="s-tab-content hidden">
+                        <div id="comments-auth-prompt" class="auth-prompt">
+                            <span class="material-symbols-outlined">lock</span>
+                            <p>Faça login para avaliar e comentar.</p>
+                            <button id="btn-login-comments" class="btn-primary btn-sm">Entrar com Google</button>
+                        </div>
+
+                        <div id="comments-form" class="comments-form hidden">
+                            <div class="rating-stars" id="star-rating">
+                                <span class="material-symbols-outlined star" data-value="1">star</span>
+                                <span class="material-symbols-outlined star" data-value="2">star</span>
+                                <span class="material-symbols-outlined star" data-value="3">star</span>
+                                <span class="material-symbols-outlined star" data-value="4">star</span>
+                                <span class="material-symbols-outlined star" data-value="5">star</span>
+                            </div>
+                            <textarea id="comment-text" placeholder="Deixe a sua reflexão sobre este artigo..."></textarea>
+                            <button id="btn-submit-comment" class="btn-primary">Publicar</button>
+                        </div>
+
+                        <div id="comments-list" class="comments-list">
+                            </div>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
-
-    <script src="./app.js" type="module"></script>
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
-                    .then(reg => console.log('Service Worker registado com sucesso!', reg))
-                    .catch(err => console.error('Erro no registo do Service Worker', err));
-            });
-        }
-    </script>
+    <div id="profile-setup-modal" class="modal hidden" style="z-index: 2000;">
+        <div class="modal-content-small">
+            <h3>Bem-vindo ao Acervo!</h3>
+            <p>Para melhorarmos a comunidade, como você se identifica?</p>
+            <select id="user-role-select" class="form-select">
+                <option value="Leitor Luterano">Leitor Luterano / Membro Leigo</option>
+                <option value="Seminarista">Seminarista</option>
+                <option value="Pastor">Pastor</option>
+                <option value="Professor">Professor</option>
+                <option value="Teólogo">Teólogo / Pesquisador</option>
+            </select>
+            <button id="btn-save-profile" class="btn-primary" style="width: 100%; margin-top: 15px;">Salvar Perfil</button>
+        </div>
+    </div>
+    <script type="module" src="app.js"></script>
 </body>
-
 </html>

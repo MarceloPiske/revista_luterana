@@ -1,131 +1,326 @@
+/* =========================================================
+   1. VARIÁVEIS GERAIS (Paleta de Cores e Sombras)
+   ========================================================= */
 :root {
-    --primary-color: #1e293b;
     --bg-color: #f8fafc;
-    --card-bg: #ffffff;
-    --text-main: #334155;
+    --nav-bg: #ffffff;
+    --text-main: #0f172a;
     --text-muted: #64748b;
-    --accent: #0284c7;
-    --radius: 12px;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
+    --primary-color: #0284c7;
+    --primary-hover: #0369a1;
+    --border-color: #e2e8f0;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --radius-md: 8px;
+    --radius-lg: 12px;
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--text-main);
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', system-ui, sans-serif;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+* {
+    box-sizing: border-box;
 }
 
-/* Configuração do Banner com Imagem (Substitua a URL pela imagem desejada) */
-.hero {
-    position: relative;
-    color: white;
-    padding: 80px 0;
-    text-align: center;
-    background-image: url('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=1920&q=80');
-    background-size: cover;
-    background-position: center;
-}
-
-.hero-overlay {
-    position: absolute;
+/* =========================================================
+   2. NAVBAR APP (Barra de Topo Fixa)
+   ========================================================= */
+.app-navbar {
+    position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(15, 23, 42, 0.7);
-    /* Escurece a imagem de fundo */
-    z-index: 1;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 2rem;
+    background-color: var(--nav-bg);
+    box-shadow: var(--shadow-sm);
+    border-bottom: 1px solid var(--border-color);
+    gap: 20px;
 }
 
-.hero-content {
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary-color);
+}
+
+.nav-brand h1 { margin: 0; font-size: 1.2rem; font-weight: 700; color: var(--text-main); }
+.nav-brand span.material-symbols-outlined { font-size: 28px; }
+.nav-brand .brand-text span { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
+
+.nav-search-container {
+    flex-grow: 1;
+    max-width: 600px;
     position: relative;
-    z-index: 2;
+    display: flex;
+    align-items: center;
 }
 
-.hero h1 {
-    margin-bottom: 10px;
-    font-size: 2.5rem;
-    font-weight: 600;
-}
-
-.hero p {
-    opacity: 0.9;
-    margin-bottom: 30px;
-}
-
-/* Barra de Pesquisa com Ícone */
-.search-wrapper {
-    position: relative;
-    max-width: 650px;
-    margin: 0 auto;
-}
-
-.search-icon {
+.nav-search-container .search-icon {
     position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 14px;
     color: var(--text-muted);
-    pointer-events: none;
 }
 
 #search-input {
     width: 100%;
-    padding: 16px 20px 16px 50px;
-    border: none;
-    border-radius: 30px;
-    font-size: 1.05rem;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    outline: none;
-    transition: transform 0.2s;
+    padding: 12px 16px 12px 44px;
+    border-radius: 50px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    font-size: 1rem;
+    transition: all 0.2s ease;
 }
 
 #search-input:focus {
-    transform: scale(1.02);
+    outline: none;
+    border-color: var(--primary-color);
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.1);
 }
 
-/* Grid e Cards de Artigo */
-.grid {
+.nav-actions { display: flex; gap: 10px; }
+.action-btn-icon {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: 0.2s;
+    display: flex;
+}
+.action-btn-icon:hover { background-color: var(--bg-color); color: var(--primary-color); }
+
+/* =========================================================
+   3. ESTRUTURA GERAL (Desktop)
+   ========================================================= */
+.app-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 24px;
-    padding: 50px 0;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px;
+    align-items: start;
 }
 
-.card {
-    background: var(--card-bg);
-    border-radius: var(--radius);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s, box-shadow 0.2s;
+.mobile-only { display: none !important; }
+
+/* =========================================================
+   4. BARRA LATERAL (Filtros)
+   ========================================================= */
+.filters-sidebar {
+    position: sticky;
+    top: 90px;
+    background: #fff;
+    padding: 20px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+}
+
+.filter-group {
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+}
+.filter-group:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0;}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.filter-header h4 {
+    margin: 0;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-main);
+}
+
+.filter-header h4 span { font-size: 18px; color: var(--primary-color); }
+
+.btn-clear-group {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.filter-list {
+    max-height: 200px;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    padding-right: 5px;
+}
+
+/* Customização da barra de rolagem (Scrollbar) dos filtros */
+.filter-list::-webkit-scrollbar { width: 6px; }
+.filter-list::-webkit-scrollbar-track { background: transparent; }
+.filter-list::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+.filter-list::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+.filter-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: 0.2s;
+}
+.filter-label:hover { color: var(--text-main); }
+.filter-label div { display: flex; align-items: center; gap: 8px; }
+
+.filter-count {
+    background: var(--bg-color);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.btn-primary-outline {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 10px;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: 0.2s;
+}
+.btn-primary-outline:hover {
+    background: var(--primary-color);
+    color: white;
+}
+/* =========================================================
+   UX MELHORADO: MINI-PESQUISAS NOS FILTROS
+   ========================================================= */
+.mini-search-container {
+    margin-bottom: 12px;
+}
+
+.mini-search {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    font-size: 0.85rem;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    transition: all 0.2s ease;
+}
+
+.mini-search:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background-color: #fff;
+    box-shadow: 0 0 0 2px rgba(2, 132, 199, 0.1);
+}
+
+.mini-search::placeholder {
+    color: #94a3b8;
+}
+
+/* Limitar a altura da lista para não virar um monstro infinito */
+.filter-list {
+    max-height: 240px; /* Mostra cerca de 7-8 itens de cada vez, o resto tem scroll */
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 5px;
+}
+/* =========================================================
+   5. ÁREA CENTRAL (Abas e Grelha de Resultados)
+   ========================================================= */
+.tabs-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+}
+
+.toggle-btn {
+    padding: 8px 16px;
+    border: 1px solid var(--border-color);
+    background: white;
+    color: var(--text-muted);
+    border-radius: 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-weight: 500;
+    transition: 0.2s;
+    font-family: inherit;
+}
+
+.toggle-btn:hover { border-color: var(--primary-color); color: var(--primary-color); }
+.toggle-btn.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.results-header { margin-bottom: 24px; }
+.results-header h2 { margin: 0 0 5px 0; font-size: 1.5rem; color: var(--text-main); }
+.results-header p { margin: 0; color: var(--text-muted); font-size: 0.9rem; }
+
+/* A Grelha de Artigos que resolve o tamanho dos cards! */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+/* =========================================================
+   6. CARTÃO DE ARTIGO (Cards)
+   ========================================================= */
+.card {
+    background: #fff;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid var(--border-color);
 }
-
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
 }
 
-/* Espaço para Imagem do Artigo */
 .card-image {
     width: 100%;
-    height: 180px;
+    height: 160px;
     object-fit: cover;
-    /* Evita que a imagem distorça */
-    background-color: #e2e8f0;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .card-content {
@@ -137,398 +332,406 @@ body {
 
 .meta-info {
     font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
     color: var(--text-muted);
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-.card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 12px;
-    color: var(--primary-color);
-    line-height: 1.4;
-}
-
-.info-row {
     display: flex;
     align-items: center;
     gap: 6px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+.meta-info span { font-size: 16px; }
+
+.card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    color: var(--text-main);
+}
+
+.info-row {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.info-row span { font-size: 18px; }
+
+.resumo {
     font-size: 0.9rem;
     color: var(--text-muted);
-    margin-bottom: 8px;
-}
-
-.info-row .material-symbols-outlined {
-    font-size: 1.1rem;
-}
-
-.card .tags {
-    font-size: 0.8rem;
-    color: var(--accent);
-    margin-top: 10px;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     margin-bottom: 15px;
-    flex-grow: 1;
 }
 
-.card .resumo {
-    font-size: 0.95rem;
-    color: #475569;
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
     margin-bottom: 20px;
+}
+.tags span {
+    background: var(--bg-color);
+    color: var(--primary-color);
+    font-size: 0.7rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 500;
 }
 
 .btn-read {
-    background: var(--accent);
-    color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 600;
-    width: 100%;
+    margin-top: auto;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     gap: 8px;
-    transition: background 0.2s;
+    background: var(--bg-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    transition: 0.2s;
+    border: 1px solid var(--border-color);
 }
-
 .btn-read:hover {
-    background: #0369a1;
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
 }
 
-/* Modal */
+/* =========================================================
+   7. MODAL DO PDF E LEITOR
+   ========================================================= */
+.hidden { display: none !important; }
+
 .modal {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(15, 23, 42, 0.85);
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(15, 23, 42, 0.85); /* Fundo escuro elegante */
+    z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
-    -webkit-backdrop-filter: blur(4px); 
+    padding: 20px;
     backdrop-filter: blur(4px);
-}
-
-.modal.hidden {
-    display: none;
 }
 
 .modal-content {
     background: white;
-    width: 95%;
-    max-width: 1000px;
-    height: 90%;
-    border-radius: var(--radius);
+    width: 100%;
+    max-width: 1300px;
+    height: 90vh;
+    border-radius: var(--radius-lg);
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
 }
 
-.close-btn {
-    background: #ef4444;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 6px;
-    font-weight: 600;
-    font-size: 1rem;
-}
-
-iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-
-/* Controle Segmentado de Revistas */
-.toggle-container {
-    display: flex;
-    justify-content: center;
-    margin-top: -30px;
-    /* Faz o toggle sobrepor o final do header */
-    margin-bottom: 40px;
-    position: relative;
-    z-index: 10;
-    padding: 0 20px;
-}
-
-.magazine-toggle {
-    background: var(--card-bg);
-    padding: 8px;
-    border-radius: 50px;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.toggle-btn {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 40px;
-    background: transparent;
-    color: var(--text-muted);
-    font-weight: 600;
-    font-size: 0.95rem;
-    cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.toggle-btn .material-symbols-outlined {
-    font-size: 1.2rem;
-}
-
-.toggle-btn:hover {
-    color: var(--primary-color);
-    background: var(--bg-color);
-}
-
-.toggle-btn.active {
-    background: var(--primary-color);
-    color: white;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-}
-
-/* Ajuste responsivo para telas menores (celulares) */
-@media (max-width: 600px) {
-    .magazine-toggle {
-        border-radius: 16px;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .toggle-btn {
-        width: 100%;
-        justify-content: center;
-    }
-}
-/* Prevenção de Rolagem do Fundo (Scroll Lock) */
-body.no-scroll { overflow: hidden; }
-
-/* Cabeçalho do Modal */
 .modal-header {
-    display: flex; justify-content: flex-end; gap: 12px;
-    padding: 12px 20px; background: #ffffff; border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: var(--nav-bg);
+    border-bottom: 1px solid var(--border-color);
 }
+
+.modal-actions-left, .modal-actions-right { display: flex; gap: 10px; }
 
 .action-btn {
-    background: var(--bg-color); color: var(--text-main); border: 1px solid #cbd5e1;
-    padding: 8px 16px; border-radius: 6px; cursor: pointer;
-    display: flex; align-items: center; gap: 6px; font-weight: 600; font-size: 0.9rem;
-    transition: background 0.2s;
-}
-.action-btn:hover { background: #e2e8f0; }
-
-/* O botão de fechar já existia, ajustei para combinar com o novo layout */
-.close-btn { 
-    background: #ef4444; color: white; border: none; padding: 8px 16px; 
-    border-radius: 6px; cursor: pointer; display: flex; align-items: center; gap: 6px;
-    font-weight: 600; font-size: 0.9rem; transition: background 0.2s;
-}
-.close-btn:hover { background: #dc2626; }
-
-/* Animação do Loading Spinner */
-.spinner-container {
-    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-    display: flex; flex-direction: column; align-items: center; gap: 15px;
-    color: var(--text-muted); z-index: 10;
-}
-
-.spinner {
-    width: 40px; height: 40px; border: 4px solid #f1f5f9;
-    border-top: 4px solid var(--accent); border-radius: 50%;
-    animation: spin 1s linear infinite;
-}
-
-@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
-
-/* Ajuste do iframe para transição suave */
-#pdf-viewer { position: relative; z-index: 20; transition: opacity 0.3s ease; opacity: 0; }
-
-/* Estrutura do Novo Modal */
-.modal-content {
+    background: white;
+    border: 1px solid var(--border-color);
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
     display: flex;
-    flex-direction: column;
-    height: 95vh; /* Ocupa quase a tela toda */
-    width: 95vw;
-    max-width: 1400px;
-}
-
-.modal-header {
-    display: flex;
-    justify-content: space-between; /* Separa os botões da esquerda e direita */
     align-items: center;
+    gap: 6px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--text-main);
+    transition: 0.2s;
+}
+.action-btn:hover {
+    background: var(--bg-color);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .modal-body {
     display: flex;
-    flex: 1; /* Ocupa todo o espaço restante abaixo do cabeçalho */
-    overflow: hidden; /* Impede que o modal vaze */
-    position: relative;
+    flex-grow: 1;
+    overflow: hidden;
 }
 
-/* Área do PDF */
 .pdf-container {
-    flex: 1; /* Cresce para ocupar o espaço livre */
+    flex-grow: 1;
     position: relative;
-    height: 100%;
+    background: #e2e8f0;
 }
 
 #pdf-viewer {
     width: 100%;
     height: 100%;
     border: none;
-    position: relative;
-    z-index: 20;
 }
 
-/* Barra Lateral Deslizante */
-.lateral-sidebar {
+.related-sidebar {
     width: 320px;
-    background: #f8fafc;
-    border-left: 1px solid #e2e8f0;
-    display: flex;
-    flex-direction: column;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Animação suave */
+    background: white;
+    border-left: 1px solid var(--border-color);
+    padding: 20px;
     overflow-y: auto;
 }
 
-/* O Segredo do efeito Slick */
-.lateral-sidebar.hidden-sidebar {
-    width: 0;
-    border: none;
-    padding: 0;
-    opacity: 0;
+.related-sidebar h4 { margin-top: 0; color: var(--text-main); }
+.related-card {
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.2s;
 }
-
-.sidebar-header {
-    padding: 20px 20px 10px 20px;
-    border-bottom: 1px solid #e2e8f0;
+.related-card:hover {
+    border-color: var(--primary-color);
+    background: var(--bg-color);
 }
+.related-card h5 { margin: 0 0 5px 0; font-size: 0.9rem; color: var(--primary-color);}
+.related-card .meta { font-size: 0.8rem; color: var(--text-muted); display: flex; align-items: center; gap: 5px;}
 
-.sidebar-header h4 {
-    margin: 0;
-    color: #0f172a;
-    font-size: 1.1rem;
-}
-
-.related-vertical-grid {
-    padding: 15px;
+.spinner-container {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
-    gap: 12px;
-}
-
-/* Cards na Vertical */
-.related-card {
-    background: #ffffff;
-    padding: 15px;
-    border-radius: 8px;
-    border: 1px solid #e2e8f0;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.related-card:hover {
-    border-color: #3b82f6;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    transform: translateX(-4px); /* Efeito de flutuar para a esquerda */
-}
-
-.related-card h5 {
-    margin: 0 0 8px 0;
-    font-size: 0.9rem;
-    color: #0f172a;
-    line-height: 1.4;
-}
-
-/* Layout Principal com Sidebar de Filtros */
-/* Layout Principal */
-.main-layout {
-    display: grid;
-    grid-template-columns: 280px 1fr; /* 280px para os filtros, o resto para os artigos */
-    gap: 30px;
-    max-width: 1400px;
-    margin: 30px auto;
-    padding: 0 20px;
-    align-items: start;
-}
-
-/* A CORREÇÃO DA GRELHA: Múltiplos artigos por linha */
-.cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 25px;
-    width: 100%;
-}
-
-/* Sidebar de Filtros */
-.filters-sidebar {
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    padding: 20px;
-    position: sticky;
-    top: 20px;
-    max-height: calc(100vh - 40px);
-    overflow-y: auto; /* Permite scroll dentro da sidebar se houver muitos filtros */
-}
-
-.filter-header {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #e2e8f0;
+    color: var(--text-muted);
 }
-
-.filter-header h3 { margin: 0; font-size: 1.1rem; color: #0f172a; }
-
-.btn-icon-clear {
-    background: none; border: none; color: #64748b; cursor: pointer;
-    transition: color 0.2s; padding: 4px; border-radius: 4px;
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    border-left-color: var(--primary-color);
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px;
 }
-.btn-icon-clear:hover { color: #ef4444; background: #fee2e2; }
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 
-.filter-group { margin-bottom: 25px; }
-.filter-group h4 { font-size: 0.8rem; text-transform: uppercase; color: #64748b; margin-bottom: 12px; letter-spacing: 0.5px; }
+/* Travar scroll do fundo quando o modal abre */
+body.no-scroll { overflow: hidden; }
 
-/* Scroll nas listas de checkboxes */
-.filter-options-container {
-    display: flex; flex-direction: column; gap: 8px;
-    max-height: 180px; overflow-y: auto; padding-right: 5px;
-}
-
-/* Estilo do Checkbox com o Contador */
-.filter-label {
-    display: flex; align-items: center; justify-content: space-between;
-    font-size: 0.9rem; color: #334155; cursor: pointer;
-}
-.filter-label div { display: flex; align-items: center; gap: 8px; }
-.filter-count { font-size: 0.75rem; color: #94a3b8; background: #f1f5f9; padding: 2px 6px; border-radius: 10px; }
-
-/* Customização da scrollbar da sidebar */
-.filter-options-container::-webkit-scrollbar { width: 4px; }
-.filter-options-container::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
-
+/* =========================================================
+   8. RESPONSIVIDADE (Mobile UX)
+   ========================================================= */
 @media (max-width: 900px) {
-    .main-layout { grid-template-columns: 1fr; }
-    .filters-sidebar { position: static; max-height: none; }
+    .app-navbar { padding: 0.75rem 1rem; }
+    .nav-brand .brand-text { display: none; }
+    
+    .app-container {
+        grid-template-columns: 1fr;
+        padding: 16px;
+    }
+
+    .mobile-only { display: flex !important; }
+    .mobile-hidden { display: none !important; }
+
+    /* Gaveta de Filtros Mobile */
+    .filters-sidebar {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 85%;
+        max-width: 320px;
+        height: 100vh;
+        max-height: 100vh;
+        z-index: 300;
+        border-radius: 0;
+        transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border: none;
+        box-shadow: var(--shadow-lg);
+    }
+    .filters-sidebar.drawer-open { left: 0; }
+
+    .sidebar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--border-color);
+    }
+    .sidebar-header h3 { margin: 0; color: var(--text-main); }
+
+    #mobile-overlay {
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(15, 23, 42, 0.6);
+        backdrop-filter: blur(2px);
+        z-index: 200;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+    #mobile-overlay.overlay-visible {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    /* Modal no Mobile */
+    .modal { padding: 0; }
+    .modal-content { height: 100vh; border-radius: 0; }
+    .related-sidebar { display: none; } /* Esconde recomendados no telemóvel para maximizar o PDF */
+}
+
+/* =========================================================
+   9. CORREÇÕES UX / UI AVANÇADAS
+   ========================================================= */
+
+/* Botão de Limpar Filtros no Topo */
+.btn-clear-all {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #fee2e2;
+    color: #ef4444;
+    border: 1px solid #fca5a5;
+    padding: 10px;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-bottom: 25px;
+}
+.btn-clear-all:hover {
+    background: #fca5a5;
+    color: #b91c1c;
+}
+
+/* Botão de Leitura Desativado (Sem Link) */
+.btn-read.disabled {
+    background: var(--bg-color);
+    color: #94a3b8;
+    border-color: var(--border-color);
+    cursor: not-allowed;
+    box-shadow: none;
+}
+.btn-read.disabled:hover {
+    background: var(--bg-color);
+    color: #94a3b8;
+    border-color: var(--border-color);
+}
+
+/* Tela de Estado Vazio (Nenhum Resultado) */
+.empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-muted);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    border-radius: var(--radius-lg);
+    border: 1px dashed var(--border-color);
+}
+.empty-state span {
+    font-size: 56px;
+    color: #cbd5e1;
+}
+.empty-state h3 { margin: 0; color: var(--text-main); font-size: 1.2rem; }
+.empty-state p { margin: 0; font-size: 0.95rem; }
+
+/* =========================================================
+   10. UI/UX: AUTENTICAÇÃO, PERFIL E AVALIAÇÕES
+   ========================================================= */
+
+/* Avatar e Auth na Navbar */
+.auth-container { display: flex; align-items: center; }
+.user-profile-menu { display: flex; align-items: center; gap: 10px; }
+.avatar-img { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary-color); cursor: pointer; }
+.btn-icon-small { background: transparent; border: none; color: var(--text-muted); cursor: pointer; display: flex; }
+.btn-icon-small:hover { color: #ef4444; }
+.btn-sm { padding: 6px 12px; font-size: 0.85rem; }
+
+/* Abas na Barra Lateral do Modal */
+.sidebar-tabs { display: flex; border-bottom: 1px solid var(--border-color); margin-bottom: 15px; }
+.s-tab { flex: 1; background: transparent; border: none; padding: 10px; font-weight: 600; color: var(--text-muted); cursor: pointer; border-bottom: 2px solid transparent; transition: 0.2s; }
+.s-tab:hover { color: var(--primary-color); background: var(--bg-color); }
+.s-tab.active { color: var(--primary-color); border-bottom-color: var(--primary-color); }
+.s-tab-content.hidden { display: none; }
+
+/* Formulário de Comentários e Estrelas */
+.auth-prompt { text-align: center; padding: 30px 10px; background: var(--bg-color); border-radius: var(--radius-md); color: var(--text-muted); }
+.auth-prompt span { font-size: 32px; margin-bottom: 10px; }
+
+.comments-form { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--border-color); }
+.rating-stars { display: flex; gap: 5px; color: #cbd5e1; cursor: pointer; justify-content: center; margin-bottom: 5px; }
+.rating-stars .star.active { color: #f59e0b; /* Laranja Dourado */ }
+.rating-stars .star:hover, .rating-stars .star:hover ~ .star { color: #fcd34d; } /* Efeito de preenchimento ao passar o rato (requer flex-direction: row-reverse no JS) */
+
+#comment-text { width: 100%; height: 80px; padding: 10px; border: 1px solid var(--border-color); border-radius: var(--radius-md); resize: none; font-family: inherit; }
+#comment-text:focus { outline: none; border-color: var(--primary-color); }
+.btn-primary { background: var(--primary-color); color: white; border: none; padding: 10px 16px; border-radius: var(--radius-md); font-weight: 600; cursor: pointer; transition: 0.2s; display: flex; justify-content: center; align-items: center; gap: 8px;}
+.btn-primary:hover { background: var(--primary-hover); }
+
+/* Design do Comentário na Lista */
+.comment-card { background: var(--bg-color); padding: 12px; border-radius: var(--radius-md); margin-bottom: 12px; border: 1px solid var(--border-color); }
+.comment-header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.comment-avatar { width: 28px; height: 28px; border-radius: 50%; }
+.comment-meta { display: flex; flex-direction: column; }
+.comment-name { font-size: 0.85rem; font-weight: 600; color: var(--text-main); margin: 0;}
+.comment-role { font-size: 0.7rem; color: var(--primary-color); background: #e0f2fe; padding: 2px 6px; border-radius: 10px; display: inline-block; width: max-content; margin-top: 2px;}
+.comment-stars { color: #f59e0b; font-size: 14px; margin-bottom: 5px; display: flex; }
+.comment-body { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; margin: 0; }
+
+/* Modal Pequeno (Perfil) */
+.modal-content-small { background: white; width: 90%; max-width: 400px; padding: 30px; border-radius: var(--radius-lg); text-align: center; box-shadow: var(--shadow-lg); }
+.modal-content-small h3 { margin-top: 0; color: var(--text-main); }
+.modal-content-small p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px; }
+.form-select { width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: var(--radius-md); font-size: 1rem; color: var(--text-main); }
+
+/* =========================================================
+   11. PROGRESSO DE LEITURA E CORREÇÕES DO MODAL
+   ========================================================= */
+
+/* Crachás (Badges) de Leitura nos Cartões */
+.card { position: relative; } /* Importante para o crachá ficar por cima da capa */
+
+.status-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    box-shadow: var(--shadow-sm);
+    z-index: 10;
+}
+
+.status-badge.lido { background: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
+.status-badge.lendo { background: #fef9c3; color: #b45309; border: 1px solid #fef08a; }
+
+/* Correção de Botão Ativo na Navbar do Modal */
+.action-btn.active-state {
+    background: var(--bg-color);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
 }
