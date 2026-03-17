@@ -1,8 +1,8 @@
 // 1. Importações do nosso módulo isolado e do SDK do Firebase Auth/Firestore
-import { auth, db, googleProvider } from './firebase-config.js';
+import { auth, db, googleProvider, analytics } from './firebase-config.js';
 import { signInWithPopup, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 import { doc, setDoc, getDoc, collection, addDoc, query, where, getDocs, orderBy, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
-
+import { logEvent } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
 /**
  * ESTADO GLOBAL DA APLICAÇÃO
  */
@@ -816,11 +816,12 @@ btnPartilhar.addEventListener('click', async () => {
     const urlPartilha = `${window.location.origin}${window.location.pathname}?artigo=${artigoAbertoAtual.id}`;
 
     // Regista no Analytics que o artigo foi partilhado
+    if (typeof logEvent !== 'undefined' && analytics){
     logEvent(analytics, 'share', {
         method: 'link_direto',
         content_type: 'artigo_academico',
         item_id: artigoAbertoAtual.id
-    });
+    });}
 
     // Tenta usar a Web Share API (Nativa em Telemóveis)
     if (navigator.share) {
@@ -1056,3 +1057,51 @@ document.querySelectorAll('.cb-ano, .cb-autor, .cb-assunto').forEach(cb => {
  * INICIALIZAÇÃO DA APLICAÇÃO
  */
 carregarAcervo();
+
+/**
+ * OTIMIZAÇÃO DE SEO DINÂMICO E DADOS ESTRUTURADOS (SCHEMA.ORG)
+ */
+function atualizarSEOAcademico(artigo) {
+    if (!artigo) return;
+
+    // 1. Atualiza Título e Descrição da aba do navegador
+    document.title = `${artigo.titulo} | ${artigo.nomeRevista}`;
+    
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+        metaDescription.setAttribute("content", artigo.resumo.substring(0, 150) + "...");
+    }
+
+    // 2. Atualiza Canonical URL para este artigo específico
+    let canonical = document.getElementById('canonical-url');
+    if (canonical) {
+        canonical.setAttribute("href", `${window.location.origin}${window.location.pathname}?artigo=${artigo.id}`);
+    }
+
+    // 3. INJEÇÃO DE JSON-LD (O Padrão de Ouro para Académicos no Google)
+    let schemaScript = document.getElementById('schema-article');
+    if (schemaScript) schemaScript.remove(); // Limpa o anterior
+
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "ScholarlyArticle",
+        "headline": artigo.titulo,
+        "author": {
+            "@type": "Person",
+            "name": artigo.autor
+        },
+        "description": artigo.resumo,
+        "datePublished": `${artigo.ano}-01-01`,
+        "publisher": {
+            "@type": "Organization",
+            "name": artigo.nomeRevista
+        },
+        "keywords": artigo.palavras_chave.join(", ")
+    };
+
+    const script = document.createElement('script');
+    script.id = 'schema-article';
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(jsonLd);
+    document.head.appendChild(script);
+}
